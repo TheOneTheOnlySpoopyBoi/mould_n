@@ -54,14 +54,7 @@ xml:add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/entities/animals/shotgunner.xml", tostring(xml))
 
-local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
-local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/boss_fish/fish_giga.xml"))
-xml:add_child(nxml.parse([[
-	<LuaComponent
-		script_death="mods/mould_n/files/scripts/boss_leviathan_death_wand.lua"
-		>
-	</LuaComponent>
-]]))
+
 
 ModTextFileSetContent("data/entities/animals/firemage_weak.xml", tostring(xml))
 
