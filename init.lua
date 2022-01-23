@@ -60,7 +60,30 @@ xml:add_child(nxml.parse([[
 		>
 	</LuaComponent>
 ]]))
-ModTextFileSetContent("data/entities/animals/boss_fish/fish_giga.xml", tostring(xml))
+
+ModTextFileSetContent("data/entities/animals/firemage_weak.xml", tostring(xml))
+
+local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/firemage_weak.xml"))
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_death="mods/mould_n/files/scripts/stendari_death_perk.lua"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/firemage_weak.xml", tostring(xml))
+
+ModTextFileSetContent("data/entities/animals/firemage_weak.xml", tostring(xml))
+
+local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/firemage.xml"))
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_death="mods/mould_n/files/scripts/stendari_death_perk.lua"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/firemage.xml", tostring(xml))
 
 
 function OnModInit()
@@ -75,7 +98,7 @@ function OnPlayerSpawned( player_entity )
 	GamePrint("Custom Wand Active")
 end
 
-ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/MyMod/files/actions.lua" )
+ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mould_n/files/actions.lua" )
 print("me when sirmole")
 
 --[[
