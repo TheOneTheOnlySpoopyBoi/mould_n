@@ -1,0 +1,15 @@
+<Mod
+name="Mould N"
+description="Aims to give incentives and rewards for hunting monsters and bosses.
+
+Current Features:
+- 5 new wands to find
+- 3 new starting wands
+- 3 perks are now drops from specific enemies or bosses
+
+"
+tags="gameplay,items,loadouts"
+dont_upload_folders=".assets"
+dont_upload_files=""
+>
+</Mod>
