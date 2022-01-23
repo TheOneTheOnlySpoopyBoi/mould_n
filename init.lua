@@ -2,6 +2,8 @@
 No need to mod any of this
 ]]--
 
+ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mould_n/files/actions.lua" )
+
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
 local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/boss_pit/boss_pit.xml"))
 xml:add_child(nxml.parse([[
@@ -98,7 +100,7 @@ function OnPlayerSpawned( player_entity )
 	GamePrint("Custom Wand Active")
 end
 
-ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mould_n/files/actions.lua" )
+
 print("me when sirmole")
 
 --[[
