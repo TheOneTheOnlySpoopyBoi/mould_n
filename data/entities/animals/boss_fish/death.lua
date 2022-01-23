@@ -8,7 +8,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	ConvertMaterialEverywhere( CellFactory_GetType( "lava" ), CellFactory_GetType( "water" ) )
 	EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  x + 32, y )
 	EntityLoad( "data/entities/items/pickup/chest_random_super.xml",  x - 32, y )
-	EntityLoad( "data/entities/buildings/teleport_teleroom.xml",  x, y )
+	EntityLoad( "data/entities/buildings/teleport_teleroom.xml",  -14051, -13 )
 	EntityLoad("mods/mould_n/data/entities/items/fishhook.xml", x, y-20)
 	
 	GameAddFlagRun( "miniboss_fish" )
