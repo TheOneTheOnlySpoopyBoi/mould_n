@@ -54,10 +54,6 @@ xml:add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/entities/animals/shotgunner.xml", tostring(xml))
 
-
-
-ModTextFileSetContent("data/entities/animals/firemage_weak.xml", tostring(xml))
-
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
 local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/firemage_weak.xml"))
 xml:add_child(nxml.parse([[
@@ -68,18 +64,45 @@ xml:add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/entities/animals/firemage_weak.xml", tostring(xml))
 
-ModTextFileSetContent("data/entities/animals/firemage_weak.xml", tostring(xml))
-
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
-local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/firemage.xml"))
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/sniper.xml"))
 xml:add_child(nxml.parse([[
 	<LuaComponent
-		script_death="mods/mould_n/files/scripts/stendari_death_perk.lua"
+		script_death="mods/mould_n/files/scripts/hiisi_sniper_death.lua"
 		>
 	</LuaComponent>
 ]]))
-ModTextFileSetContent("data/entities/animals/firemage.xml", tostring(xml))
+ModTextFileSetContent("data/entities/animals/sniper.xml", tostring(xml))
 
+local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/scavenger_poison.xml"))
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_death="mods/mould_n/files/scripts/hiisi_poison_death.lua"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/scavenger_poison.xml", tostring(xml))
+
+local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/scavenger_smg.xml"))
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_death="mods/mould_n/files/scripts/hiisi_gun_death.lua"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/scavenger_smg.xml", tostring(xml))
+
+local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/scavenger_glue.xml"))
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_death="mods/mould_n/files/scripts/hiisi_glue_death.lua"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/scavenger_glue.xml", tostring(xml))
 
 function OnModInit()
 	print("Mod - OnModInit()")
