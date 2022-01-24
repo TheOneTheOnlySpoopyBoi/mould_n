@@ -2,7 +2,7 @@
 In all my testing, this never needed to be modified. 
 -->
 
-<Sprite filename="data/items_gfx/hiisi_gun.png" >
+<Sprite filename="data/items_gfx/hiisi_heal_gun.png" >
 	
   <RectAnimation 
 	name="default" 
