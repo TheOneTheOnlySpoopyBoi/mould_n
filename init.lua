@@ -114,6 +114,16 @@ xml:add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/entities/animals/scavenger_heal.xml", tostring(xml))
 
+local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/boss_centipede/boss_centipede.xml"))
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_death="mods/mould_n/files/scripts/boss_kolmi_death.lua"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/boss_centipede/boss_centipede.xml", tostring(xml))
+
 function OnModInit()
 	print("Mod - OnModInit()")
 end
