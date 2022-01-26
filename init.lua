@@ -133,7 +133,8 @@ function OnModPostInit()
 end
 
 function OnPlayerSpawned( player_entity )
-	GamePrint("Custom Wand Active")
+	GamePrint("me when sirmole")
+	EntityLoad("data/entities/animals/dark_cave_thing/dark_cave_thing.xml" , -1748, 740)
 end
 
 
