@@ -48,7 +48,7 @@
     <LuaComponent 
         execute_on_added="1"
         remove_after_executed="1"
-        script_source_file="mods/mould_n/data/entities/items/mining_mole_wand_setup.lua"
+        script_source_file="mods/mould_n/data/entities/items/mining_mole_wand.lua"
         >
     </LuaComponent>
 

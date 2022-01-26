@@ -48,7 +48,7 @@
     <LuaComponent 
         execute_on_added="1"
         remove_after_executed="1"
-        script_source_file="mods/mould_n/data/entities/items/desert_frost_setup.lua"
+        script_source_file="mods/mould_n/data/entities/items/desert_frost.lua"
         >
     </LuaComponent>
 

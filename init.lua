@@ -118,7 +118,27 @@ xml:add_child(nxml.parse([[
 		>
 	</LuaComponent>
 ]]))
-ModTextFileSetContent("data/entities/animals/boss_centipede/boss_centipede.xml", tostring(xml))
+ModTextFileSetContent("data/entities/animals/boss_robot/boss_robot.xml", tostring(xml))
+
+local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/boss_robot/boss_robot.xml"))
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_death="mods/mould_n/files/scripts/boss_mecha_kolmi_death.lua"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/boss_robot/boss_robot.xml", tostring(xml))
+
+local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/maggot_tiny/maggot_tiny.xml"))
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_death="mods/mould_n/files/scripts/boss_tiny_death.lua"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/maggot_tiny/maggot_tiny.xml", tostring(xml))
 
 function OnModInit()
 	print("Mod - OnModInit()")
@@ -142,11 +162,13 @@ function OnPlayerSpawned( player_entity )
 	dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
 
 	GameAddFlagRun("mould_arch_1_generated")
-	print("arch1_1")
+	print("arch_1")
 	end
 end
 
-print("me when sirmole")
+function OnPlayerDied()
+	GamePrintImportant("SKILL ISSUE", "")
+end
 
 --[[
 	extol best

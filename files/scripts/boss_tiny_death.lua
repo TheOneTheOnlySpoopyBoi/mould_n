@@ -6,10 +6,12 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 	local x, y = EntityGetTransform( GetUpdatedEntityID() )
 
-	EntityLoad("mods/mould_n/data/entities/items/pyramid_wand.xml", x, y+20)
+	EntityLoad("mods/mould_n/data/entities/items/tiny_wand.xml", x, y+20)
+
+	ConvertMaterialEverywhere( CellFactory_GetType( "lava" ), CellFactory_GetType( "darkness" ) )
 
 	GamePrintImportant("THE SANDS HAVE SHIFTED", "Maybe you should dig...")
-	dofile_once("mods/mould_n/files/scripts/arch/arch_2.lua")
-	GameAddFlagRun("mould_arch_2_generated")
-	print("arch_2")
+	dofile_once("mods/mould_n/files/scripts/arch/arch_5.lua")
+	GameAddFlagRun("mould_arch_5_generated")
+	print("arch_5")
 end
