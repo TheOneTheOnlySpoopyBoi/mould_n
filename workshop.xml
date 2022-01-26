@@ -1,7 +1,7 @@
 <Mod
-name="Mould N"
+name="Mould"
 description="
-Mould N
+Mould
 
 Aims to give incentives and rewards for hunting monsters and bosses.
 
@@ -20,7 +20,7 @@ Planned Features:
 - Mage Drops
 
 "
-tags="gameplay,items,loadouts"
+tags="gameplay,items,quality of life,loadouts"
 dont_upload_folders=".assets"
 dont_upload_files=""
 >
