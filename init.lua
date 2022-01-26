@@ -1,7 +1,3 @@
---[[
-No need to mod any of this
-]]--
-
 ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mould_n/files/actions.lua" )
 
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
@@ -134,17 +130,24 @@ end
 
 function OnPlayerSpawned( player_entity )
 	GamePrint("me when sirmole")
-	EntityLoad("data/entities/animals/dark_cave_thing/dark_cave_thing.xml" , -1748, 740)
-end
 
+	if GameHasFlagRun("mould_cave_thing") == false then
+	EntityLoad("data/entities/animals/dark_cave_thing/dark_cave_thing.xml" , -1748, 740)
+	GameAddFlagRun("mould_cave_thing")
+	print("cave_thing")
+	end
+
+	if GameHasFlagRun("mould_arch_1_generated") == false then
+	--basic archaeology items
+	dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
+
+	GameAddFlagRun("mould_arch_1_generated")
+	print("arch1_1")
+	end
+end
 
 print("me when sirmole")
 
 --[[
-=======
-Credits
-=======
-Template Bodged together by Eman On
-Canniblized "Sniper Start" by Zickery#2218! to understand some code
-Thanks to u/FortyNineMilkshakes for pointing me in the right direction on reddit
-]]--
+	extol best
+]]
