@@ -118,7 +118,7 @@ xml:add_child(nxml.parse([[
 		>
 	</LuaComponent>
 ]]))
-ModTextFileSetContent("data/entities/animals/boss_robot/boss_robot.xml", tostring(xml))
+ModTextFileSetContent("data/entities/animals/boss_centipede/boss_centipede.xml", tostring(xml))
 
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
 local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/boss_robot/boss_robot.xml"))

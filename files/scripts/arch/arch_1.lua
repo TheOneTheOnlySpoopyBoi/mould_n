@@ -39,7 +39,7 @@ end
 
 function arch1_5 ()
     local rx = math.random(5500, 8100)
-    local ry = math.random(900, 400)
+    local ry = math.random(100, 400)
 
     EntityLoad("mods/mould_n/data/entities/items/hiisi_gun.xml", rx, ry)
 
