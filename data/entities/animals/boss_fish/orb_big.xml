@@ -17,7 +17,7 @@
 		update_every_n_frame="1"
 		entities_with_tag="mortal"
 		death_cause="$animal_fish_giga"
-		damage_type="DAMAGE_PROJECTILE"
+		damage_type="DAMAGE_CURSE"
 		circle_radius="24"
 		>
 	</AreaDamageComponent>

@@ -23,7 +23,7 @@
 	</ProjectileComponent>
 	
 	<DamageModelComponent 
-		hp="3000"
+		hp="1500"
 		air_needed="0" 
 		falling_damages="0" 
 		fire_damage_amount="0" 	 
@@ -49,6 +49,7 @@
 			drill="0"
 			ice="0"
 			radioactive="0"
+			curse="0"
 			>
 		</damage_multipliers>
 	</DamageModelComponent>
