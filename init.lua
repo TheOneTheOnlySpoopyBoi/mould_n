@@ -172,7 +172,7 @@ function OnPlayerSpawned( player_entity )
 end
 
 function OnPlayerDied()
-	GamePrintImportant("SKILL ISSUE", "")
+	print("dead")
 end
 
 --[[
