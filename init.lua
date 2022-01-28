@@ -152,17 +152,22 @@ function OnPlayerSpawned( player_entity )
 	GamePrint("me when sirmole")
 
 	if GameHasFlagRun("mould_cave_thing") == false then
-	EntityLoad("data/entities/animals/dark_cave_thing/dark_cave_thing.xml" , -1748, 740)
-	GameAddFlagRun("mould_cave_thing")
-	print("cave_thing")
+		EntityLoad("data/entities/animals/dark_cave_thing/dark_cave_thing.xml" , -1748, 740)
+		GameAddFlagRun("mould_cave_thing")
+		print("cave_thing")
+	end
+
+	if GameHasFlagRun("mysteryessence_spawned") == false then
+		EntityLoad("data/entities/items/pickup/essence_mystery.xml" , 13059, -250)
+		GameAddFlagRun("mysteryessence_spawned")
 	end
 
 	if GameHasFlagRun("mould_arch_1_generated") == false then
 	--basic archaeology items
-	dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
+		dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
 
-	GameAddFlagRun("mould_arch_1_generated")
-	print("arch_1")
+		GameAddFlagRun("mould_arch_1_generated")
+		print("arch_1")
 	end
 end
 
