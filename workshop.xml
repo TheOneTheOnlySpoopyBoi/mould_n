@@ -5,6 +5,15 @@ Mould
 
 Aims to give incentives and rewards for hunting monsters and bosses.
 
+What is Archaeology?
+If you dig in the desert in between the pyramid and the mountain, you can find a variety of items.
+Killing certain bosses will trigger the next tier of archaeological items to spawn.
+Tier 1 - spawns on world creation
+Tier 2 - when Spider Boss is killed
+Tier 3 - when Kolmi is killed
+Tier 4 - when Mecha Kolmi is killed
+Tier 5 - when Tiny is killed
+
 Current Features:
 - 20 new wands to find
 - 3 new starting wands
