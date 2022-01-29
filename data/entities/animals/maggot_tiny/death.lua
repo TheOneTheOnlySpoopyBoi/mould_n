@@ -10,6 +10,11 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	EntityLoad( "data/entities/items/pickup/heart_fullhp.xml", pos_x + 24, pos_y )
 	EntityLoad( "data/entities/items/wand_unshuffle_06.xml", pos_x - 16, pos_y )
 	EntityLoad( "data/entities/items/wand_unshuffle_10.xml", pos_x + 16, pos_y )
+	GamePrintImportant("THE SANDS ARE SHIMMERING", "Prosperity awaits...")
+	dofile_once("mods/mould_n/files/scripts/arch/arch_5.lua")
+	GameAddFlagRun("mould_arch_5_generated")
+	print("arch_5")
+	EntityLoad("mods/mould_n/data/entities/items/tiny_wand.xml", x, y+20)
 	
 	GameAddFlagRun( "miniboss_maggot" )
 	AddFlagPersistent( "miniboss_maggot" )
@@ -18,14 +23,4 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	--StatsLogPlayerKill( entity_id )
 
 	--EntityKill( entity_id )
-
-	EntityLoad("mods/mould_n/data/entities/items/tiny_wand.xml", x, y+20)
-
-	ConvertMaterialEverywhere( CellFactory_GetType( "lava" ), CellFactory_GetType( "darkness" ) )
-	ConvertMaterialEverywhere( CellFactory_GetType( "sand" ), CellFactory_GetType( "gold" ) )
-
-	GamePrintImportant("THE SANDS ARE SHIMMERING", "Prosperity awaits...")
-	dofile_once("mods/mould_n/files/scripts/arch/arch_5.lua")
-	GameAddFlagRun("mould_arch_5_generated")
-	print("arch_5")
 end
