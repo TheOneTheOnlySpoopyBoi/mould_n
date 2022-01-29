@@ -162,6 +162,11 @@ function OnPlayerSpawned( player_entity )
 		GameAddFlagRun("mysteryessence_spawned")
 	end
 
+	if GameHasFlagRun("mecha_fish_room_spawned") == false then
+		EntityLoad("data/biome/mecha_fish_room.xml" , 0, 0)
+		GameAddFlagRun("mecha_fish_room_spawned")
+	end
+
 	if GameHasFlagRun("mould_arch_1_generated") == false then
 	--basic archaeology items
 		dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
