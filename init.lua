@@ -174,6 +174,23 @@ function OnPlayerSpawned( player_entity )
 		GameAddFlagRun("mould_arch_1_generated")
 		print("arch_1")
 	end
+
+	if GameHasFlagRun("mould_glass_cannon_perk_spawned") == false then
+		local pos_x = -1330
+		local pos_y = -200
+		local perk_id =	perk_spawn(pos_x, pos_y, "GLASS_CANNON", x, y)
+	
+		if( perk_id ~= nil ) then
+			EntityAddComponent( perk_id, "VariableStorageComponent", 
+			{ 
+				name = "perk_dont_remove_others",
+				value_bool = "1",
+			} )
+		end
+
+		GameAddFlagRun("mould_glass_cannon_perk_spawned")
+	end
+
 end
 
 function OnPlayerDied()
