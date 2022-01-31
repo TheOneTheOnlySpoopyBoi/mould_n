@@ -4,21 +4,30 @@
 		air_friction="-0.4"
 		terminal_velocity="300" 
 		displace_liquid="0"
-		liquid_drag="0"
+		liquid_drag="1"
 		>
 	</VelocityComponent>
+
+	<HomingComponent
+		target_tag="mortal"
+		homing_targeting_coeff="6"
+		detect_distance="160"
+		homing_velocity_multiplier="1"
+		>
+	</HomingComponent>
+
 	
 	<AreaDamageComponent
-		aabb_min.x="-20" 
-		aabb_min.y="-20" 
-		aabb_max.x="20" 
-		aabb_max.y="20" 
-		damage_per_frame="0.3"
+		aabb_min.x="-10" 
+		aabb_min.y="-10" 
+		aabb_max.x="10" 
+		aabb_max.y="10" 
+		damage_per_frame="0.005"
 		update_every_n_frame="1"
 		entities_with_tag="mortal"
 		death_cause="Golden Lukki"
 		damage_type="DAMAGE_PROJECTILE"
-		circle_radius="24"
+		circle_radius="8"
 		>
 	</AreaDamageComponent>
 	
@@ -35,8 +44,8 @@
 		count_max="45"
 		render_on_grid="1"
 		fade_based_on_lifetime="0"
-		area_circle_radius.min="20"
-		area_circle_radius.max="20"
+		area_circle_radius.min="10"
+		area_circle_radius.max="10"
 		cosmetic_force_create="1"
 		collide_with_grid="0"
 		airflow_force="0.051"
@@ -66,6 +75,7 @@
 		>
 	</ProjectileComponent>
 
+	<!--
 	<SpriteComponent
 		image_file="data/entities/animals/boss_lukki/orb_sprite.xml"
 		has_special_scale="1"
@@ -74,4 +84,14 @@
 		offset_y="0"
 		>
 	</SpriteComponent>
+
+
+	-->
+
+	<VariableStorageComponent
+		name="projectile_file"
+		value_string="data/entities/animals/boss_lukki/orb.xml"
+		>
+	</VariableStorageComponent>
+	
 </Entity>

@@ -1,4 +1,4 @@
-<Entity name="The Reborn Leviathan" tags="hittable,polymorphable_NOT,necrobot_NOT,glue_NOT,teleportable_NOT,curse_NOT,touchmagic_immunity,mortal,hiteffect_enabled,ui_use_raw_name">
+<Entity name="The Reborn Leviathan" tags="fish_giga_reborn,ui_use_raw_name,hittable,polymorphable_NOT,necrobot_NOT,glue_NOT,teleportable_NOT,curse_NOT,touchmagic_immunity,mortal,hiteffect_enabled">
 	<VelocityComponent
 		gravity_y="0"
 		air_friction="0"

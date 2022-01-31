@@ -1,10 +1,10 @@
-<Entity tags="boss_lukki,enemy,mortal,hittable,homing_target,teleportable_NOT,music_energy_100,glue_NOT" name="Golden Lukki">
+<Entity name="Golden Lukki" tags="boss_lukki,ui_use_raw_name,enemy,mortal,hittable,homing_target,teleportable_NOT,music_energy_100,glue_NOT" name="Golden Lukki">
 
 	<ItemChestComponent level="4" enemy_drop="1" > </ItemChestComponent>
 
 	<LuaComponent
 	    execute_every_n_frame="-1"
-	    script_death="data/scripts/items/drop_money.lua"
+	    script_death="data/entities/animals/boss_lukki/death.lua"
 	    remove_after_executed="1" >
 	</LuaComponent>
 
@@ -129,18 +129,19 @@
 		>
 		<damage_multipliers
 			melee="0.2"
-			projectile="-0.2"
-			explosion="-0.2"
+			projectile="0.0"
+			explosion="0.0"
 			electricity="0.1"
-			fire="0.2" 
+			fire="0.1" 
 			slice="0.2"
-			ice="0.3"
+			ice="0.06"
 			>
 		</damage_multipliers>
 	</DamageModelComponent>
 
 	<GenomeDataComponent 
-		food_chain_rank="5" 
+		_enabled="1"
+		food_chain_rank="6" 
 		herd_id="spider" 
 		is_predator="1" >
 	</GenomeDataComponent>
@@ -152,7 +153,7 @@
 		aabb_max_x="10" 
 		aabb_min_y="-10" 
 		aabb_max_y="10"
-		damage_multiplier="1.0" >
+		damage_multiplier="0.5" >
 	</HitboxComponent>
 
 
@@ -210,27 +211,30 @@
 	</AreaDamageComponent>
 
 	<!-- orb attack -->
-
-	<VariableStorageComponent
-		name="shooter_part"
-		value_int="1"
-		>
-	</VariableStorageComponent>
 	
 	<LuaComponent
-		script_source_file="data/entities/animals/boss_lukki/shot.lua"
-		execute_every_n_frame="20"
+		script_damage_received="data/entities/animals/boss_lukki/shot.lua"
+		execute_every_n_frame="-1"
 		>
 	</LuaComponent>
 
 	<!-- limbs -->
 
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_dark_limb_animated.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_dark_limb_animated.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_dark_limb_animated.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_dark_limb_animated.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_dark_limb_animated.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_dark_limb_animated.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_dark_limb_animated.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_dark_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	<Entity>  <Base file="data/entities/animals/boss_lukki/lukki_feet/boss_lukki_limb_animated.xml" />  </Entity>
+	
 </Entity>
