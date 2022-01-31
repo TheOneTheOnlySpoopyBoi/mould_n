@@ -35,7 +35,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 		CreateItemActionEntity( "PHI", x, y )
 	elseif spelldrop == 8 then
 		CreateItemActionEntity( "TAU", x, y )
-	elseif spelldrop == 2 then
+	elseif spelldrop == 9 then
 		CreateItemActionEntity( "SIGMA", x, y )
 	end
 
