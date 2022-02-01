@@ -13,11 +13,9 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	EntityLoad( "data/entities/items/pickup/goldnugget_1000.xml",  x, y )
 
 	EntityLoad("mods/mould_n/data/entities/items/toothy_spider_wand.xml", x, y+20)
-	--EntityLoad("mods/mould_n/data/entities/items/toothy_spider_wand.xml", x, y+20) --wand (when i make it) MAYBE A BOW?
+	EntityLoad("mods/mould_n/data/entities/items/lukki_hunting_rifle.xml", x, y+20)
 
 	local spelldrop = math.random(1, 9)
-
-	--{ "ALPHA", "OMEGA", "GAMMA", "MU", "RESET", "ZETA", "PHI", "TAU", "SIGMA" }
 
 	if spelldrop == 1 then
 		CreateItemActionEntity( "ALPHA", x, y )
@@ -38,6 +36,4 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	elseif spelldrop == 9 then
 		CreateItemActionEntity( "SIGMA", x, y )
 	end
-
-
 end
