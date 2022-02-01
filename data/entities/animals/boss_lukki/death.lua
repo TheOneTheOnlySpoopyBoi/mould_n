@@ -12,7 +12,6 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	EntityLoad( "data/entities/items/pickup/goldnugget_1000.xml",  x, y )
 	EntityLoad( "data/entities/items/pickup/goldnugget_1000.xml",  x, y )
 
-	EntityLoad("mods/mould_n/data/entities/items/toothy_spider_wand.xml", x, y+20)
 	EntityLoad("mods/mould_n/data/entities/items/lukki_hunting_rifle.xml", x, y+20)
 
 	local spelldrop = math.random(1, 9)

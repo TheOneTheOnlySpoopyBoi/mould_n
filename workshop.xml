@@ -5,6 +5,8 @@ Mould
 
 Aims to give incentives and rewards for hunting monsters and bosses.
 
+Probably incompatible with with other biome mods.
+
 What is Archaeology?
 If you dig in the desert in between the pyramid and the mountain, you can find a variety of items.
 Killing certain bosses will trigger the next tier of archaeological items to spawn.
@@ -16,8 +18,9 @@ Tier 5 - when Tiny is killed
 
 Current Features:
 - 21 new wands to find
-- 2 new bosses
+- 1 new bosses (and 1 reborn boss)
 - 3 new starting wands
+- 1 new biome
 - a 3rd Sun to make
 - 3 new spells
 - 4 perks are now drops from specific enemies or bosses
@@ -27,17 +30,18 @@ Current Features:
 - 1 new structure
 
 Planned Features:
+- miniboss for the decaying jungle
 - new bosses with drops
 - drops for vanilla bosses
+- new biomes
 - a way to respawn bosses
-- decaying jungle biome with boss (maybe)
 - more archaeology items
 
 Github: https://github.com/mole-den/mould-n-noita
 Discord: https://discord.gg/JuRC6FqXkb
 
 "
-tags="gameplay,items,quality of life,loadouts,tweaks,bosses"
+tags="gameplay,items,quality of life,loadouts,tweaks,bosses,biomes"
 dont_upload_folders=".assets" 
 dont_upload_files=""
 >

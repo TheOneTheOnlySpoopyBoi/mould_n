@@ -1034,4 +1034,11 @@
 		height_index="0"
 		color="ff353fca" >
 	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/rainforest_decay.xml" 
+		height_index="0"
+		color="ff357442" >
+	</Biome>
+
 </BiomesToLoad>

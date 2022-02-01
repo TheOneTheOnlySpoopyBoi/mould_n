@@ -175,6 +175,12 @@ function OnPlayerSpawned( player_entity )
 		print("arch_1")
 	end
 
+	if GameHasFlagRun("mould_boss_lukki_spawned") == false then
+		EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
+	
+		GameAddFlagRun("mould_boss_lukki_spawned")
+	end
+
 	if GameHasFlagRun("mould_glass_cannon_perk_spawned") == false then
 		local pos_x = -1330
 		local pos_y = -200
