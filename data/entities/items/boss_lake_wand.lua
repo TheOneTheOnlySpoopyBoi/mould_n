@@ -3,9 +3,8 @@ dofile("data/scripts/gun/procedural/gun_action_utils.lua")
 
 local entity_id = GetUpdatedEntityID()
 
-AddGunAction( entity_id, "LIFETIME" )
+AddGunAction( entity_id, "LIFETIME_DOWN" )
 AddGunAction( entity_id, "BURST_2" )
-AddGunAction( entity_id, "TELEPORT_PROJECTILE_SHORT" )
-AddGunAction( entity_id, "FREEZING_GAZE" )
+AddGunAction( entity_id, "TELEPORT_PROJECTILE" )
 
 AddGunActionPermanent( entity_id, "WATER_TRAIL" )

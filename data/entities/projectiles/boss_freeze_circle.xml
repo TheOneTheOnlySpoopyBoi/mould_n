@@ -74,7 +74,11 @@
 		<ProjectileComponent 
 			damage_game_effect_entities="data/entities/misc/effect_frozen.xml,"
 			friendly_fire="0"
+			death_cause="Lack of skill"
 		    >
+			<damage_by_type curse="15" >
+    		</damage_by_type>
+
 			<config_explosion
 				explosion_sprite=""
 			    >

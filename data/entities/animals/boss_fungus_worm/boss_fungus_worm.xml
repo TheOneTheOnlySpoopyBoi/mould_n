@@ -54,7 +54,7 @@
 		fire_probability_of_ignition="0.5" 
 		blood_material="blood_worm"
 		blood_spray_material="blood_worm"
-		hp="470" 
+		hp="300 " 
 		is_on_fire="0" 
 		mAirAreWeInWater="0" 
 		mFallCount="0" 

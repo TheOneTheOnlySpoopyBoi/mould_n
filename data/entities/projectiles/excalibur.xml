@@ -31,13 +31,13 @@
 	  shoot_light_flash_r="10"
     shoot_light_flash_g="10"
     shoot_light_flash_b="255"
-    shoot_light_flash_radius="86"
+    shoot_light_flash_radius="186"
     >
     <config_explosion
       never_cache="1" 
       camera_shake="1.5" 
-      explosion_radius="6"
-      explosion_sprite="data/particles/spark_0$[1-3].xml" 
+      explosion_radius="8"
+      explosion_sprite="data/particles/excal_spark.xml" 
       explosion_sprite_lifetime="0" 
       create_cell_probability="0" 
       hole_destroy_liquid="0" 
@@ -68,31 +68,6 @@
     </damage_by_type>
   </ProjectileComponent>
   
-  <ParticleEmitterComponent 
-    emitted_material_name="water"
-    count_min="10"
-    count_max="17"
-    offset.x="0"
-    offset.y="1"
-    x_pos_offset_min="0"
-    y_pos_offset_min="0"
-    x_pos_offset_max="0"
-    y_pos_offset_max="0"
-    x_vel_min="-10"
-    x_vel_max="10"
-    y_vel_min="-10"
-    y_vel_max="10"
-    count_min="5"
-    count_max="5"
-    lifetime_min="0.1"
-    lifetime_max="0.3"
-    create_real_particles="1"
-    emit_cosmetic_particles="0"
-    emission_interval_min_frames="1"
-    emission_interval_max_frames="2"
-    is_emitting="1" >
-  </ParticleEmitterComponent>
-  
   <AudioLoopComponent
 		file="data/audio/Desktop/projectiles.bank"
 		event_name="player_projectiles/chainsaw/loop"
@@ -104,5 +79,69 @@
 		value_string="data/entities/projectiles/excalibur.xml"
 		>
 	</VariableStorageComponent>
+
+  <MagicConvertMaterialComponent
+    from_material="lava"
+    to_material="water"
+    steps_per_frame="20"
+    loop="1"
+		is_circle="1"
+    radius="20" >
+  </MagicConvertMaterialComponent>
+
+  <MagicConvertMaterialComponent
+    from_material="blood"
+    to_material="water"
+    steps_per_frame="20"
+    loop="1"
+		is_circle="1"
+    radius="20" >
+  </MagicConvertMaterialComponent>
+
+  <MagicConvertMaterialComponent
+    from_material="oil"
+    to_material="water"
+    steps_per_frame="20"
+    loop="1"
+		is_circle="1"
+    radius="20" >
+  </MagicConvertMaterialComponent>
+
+  <MagicConvertMaterialComponent
+    from_material="acid"
+    to_material="water"
+    steps_per_frame="20"
+    loop="1"
+		is_circle="1"
+    radius="20" >
+  </MagicConvertMaterialComponent>
+
+  <MagicConvertMaterialComponent
+    from_material="radioactive_liquid"
+    to_material="water"
+    steps_per_frame="20"
+    loop="1"
+		is_circle="1"
+    radius="20" >
+  </MagicConvertMaterialComponent>
+
+  <MagicConvertMaterialComponent
+    from_material="fire"
+    to_material="water"
+    steps_per_frame="20"
+    loop="1"
+		is_circle="1"
+    radius="20" >
+  </MagicConvertMaterialComponent>
+
+  <MagicConvertMaterialComponent
+    from_material="slime"
+    to_material="water"
+    steps_per_frame="20"
+    loop="1"
+		is_circle="1"
+    radius="20" >
+  </MagicConvertMaterialComponent>
+
 </Entity>
 
