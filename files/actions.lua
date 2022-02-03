@@ -63,6 +63,46 @@ local to_insert = {
             draw_actions( 1, true )
         end,
     },
+    {
+		id          = "FUNGUS_WORM_RAIN",
+		name 		= "Sienimatosade",
+		description = "Alea iacta est",
+		sprite 		= "data/ui_gfx/gun_actions/fungus_worm_rain.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/bomb_unidentified.png",
+		related_projectiles	= {"data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml"},
+		spawn_requires_flag = "card_unlocked_rain",
+		never_unlimited		= true,
+		type 		= ACTION_TYPE_STATIC_PROJECTILE,
+		spawn_level                       = "6,10",
+		spawn_probability                 = "0.1,0.8",
+		price = 350,
+		mana = 350, 
+		max_uses    = 2, 
+		custom_xml_file = "data/entities/misc/fungus_worm_rain.xml",
+		action 		= function()
+			add_projectile("data/entities/projectiles/fungus_worm_rain.xml")
+			c.fire_rate_wait = c.fire_rate_wait + 100
+			current_reload_time = current_reload_time + 60
+		end,
+	},
+    {
+		id          = "EXCALIBUR",
+		name 		= "Excalibur",
+		description = "Strange women lying in ponds distributing swords is no basis for a system of government",
+		sprite 		= "data/ui_gfx/gun_actions/excalibur.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/excalibur.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "6",
+		spawn_probability                 = "0", 
+		price = 80,
+		mana = 1,
+		--max_uses = 1000,
+		action 		= function()
+			add_projectile("data/entities/projectiles/excalibur.xml")
+			c.fire_rate_wait = 0
+		end,
+	},
 }
 
 for k, v in ipairs(to_insert) do

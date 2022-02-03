@@ -151,12 +151,6 @@ end
 function OnPlayerSpawned( player_entity )
 	GamePrint("me when sirmole")
 
-	if GameHasFlagRun("mould_cave_thing") == false then
-		EntityLoad("data/entities/animals/dark_cave_thing/dark_cave_thing.xml" , -1748, 740)
-		GameAddFlagRun("mould_cave_thing")
-		print("cave_thing")
-	end
-
 	if GameHasFlagRun("mysteryessence_spawned") == false then
 		EntityLoad("data/entities/items/pickup/essence_mystery.xml" , 13059, -250)
 		GameAddFlagRun("mysteryessence_spawned")
@@ -175,10 +169,11 @@ function OnPlayerSpawned( player_entity )
 		print("arch_1")
 	end
 
-	if GameHasFlagRun("mould_boss_lukki_spawned") == false then
+	if GameAddFlagRun("mould_bosses_spawned") == false then
 		EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
-	
-		GameAddFlagRun("mould_boss_lukki_spawned")
+		EntityLoad("data/entities/animals/dark_cave_thing/dark_cave_thing.xml" , -1748, 740)
+		EntityLoad("data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 0, 0)
+		EntityLoad("data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , 0, 0)
 	end
 
 	if GameHasFlagRun("mould_glass_cannon_perk_spawned") == false then
