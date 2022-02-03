@@ -173,7 +173,7 @@ function OnPlayerSpawned( player_entity )
 		EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
 		EntityLoad("mods/mould_n/data/entities/animals/dark_cave_thing/dark_cave_thing.xml" , -1748, 740)
 		EntityLoad("mods/mould_n/data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 3300, 6400)
-		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -20, -1400)
+		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , 20, -14000)
 
 		GameAddFlagRun("mould_bosses_spawned")
 	end
