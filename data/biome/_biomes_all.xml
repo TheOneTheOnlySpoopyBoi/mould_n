@@ -1041,4 +1041,10 @@
 		color="ff357442" >
 	</Biome>
 
+	<Biome 
+		biome_filename="data/biome/cursed_sandcave.xml" 
+		height_index="0"
+		color="ff007f7f" >
+	</Biome>
+
 </BiomesToLoad>
