@@ -10,4 +10,6 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	
 	EntityLoad("mods/mould_n/data/entities/items/boss_lake_wand.xml", x, y-20)
 	EntityLoad("mods/mould_n/data/entities/items/boss_lake_sword.xml", x, y-20)
+
+	EntityLoad("mods/mould_n/data/entities/items/rebirth/boss_lady_tablet.xml", x, y)
 end

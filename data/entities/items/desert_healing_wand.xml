@@ -1,5 +1,4 @@
-<Entity tags="a">
-
+<Entity tags="teleportable_NOT,wand,item">
 	<AbilityComponent 
         amount_in_inventory="1"
         cooldown_frames="0"

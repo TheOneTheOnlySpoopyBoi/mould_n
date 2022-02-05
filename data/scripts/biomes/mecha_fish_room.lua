@@ -5,7 +5,7 @@ dofile_once("data/scripts/biome_scripts.lua")
 
 RegisterSpawnFunction( 0xffffeedd, "init" )
 --RegisterSpawnFunction( 0xffbf262b, "spawn_metportal" )
-RegisterSpawnFunction( 0xff78ca42, "spawn_boss" )
+RegisterSpawnFunction( 0xff357442, "spawn_altar" ) 
 
 function spawn_small_enemies( x, y ) end
 function spawn_big_enemies( x, y ) end
@@ -55,15 +55,10 @@ function spawn_wands(x, y)
 end
 
 function init( x, y, w, h )
-	LoadPixelScene( "data/biome_impl/mecha_fish_room.png", "", x, y, "", true )
+	LoadPixelScene( "data/biome_impl/mecha_fish_room.png", "data/biome_impl/mecha_fish_room_visual.png", x, y, "data/biome_impl/mecha_fish_room_background.png", true )
+	EntityLoad( "data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10530, 9472 )
 end
 
---function spawn_metportal( x, y )
-	--EntityLoad( "data/entities/buildings/teleport_lavalake.xml", x, y )
---end
-
-function spawn_boss( x, y )
-	EntityLoad( "data/entities/animals/boss_fish_reborn/fish_giga_reborn.xml", x, y )
-end
-
---EntityLoad( "data/entities/animals/boss_fish_reborn/fish_giga_reborn.xml", -10526, 9520 )
+--[[function spawn_altar( x, y )
+	EntityLoad( "data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472 )
+end]]--

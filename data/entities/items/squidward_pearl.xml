@@ -1,4 +1,4 @@
-<Entity tags="a">
+<Entity tags="pearl">
 
 	<AbilityComponent 
         amount_in_inventory="1"

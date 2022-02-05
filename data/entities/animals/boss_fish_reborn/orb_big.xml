@@ -17,7 +17,7 @@
 		update_every_n_frame="1"
 		entities_with_tag="mortal"
 		death_cause="The Reborn Leviathan"
-		damage_type="DAMAGE_CURSE"
+		damage_type="DAMAGE_PROJECTILE"
 		circle_radius="24"
 		>
 	</AreaDamageComponent>

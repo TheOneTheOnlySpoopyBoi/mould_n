@@ -169,16 +169,13 @@ function OnPlayerSpawned( player_entity )
 		print("arch_1")
 	end
 
-	if GameHasFlagRun("mould_bosses_spawned") == false then
+	if GameHasFlagRun("mould_spawned") == false then
+		EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
+
 		EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
 		EntityLoad("mods/mould_n/data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 3300, 6400)
 		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -12446, -186)
 
-		GameAddFlagRun("mould_bosses_spawned")
-	end
-
-
-	if GameHasFlagRun("mould_glass_cannon_perk_spawned") == false then
 		local pos_x = -1330
 		local pos_y = -200
 		local perk_id =	perk_spawn(pos_x, pos_y, "GLASS_CANNON", x, y)
@@ -191,7 +188,7 @@ function OnPlayerSpawned( player_entity )
 			} )
 		end
 
-		GameAddFlagRun("mould_glass_cannon_perk_spawned")
+		GameAddFlagRun("mould_spawned")
 	end
 
 end
@@ -199,7 +196,3 @@ end
 function OnPlayerDied()
 	print("dead")
 end
-
---[[
-	extol best
-]]

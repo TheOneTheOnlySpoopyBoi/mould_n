@@ -103,6 +103,24 @@ local to_insert = {
 			c.fire_rate_wait = 0
 		end,
 	},
+	{
+		id          = "EXCALIBUR_REBORN",
+		name 		= "Excalibur Reborn",
+		description = "Strange women lying in ponds distributing swords is no basis for a system of government",
+		sprite 		= "data/ui_gfx/gun_actions/excal_reborn.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/disc_bullet_unidentified.png",
+		spawn_requires_flag = "card_unlocked_everything",
+		related_projectiles	= {"data/entities/projectiles/excal_reborn.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "6",
+		spawn_probability                 = "0", 
+		price = 100,
+		mana = 1,
+		action 		= function()
+			add_projectile("data/entities/projectiles/excal_reborn.xml")
+			-- damage = 0.3
+		end,
+	},
 }
 
 for k, v in ipairs(to_insert) do

@@ -11,7 +11,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	EntityLoad( "data/entities/buildings/teleport_teleroom.xml",  -14051, -13 )
 	EntityLoad("mods/mould_n/data/entities/items/fishhook.xml", x, y-20)
 
-	EntityLoad( "data/entities/animals/boss_fish_reborn/fish_giga_reborn.xml", -10526, 9520 )
+	EntityLoad("mods/mould_n/data/entities/items/rebirth/boss_fish_tablet.xml", x, y)
 	
 	GameAddFlagRun( "miniboss_fish" )
 	AddFlagPersistent( "miniboss_fish" )

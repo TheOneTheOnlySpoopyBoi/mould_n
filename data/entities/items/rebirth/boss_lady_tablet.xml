@@ -1,0 +1,23 @@
+<Entity
+    tags="rebirth_tablet,item_physics,rebirth_tablet_lady"
+    name="Tablet of Rebirth (Lady of the Lake)"
+    >
+
+	<Base file="data/entities/items/rebirth/base_tablet.xml">
+		<UIInfoComponent
+			name="Tablet of Rebirth"
+			>
+		</UIInfoComponent>
+		
+		<ItemComponent
+			item_name="Tablet of Rebirth"
+			ui_description="Has the power to resurrect the lady of the Lake..."
+			>
+		</ItemComponent>
+		
+		<AbilityComponent
+			ui_name="Tablet of Rebirth"
+			>
+		</AbilityComponent>
+	</Base>
+</Entity>
