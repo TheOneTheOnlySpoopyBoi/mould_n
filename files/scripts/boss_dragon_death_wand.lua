@@ -7,4 +7,6 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	local x, y = EntityGetTransform( GetUpdatedEntityID() )
 
 	EntityLoad("mods/mould_n/data/entities/items/dragon_wand.xml", x, y+20)
+
+	EntityLoad("mods/mould_n/data/entities/items/rebirth/boss_dragon_tablet.xml", x, y)
 end
