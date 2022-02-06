@@ -193,6 +193,48 @@ function OnPlayerSpawned( player_entity )
 
 end
 
+function OnWorldPostUpdate()
+	if GameHasFlagRun("mysteryessence_spawned") == false then
+		EntityLoad("data/entities/items/pickup/essence_mystery.xml" , 13059, -250)
+		GameAddFlagRun("mysteryessence_spawned")
+	end
+
+	if GameHasFlagRun("mecha_fish_room_spawned") == false then
+		EntityLoad("data/biome/mecha_fish_room.xml" , 0, 0)
+		GameAddFlagRun("mecha_fish_room_spawned")
+	end
+
+	if GameHasFlagRun("mould_arch_1_generated") == false then
+	--basic archaeology items
+		dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
+
+		GameAddFlagRun("mould_arch_1_generated")
+		print("arch_1")
+	end
+
+	if GameHasFlagRun("mould_spawned") == false then
+		EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
+
+		EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
+		EntityLoad("mods/mould_n/data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 3300, 6400)
+		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -12446, -186)
+
+		local pos_x = -1330
+		local pos_y = -200
+		local perk_id =	perk_spawn(pos_x, pos_y, "GLASS_CANNON", x, y)
+	
+		if( perk_id ~= nil ) then
+			EntityAddComponent( perk_id, "VariableStorageComponent", 
+			{ 
+				name = "perk_dont_remove_others",
+				value_bool = "1",
+			} )
+		end
+
+		GameAddFlagRun("mould_spawned")
+	end
+end
+
 function OnPlayerDied()
 	print("dead")
 end
