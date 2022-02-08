@@ -11,8 +11,8 @@
 	</_Transform>
 
 	<WormComponent
-		acceleration="1.5"
-		gravity="2"
+		acceleration="1.3"
+		gravity="1"
 		tail_gravity="20"
 		part_distance="16"
 		ground_check_offset="8"
@@ -26,11 +26,11 @@
 	</WormComponent>
 
 	<WormAIComponent
-		speed="6"
-		speed_hunt="7"
+		speed="4"
+		speed_hunt="5"
 		direction_adjust_speed="0.003"
 		direction_adjust_speed_hunt="0.04"
-		hunt_box_radius="256"
+		hunt_box_radius="512"
 		random_target_box_radius="128"
 		new_hunt_target_check_every="240"
 		new_random_target_check_every="240"
