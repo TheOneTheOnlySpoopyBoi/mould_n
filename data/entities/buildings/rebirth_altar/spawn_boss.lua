@@ -30,9 +30,13 @@ function collision_trigger(colliding_entity_id)
     if (EntityHasTag(colliding_entity_id, "rebirth_tablet_dragon")) then
         EntityKill(colliding_entity_id)
 
-        --EntityLoad("data/entities/animals/boss_dragon_reborn/boss_dragon_reborn.xml", -10523, 9322)
+        EntityLoad("data/entities/animals/boss_dragon_reborn/boss_dragon_reborn.xml", -10523, 9322)
+        EntityLoad("data/entities/animals/boss_dragon_reborn/boss_dragon_reborn.xml", -10523, 9322)
+        EntityLoad("data/entities/animals/boss_dragon_reborn/boss_dragon_reborn.xml", -10523, 9322)
+        EntityLoad("data/entities/animals/boss_dragon_reborn/boss_dragon_reborn.xml", -10523, 9322)
+        EntityLoad("data/entities/animals/boss_dragon_reborn/boss_dragon_reborn.xml", -10523, 9322)
 
-        GamePrintImportant("THE ALTAR SHAKES", "Something is not here...") --change when boss implemented
+        GamePrintImportant("THE ALTAR SHAKES", "Something is here...")
         GamePlaySound( "data/audio/Desktop/event_cues.bank", "event_cues/orb_distant_monster/create", -10523, 9422 )
         GameScreenshake( 100 )
         EntityLoad("data/entities/particles/rebirth.xml", -10523, 9522)
