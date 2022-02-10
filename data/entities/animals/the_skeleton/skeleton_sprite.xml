@@ -1,0 +1,7 @@
+<Sprite 
+  filename="data/entities/animals/the_skeleton/sprite.png" 
+  offset_x="8" 
+  offset_y="10"
+  default_animation="stand" >
+</Sprite>
+

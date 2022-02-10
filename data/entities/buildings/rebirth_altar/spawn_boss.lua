@@ -41,6 +41,16 @@ function collision_trigger(colliding_entity_id)
         GameScreenshake( 100 )
         EntityLoad("data/entities/particles/rebirth.xml", -10523, 9522)
     end
+    if (EntityHasTag(colliding_entity_id, "lightsaber")) then
+        EntityKill(colliding_entity_id)
+
+        EntityLoad("data/entities/animals/the_skeleton/the_skeleton.xml", -10523, 9322)
+
+        GamePrintImportant("THE ALTAR SHAKES", "THE SKELETON APPEARS...")
+        GamePlaySound( "data/audio/Desktop/event_cues.bank", "event_cues/orb_distant_monster/create", -10523, 9422 )
+        GameScreenshake( 100 )
+        EntityLoad("data/entities/particles/rebirth.xml", -10523, 9522)
+    end
 
     --GamePrint("2")
 

@@ -1,4 +1,4 @@
-<Entity tags="hittable,teleportable_NOT,seed_e,newsun_green" >
+<Entity tags="hittable,teleportable_NOT,seed_e,newsun" >
 	<StreamingKeepAliveComponent />
 	
 	<Base file="data/entities/base_item_projectile.xml" />
@@ -40,7 +40,7 @@
 		offset_y="105"
 		emissive="1"
 		additive="1"
-		image_file="data/props_gfx/sun_big_green.png"
+		image_file="data/props_gfx/sun_big.png"
 		smooth_filtering="1"
 	></SpriteComponent>
 
@@ -53,7 +53,7 @@
 		_tags="enabled_in_world,enabled_in_hand"
 		kill_when_finished="0"
 		steps_per_frame="16"
-		to_material="magic_gas_hp_regeneration"
+		to_material="lava"
 		convert_entities="1"
 		clean_stains="0"
 		is_circle="1"
@@ -67,7 +67,7 @@
 		kill_when_finished="0"
 		from_material_tag="[alchemy]"
 		steps_per_frame="16"
-		to_material="magic_gas_hp_regeneration"
+		to_material="lava"
 		clean_stains="0"
 		is_circle="1"
 		radius="230" 
@@ -96,23 +96,47 @@
 	</CellEaterComponent>
 	
 	<AreaDamageComponent
-		aabb_min.x="-244" 
-		aabb_min.y="-244" 
-		aabb_max.x="244" 
-		aabb_max.y="244" 
-		damage_per_frame="-200.14"
+		aabb_min.x="-122" 
+		aabb_min.y="-122" 
+		aabb_max.x="122" 
+		aabb_max.y="122" 
+		damage_per_frame="2.14"
 		update_every_n_frame="1"
 		entities_with_tag="mortal"
 		death_cause="$damage_sun"
-		damage_type="DAMAGE_HEALING"
+		damage_type="DAMAGE_CURSE"
 		>
 	</AreaDamageComponent>
 	
-
+	<AreaDamageComponent
+		aabb_min.x="-190" 
+		aabb_min.y="-190" 
+		aabb_max.x="190" 
+		aabb_max.y="190" 
+		damage_per_frame="1.05"
+		update_every_n_frame="1"
+		entities_with_tag="mortal"
+		death_cause="$damage_sun"
+		damage_type="DAMAGE_EXPLOSION"
+		>
+	</AreaDamageComponent>
+	
+	<AreaDamageComponent
+		aabb_min.x="-280" 
+		aabb_min.y="-280" 
+		aabb_max.x="280" 
+		aabb_max.y="280" 
+		damage_per_frame="0.61"
+		update_every_n_frame="1"
+		entities_with_tag="mortal"
+		death_cause="$damage_sun"
+		damage_type="DAMAGE_FIRE"
+		>
+	</AreaDamageComponent>
 	
 	<ParticleEmitterComponent 
 		_tags="enabled_in_world,enabled_in_hand"
-		emitted_material_name="magic_gas_hp_regeneration"
+		emitted_material_name="spark_yellow"
 		fade_based_on_lifetime="1"
 		x_pos_offset_min="0"
 		x_pos_offset_max="0"
@@ -147,7 +171,7 @@
 	
 	<ParticleEmitterComponent 
 		_tags="enabled_in_world,enabled_in_hand"
-		emitted_material_name="magic_gas_hp_regeneration"
+		emitted_material_name="spark"
 		fade_based_on_lifetime="1"
 		x_pos_offset_min="0"
 		x_pos_offset_max="0"
@@ -216,8 +240,8 @@
 	</LuaComponent>
 	
 	<LuaComponent
-		script_source_file="data/scripts/buildings/sun/sun_green_effect.lua"
-		execute_every_n_frame="41"
+		script_source_file="data/scripts/buildings/sun/sun_collision.lua"
+		execute_every_n_frame="10"
 		>
 	</LuaComponent>
 </Entity>

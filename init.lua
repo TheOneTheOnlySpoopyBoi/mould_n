@@ -176,6 +176,12 @@ function OnPlayerSpawned( player_entity )
 		EntityLoad("mods/mould_n/data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 3300, 6400)
 		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -12446, -186)
 
+		--[[ TESTING ]]--
+
+		EntityLoad("mods/mould_n/data/entities/items/sun_weapon/weapon_newsun/sun_weapon_newsun.lua", 0, 0)
+
+		--[[ ]]--
+
 		local pos_x = -1330
 		local pos_y = -200
 		local perk_id =	perk_spawn(pos_x, pos_y, "GLASS_CANNON", x, y)
@@ -189,6 +195,21 @@ function OnPlayerSpawned( player_entity )
 		end
 
 		GameAddFlagRun("mould_spawned")
+
+		if GameHasFlagRun("mould_lightsaber_spawned") == false then
+		local function spawnsaber ()
+			local saberx = math.random(1000,-1000)
+			local sabery = math.random(1000,-1000)
+
+			EntityLoad("mods/mould_n/data/entities/items/ligthsaber.xml", saberx, sabery)
+		end
+			
+		for i=1,10 do spawnsaber() end
+
+		GameAddFlagRun("mould_lightsaber_spawned")
+		
+		end
+
 	end
 
 end
