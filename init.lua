@@ -169,6 +169,12 @@ function OnPlayerSpawned( player_entity )
 		print("arch_1")
 	end
 
+	if GameHasFlagRun("mould_saber_spawned") == false then
+		dofile_once("mods/mould_n/files/scripts/spawn_saber.lua")
+		
+		GameAddFlagRun("mould_saber_spawned")
+	end
+
 	if GameHasFlagRun("mould_spawned") == false then
 		EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
 
@@ -178,7 +184,7 @@ function OnPlayerSpawned( player_entity )
 
 		--[[ TESTING ]]--
 
-		EntityLoad("mods/mould_n/data/entities/items/sun_weapon/weapon_newsun/sun_weapon_newsun.lua", 0, 0)
+		--EntityLoad("mods/mould_n/data/entities/items/sun_weapon/weapon_newsun/sun_weapon_newsun.xml", 0, 0)
 
 		--[[ ]]--
 
@@ -192,22 +198,6 @@ function OnPlayerSpawned( player_entity )
 				name = "perk_dont_remove_others",
 				value_bool = "1",
 			} )
-		end
-
-		GameAddFlagRun("mould_spawned")
-
-		if GameHasFlagRun("mould_lightsaber_spawned") == false then
-		local function spawnsaber ()
-			local saberx = math.random(1000,-1000)
-			local sabery = math.random(1000,-1000)
-
-			EntityLoad("mods/mould_n/data/entities/items/ligthsaber.xml", saberx, sabery)
-		end
-			
-		for i=1,10 do spawnsaber() end
-
-		GameAddFlagRun("mould_lightsaber_spawned")
-		
 		end
 
 	end
@@ -231,6 +221,12 @@ function OnWorldPostUpdate()
 
 		GameAddFlagRun("mould_arch_1_generated")
 		print("arch_1")
+	end
+
+	if GameHasFlagRun("mould_saber_spawned") == false then
+		dofile_once("mods/mould_n/files/scripts/spawn_saber.lua")
+
+		GameAddFlagRun("mould_saber_spawned")
 	end
 
 	if GameHasFlagRun("mould_spawned") == false then

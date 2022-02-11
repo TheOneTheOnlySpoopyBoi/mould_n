@@ -121,6 +121,38 @@ local to_insert = {
 			-- damage = 0.3
 		end,
 	},
+	{
+		id          = "RING_NEWSUN",
+		name 		= "Flare of Light",
+		description = "The power of the New Sun in the palm of your hand...",
+		sprite 		= "data/ui_gfx/gun_actions/ring_newsun.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/meteor_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/ring_newsun.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "10",
+		spawn_probability                 = "0",
+		price = 100,
+		mana = 100,
+		action 		= function()
+			add_projectile("data/entities/projectiles/ring_newsun.xml")
+		end,
+	},
+	{
+		id          = "RING_DARKSUN",
+		name 		= "Flare of Darkness",
+		description = "The power of the Dark Sun in the palm of your hand...",
+		sprite 		= "data/ui_gfx/gun_actions/ring_darksun.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/meteor_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/ring_darksun.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "10",
+		spawn_probability                 = "0",
+		price = 100,
+		mana = 100,
+		action 		= function()
+			add_projectile("data/entities/projectiles/ring_darksun.xml")
+		end,
+	},
 }
 
 for k, v in ipairs(to_insert) do

@@ -16,7 +16,7 @@ function collision_trigger(colliding_entity_id)
     if (EntityHasTag(colliding_entity_id, "newsun_dark")) then
         EntityKill(colliding_entity_id)
        
-        --EntityLoad("mods/mould_n/data/entities/items/sun_weapon/weapon_darksun/sun_weapon_darksun.lua", x, y) --nyi
+        EntityLoad("mods/mould_n/data/entities/items/sun_weapon/weapon_darksun/sun_weapon_darksun.lua", x, y) 
 
         EntityKill(entity_id)
     end
