@@ -1047,4 +1047,10 @@
 		color="ff007f7f" >
 	</Biome>
 
+	<Biome 
+		biome_filename="data/biome/reef.xml" 
+		height_index="0"
+		color="ff4bb87f" >
+	</Biome>
+
 </BiomesToLoad>

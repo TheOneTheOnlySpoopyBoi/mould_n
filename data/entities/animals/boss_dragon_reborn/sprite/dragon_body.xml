@@ -1,5 +1,5 @@
 <Sprite 
-  filename="data/entities/animals/boss_dragon_reborn/sprite/dragon_body.xml" 
+  filename="data/entities/animals/boss_dragon_reborn/sprite/dragon_body.png" 
   offset_x="17" 
   offset_y="15"
   default_animation="stand" >

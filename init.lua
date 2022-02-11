@@ -161,14 +161,6 @@ function OnPlayerSpawned( player_entity )
 		GameAddFlagRun("mecha_fish_room_spawned")
 	end
 
-	if GameHasFlagRun("mould_arch_1_generated") == false then
-	--basic archaeology items
-		dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
-
-		GameAddFlagRun("mould_arch_1_generated")
-		print("arch_1")
-	end
-
 	if GameHasFlagRun("mould_saber_spawned") == false then
 		dofile_once("mods/mould_n/files/scripts/spawn_saber.lua")
 		
@@ -181,6 +173,8 @@ function OnPlayerSpawned( player_entity )
 		EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
 		EntityLoad("mods/mould_n/data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 3300, 6400)
 		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -12446, -186)
+
+		dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
 
 		--[[ TESTING ]]--
 
@@ -215,13 +209,7 @@ function OnWorldPostUpdate()
 		GameAddFlagRun("mecha_fish_room_spawned")
 	end
 
-	if GameHasFlagRun("mould_arch_1_generated") == false then
-	--basic archaeology items
-		dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
 
-		GameAddFlagRun("mould_arch_1_generated")
-		print("arch_1")
-	end
 
 	if GameHasFlagRun("mould_saber_spawned") == false then
 		dofile_once("mods/mould_n/files/scripts/spawn_saber.lua")
@@ -232,9 +220,11 @@ function OnWorldPostUpdate()
 	if GameHasFlagRun("mould_spawned") == false then
 		EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
 
-		EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
+		--[[EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
 		EntityLoad("mods/mould_n/data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 3300, 6400)
-		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -12446, -186)
+		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -12446, -186)]]--
+
+		dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
 
 		local pos_x = -1330
 		local pos_y = -200

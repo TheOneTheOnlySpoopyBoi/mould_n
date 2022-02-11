@@ -1,13 +1,13 @@
 dofile_once("data/scripts/lib/utilities.lua")
 dofile_once("data/scripts/perks/perk.lua")
 
-function spawnsaber ()
+--[[function spawnsaber ()
 	local rx = math.random(14000, 12000)
     local ry = math.random(1000, -1000)
 
     EntityLoad("mods/mould_n/data/entities/items/lightsaber.xml", rx, ry)
 
-end
+end]]--
 
 
 
@@ -16,4 +16,6 @@ end
 
 
 
-for i=1,10 do spawnsaber() end
+--for i=1,10 do spawnsaber() end
+
+dofile_once("mods/mould_n/files/arch/arch_1.lua")
