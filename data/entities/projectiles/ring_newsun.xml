@@ -26,7 +26,7 @@
     on_collision_die="1"
 	die_on_liquid_collision="1"
     lifetime="200"
-	muzzle_flash_file="data/entities/particles/muzzle_flashes/muzzle_flash_launcher_large.xml"
+
 	shoot_light_flash_r="255"
     shoot_light_flash_g="210"
     shoot_light_flash_b="40"

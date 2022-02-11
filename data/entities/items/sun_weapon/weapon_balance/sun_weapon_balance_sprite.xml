@@ -2,14 +2,14 @@
 In all my testing, this never needed to be modified. 
 -->
 
-<Sprite filename="data/entities/items/sun_weapon/weapon_newsun/sun_weapon_newsun.png" >
+<Sprite filename="data/entities/items/sun_weapon/weapon_balance/sun_weapon_balance.png" >
 	
   <RectAnimation 
 	name="default" 
 	pos_x="1" 
 	pos_y="1" 
 	offset_x="-3" 
-	offset_y="6"
+	offset_y="6" 
 	has_offset="1"
 	frame_count="1" 
 	frame_width="18" 

@@ -153,6 +153,22 @@ local to_insert = {
 			add_projectile("data/entities/projectiles/ring_darksun.xml")
 		end,
 	},
+	{
+		id          = "RING_BALANCE",
+		name 		= "Flare of Balance",
+		description = "The power of the Fourth Egg in the palm of your hand...",
+		sprite 		= "data/ui_gfx/gun_actions/ring_balance.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/meteor_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/ring_balance.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "10",
+		spawn_probability                 = "0",
+		price = 100,
+		mana = 100,
+		action 		= function()
+			add_projectile("data/entities/projectiles/ring_balance.xml")
+		end,
+	},
 }
 
 for k, v in ipairs(to_insert) do

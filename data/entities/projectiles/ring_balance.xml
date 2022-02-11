@@ -35,7 +35,11 @@
 	physics_impulse_coeff="9000"
 	>
 	<damage_by_type
-		electricity="4.20"
+    curse="10"
+    healing="4.20"
+    fire="4.20"
+    explosion="4.20"
+    electricity="4.20"
     ice="4.20"
 		>
 	</damage_by_type>
@@ -105,7 +109,7 @@
   </ParticleEmitterComponent>
   
   <ParticleEmitterComponent 
-    emitted_material_name="poison_gas"
+    emitted_material_name="fire"
     offset.x="0"
     offset.y="0"
     x_pos_offset_min="-1"
@@ -268,7 +272,7 @@
 
 	<VariableStorageComponent
 		name="projectile_file"
-		value_string="data/entities/projectiles/ring_darksun.xml"
+		value_string="data/entities/projectiles/ring_newsun.xml"
 		>
 	</VariableStorageComponent>
 </Entity>

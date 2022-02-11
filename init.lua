@@ -225,7 +225,7 @@ function OnWorldPostUpdate()
 
 	if GameHasFlagRun("mould_saber_spawned") == false then
 		dofile_once("mods/mould_n/files/scripts/spawn_saber.lua")
-
+		
 		GameAddFlagRun("mould_saber_spawned")
 	end
 

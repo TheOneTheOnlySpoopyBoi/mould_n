@@ -7,10 +7,11 @@ function collision_trigger(colliding_entity_id)
     --GamePrint("1")
     if (EntityHasTag(colliding_entity_id, "mortal")) then
         return
-    elseif (EntityHasTag(colliding_entity_id, "sun_weapon_darksun")) then
+    elseif (EntityHasTag(colliding_entity_id, "newsun_dark")) then
         EntityKill(colliding_entity_id)
 
-        --entityload sun weapon balance
+        EntityLoad("mods/mould_n/data/entities/items/sun_weapon/weapon_balance/sun_weapon_balance.xml", x, y) 
+        EntityLoad("data/entities/particles/image_emitters/altar_tablet_curse_symbol.xml", x, y)
 
         EntityKill(entity_id)
     end

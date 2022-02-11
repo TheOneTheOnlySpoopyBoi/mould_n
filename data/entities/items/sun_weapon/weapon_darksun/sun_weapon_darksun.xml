@@ -41,7 +41,9 @@
         <ItemComponent
             item_name="default_gun"
             remove_on_death="1"
-            collect_nondefault_actions="1" >
+            collect_nondefault_actions="1" 
+            play_hover_animation="1"
+            >
         </ItemComponent>
     </Base>
 
@@ -55,5 +57,18 @@
     <ManaReloaderComponent
         _tags="enabled_in_world,enabled_in_hand,enabled_in_inventory" >
     </ManaReloaderComponent>
-    
+
+    <CollisionTriggerComponent
+        width="60"
+        height="20" 
+        required_tag="hittable"
+        destroy_this_entity_when_triggered="0"
+        >
+    </CollisionTriggerComponent>
+
+    <LuaComponent
+        script_collision_trigger_hit="mods/mould_n/data/entities/items/sun_weapon/weapon_darksun/collide.lua"
+        >
+    </LuaComponent>
+
 </Entity>
