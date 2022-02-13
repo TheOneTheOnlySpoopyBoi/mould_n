@@ -21,3 +21,91 @@
 	>
     </Graphics>
   </CellData>
+
+  <CellData
+	name="coral_green"
+	ui_name="Coral"
+	tags="[static],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="10"
+	cell_type="liquid"
+	wang_color="ff4bcf7f"
+	liquid_sand="1"
+	liquid_static="1"
+	on_fire="0"
+	gfx_glow="200"
+	hp="60000" 
+	platform_type="1"
+	>
+    <Graphics
+	texture_file="data/materials_gfx/coral_green.png"
+	color="ff145014"
+	>
+    </Graphics>
+  </CellData>
+
+  <CellData
+	name="coral_blue"
+	ui_name="Coral"
+	tags="[static],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="10"
+	cell_type="liquid"
+	wang_color="ff4bb8a1"
+	liquid_sand="1"
+	liquid_static="1"
+	on_fire="0"
+	gfx_glow="200"
+	hp="60000" 
+	platform_type="1"
+	>
+    <Graphics
+	texture_file="data/materials_gfx/coral_blue.png"
+	color="ff145014"
+	>
+    </Graphics>
+  </CellData>
+
+  <CellData
+	name="rock_static_coral"
+	ui_name="Enriched Rock"
+	tags="[static],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="10"
+	cell_type="liquid"
+	wang_color="ff146339"
+	liquid_sand="1"
+	liquid_static="1"
+	on_fire="0"
+	gfx_glow="100"
+	hp="60000" 
+	platform_type="1"
+	>
+    <Graphics
+	texture_file="data/materials_gfx/coral_rock.png"
+	color="ff145014"
+	>
+    </Graphics>
+  </CellData>
+
+  <CellData
+	name="rock_static_strange"
+	ui_name="Strange Matter"
+	tags="[static],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="10"
+	cell_type="liquid"
+	wang_color="ff146251"
+	liquid_sand="1"
+	liquid_static="1"
+	on_fire="0"
+	gfx_glow="50"
+	hp="60000" 
+	platform_type="1"
+	>
+    <Graphics
+	texture_file="data/materials_gfx/strange_rock.png"
+	color="ff145014"
+	>
+    </Graphics>
+  </CellData>
