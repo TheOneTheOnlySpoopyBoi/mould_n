@@ -1,4 +1,5 @@
 ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mould_n/files/actions.lua" )
+ModMaterialsFileAdd("mods/mould_n/files/materials.xml")
 
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
 local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/boss_pit/boss_pit.xml"))
