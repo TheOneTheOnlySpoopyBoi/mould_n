@@ -77,7 +77,7 @@ if ( pcomp ~= 0 ) and ( hcomp ~= nil ) then
 				local vx = math.cos( offset + inc * a ) * 80
 				local vy = 0 - math.sin( offset + inc * a ) * 80
 				
-				shoot_projectile( root_id, "data/entities/animals/boss_fish/orb_big.xml", x, y, vx, vy )
+				shoot_projectile( root_id, "data/entities/animals/boss_fish_reborn/orb_big.xml", x, y, vx, vy )
 			end
 		end
 	end

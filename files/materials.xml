@@ -109,3 +109,39 @@
 	>
     </Graphics>
   </CellData>
+
+   <CellData
+	name="seam"
+	ui_name="Seam"
+  	tags="[liquid],[corrodible],[soluble],[blood],[impure],[liquid_common],[food]"
+	burnable="0"
+	density="2.123"
+	cell_type="liquid"
+	wang_color="ffb5cbce"
+	generates_smoke="0"
+	liquid_gravity="1.0"
+	liquid_sand="0"
+	liquid_stains="0"
+	on_fire="0"
+	requires_oxygen="1"
+	temperature_of_fire="10"
+	show_in_creative_mode="1"
+	>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="WATERBREATHING" amount="0.5" />
+		</Ingestion>
+	</StatusEffects>
+    <Graphics 
+	texture_file="data/materials_gfx/seam.png" 
+	color="ffb5cbce" >
+    </Graphics>
+  </CellData>
+
+  <Reaction probability="15" 
+	input_cell1="blood" 	input_cell2="blood_worm"  
+	output_cell1="seam" 			output_cell2="seam"
+	>
+  </Reaction>
+
+</Materials>

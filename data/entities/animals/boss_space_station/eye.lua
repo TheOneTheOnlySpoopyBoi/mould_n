@@ -77,7 +77,19 @@ if ( pcomp ~= 0 ) and ( hcomp ~= nil ) then
 				local vx = math.cos( offset + inc * a ) * 80
 				local vy = 0 - math.sin( offset + inc * a ) * 80
 				
-				shoot_projectile( root_id, "data/entities/animals/boss_fish/orb_big.xml", x, y, vx, vy )
+				local doshoot = math.Random(1, 3)
+				if doshoot == 2 then
+					local shootwhat = math.Random(1, 3)
+			
+					if shootwhat == 1 then
+						shoot_projectile( entity_id, "data/entities/animals/boss_robot/rocket_roll.xml", x, y, vx, vy )
+					elseif shootwhat == 2 then
+						shoot_projectile( entity_id, "data/entities/animals/boss_robot/rocket_roll.xml", x, y, vx, vy )
+					elseif shootwhat == 3 then
+						--summon drone
+						shoot_projectile( entity_id, "data/entities/animals/boss_space_station/drone.xml", x, y, vx, vy )
+					end
+				end
 			end
 		end
 	end

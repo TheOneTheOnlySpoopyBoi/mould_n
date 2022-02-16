@@ -1,4 +1,4 @@
-<Entity name="$animal_fish_giga" tags="hittable,polymorphable_NOT,necrobot_NOT,glue_NOT,teleportable_NOT,curse_NOT,touchmagic_immunity,mortal,hiteffect_enabled">
+<Entity name="Space Station" tags="hittable,polymorphable_NOT,necrobot_NOT,glue_NOT,teleportable_NOT,curse_NOT,touchmagic_immunity,mortal,hiteffect_enabled">
 	<VelocityComponent
 		gravity_y="0"
 		air_friction="0"
@@ -23,12 +23,12 @@
 	</ProjectileComponent>
 	
 	<DamageModelComponent 
-		hp="1500"
+		hp="500"
 		air_needed="0" 
 		falling_damages="0" 
 		fire_damage_amount="0" 	 
 		fire_probability_of_ignition="0" 
-		blood_material="blood"
+		blood_material="oil"
 		is_on_fire="0" 
 		materials_damage="0" 
 		ragdoll_filenames_file=""
@@ -40,23 +40,23 @@
 		blood_multiplier="0"
 		>
 		<damage_multipliers
-			melee="0.01"
-			projectile="0"
-			explosion="0.01"
-			electricity="0"
-			fire="0"
+			melee="0.03"
+			projectile="0.04"
+			explosion="0.06"
+			electricity="0.07"
+			fire="0.05"
 			slice="0.01"
-			drill="0"
-			ice="0"
-			radioactive="0"
-			curse="0"
+			drill="0.03"
+			ice="0.05"
+			radioactive="0.03"
+			curse="0.03"
 			>
 		</damage_multipliers>
 	</DamageModelComponent>
 
 	<GenomeDataComponent 
 		food_chain_rank="5" 
-		herd_id="eel" 
+		herd_id="robot" 
 		is_predator="1" >
 	</GenomeDataComponent>
 	
@@ -80,7 +80,7 @@
 		</InheritTransformComponent>
 		
 		<SpriteComponent
-			image_file="data/entities/animals/boss_fish/eye.xml"
+			image_file="data/entities/animals/boss_space_station/eye.xml"
 			has_special_scale="1"
 			special_scale_x="1"
 			offset_x="0"
@@ -91,14 +91,14 @@
 		</SpriteComponent>
 		
 		<LuaComponent
-			script_source_file="data/entities/animals/boss_fish/eye.lua"
+			script_source_file="data/entities/animals/boss_space_station/eye.lua"
 			execute_every_n_frame="1"
 			>
 		</LuaComponent>
 	</Entity>
 	
 	<SpriteComponent
-		image_file="data/entities/animals/boss_fish/body.png"
+		image_file="data/entities/animals/boss_space_station/body.png"
 		has_special_scale="1"
 		special_scale_x="1"
 		offset_x="128"
@@ -107,98 +107,14 @@
 		>
 	</SpriteComponent>
 
-	<Entity>
-		<InheritTransformComponent>
-			<Transform position.x="-96" position.y="64" ></Transform>
-		</InheritTransformComponent>
-		
-		<SpriteComponent
-			image_file="data/entities/animals/boss_fish/tentacle_1.png"
-			has_special_scale="1"
-			special_scale_x="1"
-			offset_x="67"
-			offset_y="19"
-			>
-		</SpriteComponent>
-		
-		<LuaComponent
-			script_source_file="data/entities/animals/boss_fish/tentacle_1.lua"
-			execute_every_n_frame="1"
-			>
-		</LuaComponent>
-	</Entity>
-	
-	<Entity>
-		<InheritTransformComponent>
-			<Transform position.x="-72" position.y="72" ></Transform>
-		</InheritTransformComponent>
-		
-		<SpriteComponent
-			image_file="data/entities/animals/boss_fish/tentacle_2.png"
-			has_special_scale="1"
-			special_scale_x="1"
-			offset_x="37"
-			offset_y="17"
-			>
-		</SpriteComponent>
-		
-		<LuaComponent
-			script_source_file="data/entities/animals/boss_fish/tentacle_2.lua"
-			execute_every_n_frame="1"
-			>
-		</LuaComponent>
-	</Entity>
-	
-	<Entity>
-		<InheritTransformComponent>
-			<Transform position.x="72" position.y="72" ></Transform>
-		</InheritTransformComponent>
-		
-		<SpriteComponent
-			image_file="data/entities/animals/boss_fish/tentacle_3.png"
-			has_special_scale="1"
-			special_scale_x="1"
-			offset_x="37"
-			offset_y="17"
-			>
-		</SpriteComponent>
-		
-		<LuaComponent
-			script_source_file="data/entities/animals/boss_fish/tentacle_3.lua"
-			execute_every_n_frame="1"
-			>
-		</LuaComponent>
-	</Entity>
-	
-	<Entity>
-		<InheritTransformComponent>
-			<Transform position.x="96" position.y="64" ></Transform>
-		</InheritTransformComponent>
-		
-		<SpriteComponent
-			image_file="data/entities/animals/boss_fish/tentacle_4.png"
-			has_special_scale="1"
-			special_scale_x="1"
-			offset_x="28"
-			offset_y="19"
-			>
-		</SpriteComponent>
-		
-		<LuaComponent
-			script_source_file="data/entities/animals/boss_fish/tentacle_4.lua"
-			execute_every_n_frame="1"
-			>
-		</LuaComponent>
-	</Entity>
-
 	<LuaComponent
-		script_source_file="data/entities/animals/boss_fish/movement.lua"
+		script_source_file="data/entities/animals/boss_space_station/movement.lua"
 		execute_every_n_frame="1"
 		>
 	</LuaComponent>
 	
 	<LuaComponent
-		script_damage_received="data/entities/animals/boss_fish/damage.lua"
+		script_damage_received="data/entities/animals/boss_space_station/damage.lua"
 		execute_every_n_frame="-1"
 		>
 	</LuaComponent>
@@ -273,7 +189,7 @@
 	</Entity>
 	
 	<LuaComponent
-		script_death="data/entities/animals/boss_fish/death.lua"
+		script_death="data/entities/animals/boss_space_station/death.lua"
 		>
 	</LuaComponent>
 </Entity>

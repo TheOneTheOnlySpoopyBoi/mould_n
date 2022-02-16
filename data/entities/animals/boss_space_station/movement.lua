@@ -9,8 +9,8 @@ local angle2 = ( GameGetFrameNum() + 212 ) * 0.006
 edit_component( entity_id, "VelocityComponent", function(comp,vars)
 	local vel_x,vel_y = ComponentGetValueVector2( comp, "mVelocity")
 
-	vel_x = math.cos( angle ) * 25
-	vel_y = math.cos( angle2 ) * 15
+	vel_x = math.cos( angle ) * 35
+	vel_y = math.cos( angle2 ) * 35
 
 	ComponentSetValueVector2( comp, "mVelocity", vel_x, vel_y)
 end)

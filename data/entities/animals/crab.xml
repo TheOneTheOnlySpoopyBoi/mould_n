@@ -1,5 +1,5 @@
 <Entity name="Crab" 
-    tags="mortal,hittable,helpless_animal,prey" >
+    tags="crab,mortal,hittable,helpless_animal,prey" >
     
     <AdvancedFishAIComponent
         move_check_range_min="8"
