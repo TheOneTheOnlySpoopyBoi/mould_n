@@ -198,3 +198,5 @@ function Moulding()
 		GameAddFlagRun("mould_spawned")
 	end
 end
+
+GamePrint("Mould")
