@@ -168,13 +168,6 @@ function Moulding()
 		GameAddFlagRun("mysteryessence_spawned")
 	end
 
-	if GameHasFlagRun("mecha_fish_room_spawned") == false then
-		EntityLoad("data/biome/mecha_fish_room.xml" , 0, 0)
-		GameAddFlagRun("mecha_fish_room_spawned")
-	end
-
-
-
 	if GameHasFlagRun("mould_saber_spawned") == false then
 		dofile_once("mods/mould_n/files/scripts/spawn_saber.lua")
 		
