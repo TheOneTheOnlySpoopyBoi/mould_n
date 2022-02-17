@@ -87,7 +87,7 @@ if ( pcomp ~= 0 ) and ( hcomp ~= nil ) then
 						shoot_projectile( entity_id, "data/entities/animals/boss_robot/rocket_roll.xml", x, y, vx, vy )
 					elseif shootwhat == 3 then
 						--summon drone
-						shoot_projectile( entity_id, "data/entities/animals/boss_space_station/drone.xml", x, y, vx, vy )
+						shoot_projectile( entity_id, "data/entities/animals/boss_space_station/space_station_drone.xml", x, y, vx, vy )
 					end
 				end
 			end
