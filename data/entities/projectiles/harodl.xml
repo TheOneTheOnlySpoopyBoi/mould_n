@@ -1,0 +1,26 @@
+<Entity
+    name="Harodl"
+    tags="harodl"
+    >
+    
+    <InheritTransformComponent />
+
+	<LifetimeComponent
+		lifetime="1"
+		>
+	</LifetimeComponent>
+	
+	<VariableStorageComponent
+		name="harodl"
+		value_int="0"
+		>
+	</VariableStorageComponent>
+
+    <LuaComponent
+       script_source_file="data/scripts/projectiles/harodl.lua"
+		execute_on_added="1"
+		remove_after_executed="1"
+        >
+    </LuaComponent>
+
+</Entity>

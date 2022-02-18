@@ -129,7 +129,7 @@
 	>
 	<StatusEffects>
 		<Ingestion>
-			<StatusEffect type="WATERBREATHING" amount="0.5" />
+			<StatusEffect type="WATERBREATHING" amount="0.1" />
 		</Ingestion>
 	</StatusEffects>
     <Graphics 
@@ -138,7 +138,7 @@
     </Graphics>
   </CellData>
 
-  <Reaction probability="15" 
+  <Reaction probability="50" 
 	input_cell1="blood" 	input_cell2="blood_worm"  
 	output_cell1="seam" 			output_cell2="seam"
 	>
