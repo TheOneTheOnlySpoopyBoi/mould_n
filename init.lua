@@ -174,6 +174,18 @@ function Moulding()
 		GameAddFlagRun("mould_saber_spawned")
 	end
 
+	if GameHasFlagRun("mould_space_station") == false then
+		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/boss_space_station.xml", -953, -3582)
+
+		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
+		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
+		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
+		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
+		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
+
+		GameAddFlagRun("mould_space_station")
+	end
+
 	if GameHasFlagRun("mould_spawned") == false then
 		EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
 

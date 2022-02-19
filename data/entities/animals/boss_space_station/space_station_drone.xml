@@ -25,6 +25,7 @@
 		new_hunt_target_check_every="240"
 		new_random_target_check_every="240"
 		ragdoll_fx_forced="DISINTEGRATED"
+		never_ragdollify_on_death="1"
 		jump_cam_shake="20" >
 	</BossDragonComponent>
 

@@ -252,7 +252,7 @@ local to_insert = {
 		end,
 	},
 	{
-		id          = "HAORDL",
+		id          = "HARODL",
 		name 		= "Harodl",
 		description = "I am become death. The destroyer of worlds.",
 		sprite 		= "data/ui_gfx/gun_actions/harodl.png",
@@ -263,8 +263,8 @@ local to_insert = {
 		type 		= ACTION_TYPE_OTHER,
 		recursive	= true,
 		ai_never_uses = true,
-		spawn_level                       = "10", -- MANA_REDUCE
-		spawn_probability                 = "1", -- MANA_REDUCE
+		spawn_level                       = "10",
+		spawn_probability                 = "1", 
 		price = 1000,
 		mana = 1000,
 		max_uses    = 1,

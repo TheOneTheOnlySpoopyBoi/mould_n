@@ -19,19 +19,21 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	local vx = math.cos( angle ) * 80
 	local vy = 0 - math.sin( angle ) * 80
 	
-	local doshoot = math.Random(1, 3)
-	if doshoot == 2 then
-		local shootwhat = math.Random(1, 3)
 
-		if shootwhat == 1 then
-			shoot_projectile( entity_id, "data/entities/animals/boss_robot/rocket_roll.xml", x, y, vx, vy )
-		elseif shootwhat == 2 then
-			shoot_projectile( entity_id, "data/entities/animals/boss_robot/rocket_roll.xml", x, y, vx, vy )
-		elseif shootwhat == 3 then
-			--summon drone
-			shoot_projectile( entity_id, "data/entities/animals/boss_space_station/space_station_drone.xml", x, y, vx, vy )
-		end
-	end
+	local shootwhat = math.Random(1, 3)
+
+
+	
+	shoot_projectile( entity_id, "data/entities/projectiles/rocket_tank.xml", x, y, vx, vy )
+
+	--[[if shootwhat == 1 then
+		shoot_projectile( entity_id, "data/entities/animals/boss_robot/rocket_roll.xml", x, y, vx, vy )
+	elseif shootwhat == 2 then
+		shoot_projectile( entity_id, "data/entities/animals/boss_robot/rocket_roll.xml", x, y, vx, vy )
+	elseif shootwhat == 3 then
+		--summon drone
+		EntityLoad("data/entities/animals/boss_space_station/space_station_drone.xml", x, y)
+	end]]--
 
 	local c = EntityGetComponent( entity_id, "SpriteComponent", "health_bar" )
 	if ( c ~= nil ) then

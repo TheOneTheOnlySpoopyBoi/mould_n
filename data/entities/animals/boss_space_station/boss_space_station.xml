@@ -23,7 +23,7 @@
 	</ProjectileComponent>
 	
 	<DamageModelComponent 
-		hp="500"
+		hp="200"
 		air_needed="0" 
 		falling_damages="0" 
 		fire_damage_amount="0" 	 
@@ -40,16 +40,16 @@
 		blood_multiplier="0"
 		>
 		<damage_multipliers
-			melee="0.03"
-			projectile="0.04"
-			explosion="0.06"
-			electricity="0.07"
-			fire="0.05"
-			slice="0.01"
-			drill="0.03"
-			ice="0.05"
-			radioactive="0.03"
-			curse="0.03"
+			melee="0.3"
+			projectile="0.4"
+			explosion="0.6"
+			electricity="0.7"
+			fire="0.5"
+			slice="0.1"
+			drill="0.3"
+			ice="0.5"
+			radioactive="0.3"
+			curse="0.3"
 			>
 		</damage_multipliers>
 	</DamageModelComponent>
@@ -67,35 +67,6 @@
 		aabb_max_y="84"
 		damage_multiplier="1.0" >
 	</HitboxComponent>
-	
-	<Entity>
-		<VariableStorageComponent
-			name="phase_timer"
-			value_int="0"
-			>
-		</VariableStorageComponent>
-		
-		<InheritTransformComponent>
-			<Transform position.x="0" position.y="48" ></Transform>
-		</InheritTransformComponent>
-		
-		<SpriteComponent
-			image_file="data/entities/animals/boss_space_station/eye.xml"
-			has_special_scale="1"
-			special_scale_x="1"
-			offset_x="0"
-			offset_y="0"
-			z_index="1.9"
-			rect_animation=""
-			>
-		</SpriteComponent>
-		
-		<LuaComponent
-			script_source_file="data/entities/animals/boss_space_station/eye.lua"
-			execute_every_n_frame="1"
-			>
-		</LuaComponent>
-	</Entity>
 	
 	<SpriteComponent
 		image_file="data/entities/animals/boss_space_station/body.png"
