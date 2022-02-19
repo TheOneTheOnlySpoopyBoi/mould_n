@@ -254,7 +254,7 @@ local to_insert = {
 	{
 		id          = "HARODL",
 		name 		= "Harodl",
-		description = "I am become death. The destroyer of worlds.",
+		description = "Now I am become death, the destroyer of worlds.",
 		sprite 		= "data/ui_gfx/gun_actions/harodl.png",
 		sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
 		spawn_requires_flag = "card_unlocked_everything",
