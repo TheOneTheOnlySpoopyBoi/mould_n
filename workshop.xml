@@ -3,18 +3,9 @@ name="Mould"
 description="
 Mould
 
-Aims to give incentives and rewards for hunting monsters and bosses.
+An expansion primarily based around hunting and exploration.
 
-Probably incompatible with with other biome mods.
-
-What is Archaeology?
-If you dig in the desert in between the pyramid and the mountain, you can find a variety of items.
-Killing certain bosses will trigger the next tier of archaeological items to spawn.
-Tier 1 - spawns on world creation
-Tier 2 - when Spider Boss is killed
-Tier 3 - when Kolmi is killed
-Tier 4 - when Mecha Kolmi is killed
-Tier 5 - when Tiny is killed
+Incompatible with most other biome mods.
 
 Current Features:
 - 33 new weapons

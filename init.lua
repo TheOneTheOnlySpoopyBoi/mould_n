@@ -163,52 +163,7 @@ function OnPlayerDied()
 end
 
 function Moulding()
-	if GameHasFlagRun("mysteryessence_spawned") == false then
-		EntityLoad("data/entities/items/pickup/essence_mystery.xml" , 13059, -250)
-		GameAddFlagRun("mysteryessence_spawned")
-	end
-
-	if GameHasFlagRun("mould_saber_spawned") == false then
-		dofile_once("mods/mould_n/files/scripts/spawn_saber.lua")
-		
-		GameAddFlagRun("mould_saber_spawned")
-	end
-
-	if GameHasFlagRun("mould_space_station") == false then
-		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/boss_space_station.xml", -953, -3582)
-
-		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
-		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
-		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
-		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
-		EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
-
-		GameAddFlagRun("mould_space_station")
-	end
-
-	if GameHasFlagRun("mould_spawned") == false then
-		EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
-
-		EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
-		EntityLoad("mods/mould_n/data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 3300, 6400)
-		EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -12446, -186)
-
-		dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
-
-		local pos_x = -1330
-		local pos_y = -200
-		local perk_id =	perk_spawn(pos_x, pos_y, "GLASS_CANNON", x, y)
-	
-		if( perk_id ~= nil ) then
-			EntityAddComponent( perk_id, "VariableStorageComponent", 
-			{ 
-				name = "perk_dont_remove_others",
-				value_bool = "1",
-			} )
-		end
-
-		GameAddFlagRun("mould_spawned")
-	end
+	dofile_once("mods/mould_n/files/spawn.lua")
 end
 
 GamePrint("Mould")

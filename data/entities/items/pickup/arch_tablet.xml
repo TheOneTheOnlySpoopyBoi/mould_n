@@ -1,0 +1,20 @@
+<Entity tags="tablet,normal_tablet">
+	<Base file="data/entities/items/books/base_book.xml">
+		<UIInfoComponent
+			name="Tabula Kaivaa"
+			>
+		</UIInfoComponent>
+		
+		<ItemComponent
+			item_name="Tabula Kaivaa"
+			ui_description="Digging to the west of the pinnacle of past civilizations can uncover a variety of treasures.
+Certain events trigger the desert sands to shift and reveal greater treasures."
+			>
+		</ItemComponent>
+		
+		<AbilityComponent
+			ui_name="Tabula Kaivaa"
+			>
+		</AbilityComponent>
+	</Base>
+</Entity>
