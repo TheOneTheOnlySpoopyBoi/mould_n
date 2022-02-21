@@ -254,7 +254,7 @@ local to_insert = {
 	{
 		id          = "HARODL",
 		name 		= "Harodl",
-		description = "Now I am become death, the destroyer of worlds.",
+		description = "You're heavily advised to cast this spell.",
 		sprite 		= "data/ui_gfx/gun_actions/harodl.png",
 		sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
 		spawn_requires_flag = "card_unlocked_everything",
@@ -264,7 +264,7 @@ local to_insert = {
 		recursive	= true,
 		ai_never_uses = true,
 		spawn_level                       = "10",
-		spawn_probability                 = "1", 
+		spawn_probability                 = "0", 
 		price = 1000,
 		mana = 1000,
 		max_uses    = 1,

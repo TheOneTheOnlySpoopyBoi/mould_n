@@ -1053,4 +1053,34 @@
 		color="ff4bb87f" >
 	</Biome>
 
+	<Biome 
+		biome_filename="data/biome/mine_field.xml" 
+		height_index="0"
+		color="ff082b70" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/prawn_cave.xml" 
+		height_index="0"
+		color="ff75b794" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/boss_lukki_room.xml" 
+		height_index="0"
+		color="ff528900" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/boss_fungus_worm_room.xml" 
+		height_index="0"
+		color="ff1d3f24" >
+	</Biome>
+
+	<Biome
+		biome_filename="data/biome/harodl_room.xml" 
+		height_index="0"
+		color="ff8a9f82" >
+	</Biome>
+
 </BiomesToLoad>

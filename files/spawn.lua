@@ -29,11 +29,11 @@ if GameHasFlagRun("mould_space_station") == false then
 end
 
 --golden lukki
-if GameHasFlagRun("mould_boss_lukki") == false then
+--[[if GameHasFlagRun("mould_boss_lukki") == false then
     EntityLoad("mods/mould_n/data/entities/animals/boss_lukki/boss_lukki.xml", -4300, 9830)
 
     GameAddFlagRun("mould_boss_lukki")
-end
+end]]--
 
 
 --fungus worm

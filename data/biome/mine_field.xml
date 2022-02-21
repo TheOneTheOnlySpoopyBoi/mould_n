@@ -1,0 +1,24 @@
+<Biome>
+  <Topology 
+    name="Mine Field"
+    type="BIOME_WANG_TILE"
+    background_image="data/weather_gfx/background_cave_02.png"
+    background_use_neighbor="0"
+
+    wang_template_file="data/wang_tiles/mine_field.png" 
+    lua_script="data/scripts/biomes/mine_field.lua"
+    wang_map_width="260"
+    wang_map_height="260"
+    audio_music_2="fungicave"
+    audio_ambience="fungicave"
+  >
+  </Topology>
+
+  <Materials 
+    name="mine_field" 
+     >
+    
+  </Materials>
+
+</Biome>
+

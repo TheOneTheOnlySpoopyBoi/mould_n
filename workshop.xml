@@ -10,10 +10,9 @@ Incompatible with most other biome mods.
 Current Features:
 - 33 new weapons
 - 7 new bosses (3 reborn bosses, 2 minibosses and 2 bosses)
-- 3 new biomes (Decaying Jungle, Cursed Sandcave, Reef)
+- 5 new biomes (Decaying Jungle, Cursed Sandcave, Reef, Mine Field, Prawn Cave)
 - structure to respawn bosses (into reborn bosses, currently wip)
 - 11 new spells
-- 1 new animal
 - 6 new materials
 - 3rd Sun to make
 - 4 perks are now drops from specific enemies or bosses
@@ -21,8 +20,8 @@ Current Features:
 - world generation changes
 
 Planned Features:
-- extra biomes
-- more bosses
+- Boss spawning changes (to fix spawning issues)
+- All reborn bosses
 - extra quests as an expansion for a specific mod when it releases
 
 Github: https://github.com/mole-den/mould-n-noita
