@@ -37,11 +37,11 @@ end]]--
 
 
 --fungus worm
-if GameHasFlagRun("mould_boss_fungus_worm") == false then
+--[[if GameHasFlagRun("mould_boss_fungus_worm") == false then
     EntityLoad("mods/mould_n/data/entities/animals/boss_fungus_worm/boss_fungus_worm.xml" , 3300, 6400)
 
     GameAddFlagRun("mould_boss_fungus_worm")
-end
+end]]--
 
 
 --lake spirit
