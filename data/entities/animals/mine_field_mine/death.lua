@@ -4,7 +4,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	local entity_id = GetUpdatedEntityID()
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 	
-	EntityLoad( "data/entities/projectiles/mine_explosion.xml", pos_x, pos_y )
+	Eshoot_projectile( entity_id, "data/entities/projectiles/mine_explosion.xml", x, y, vx, vy )
 
 	GamePrintImportant("it works", "maybe")
 end
