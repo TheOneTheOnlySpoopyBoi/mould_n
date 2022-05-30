@@ -172,9 +172,15 @@
 	>
   </Reaction>
   
-   <Reaction probability="10"
+	<Reaction probability="10"
    input_cell1="mould" 	input_cell2="air"
    output_cell1="mould" 	output_cell2="mould" >
   </Reaction>
+
+  <Reaction probability="50"
+   input_cell1="seam" 	input_cell2="gold"
+   output_cell1="mould" 	output_cell2="steam" >
+  </Reaction>
+
 
 </Materials>

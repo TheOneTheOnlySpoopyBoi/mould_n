@@ -147,10 +147,7 @@
 		</GameEffectComponent >
 	</Entity>
 	
-	<LuaComponent
-		script_death="data/entities/animals/mine_field_mine/death.lua"
-		>
-	</LuaComponent>
+	
 
 	<CollisionTriggerComponent
         width="60"
@@ -164,4 +161,9 @@
         script_collision_trigger_hit="mods/mould_n/data/entities/animals/mine_field_mine/collide.lua"
         >
     </LuaComponent>
+
+	<LuaComponent
+		script_death="data/entities/animals/mine_field_mine/death.lua"
+		>
+	</LuaComponent>
 </Entity>
