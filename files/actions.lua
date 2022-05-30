@@ -253,7 +253,7 @@ local to_insert = {
 	},
 	{
 		id          = "HARODL",
-		name 		= "Harodl",
+		name 		= "Mol",
 		description = "You're heavily advised to cast this spell.",
 		sprite 		= "data/ui_gfx/gun_actions/harodl.png",
 		sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",

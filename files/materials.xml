@@ -22,6 +22,28 @@
     </Graphics>
   </CellData>
 
+   <CellData
+	name="mould"
+	ui_name="$mat_mould"
+  	tags="[liquid],[impure]"
+	burnable="0"
+	density="1"
+	lifetime="1350"
+	cell_type="liquid"
+	wang_color="7f381774"
+	generates_smoke="0"
+	liquid_gravity="0.5"
+	liquid_sand="1"
+	gfx_glow="90"
+	on_fire="0"
+	requires_oxygen="0"
+	temperature_of_fire="60"  >
+	<Graphics
+		texture_file="data/materials_gfx/mould.png"
+		>
+	</Graphics>
+  </CellData>
+
   <CellData
 	name="coral_green"
 	ui_name="Coral"
@@ -148,6 +170,11 @@
 	input_cell1="blood" 	input_cell2="blood_worm"  
 	output_cell1="seam" 			output_cell2="seam"
 	>
+  </Reaction>
+  
+   <Reaction probability="10"
+   input_cell1="mould" 	input_cell2="air"
+   output_cell1="mould" 	output_cell2="mould" >
   </Reaction>
 
 </Materials>
