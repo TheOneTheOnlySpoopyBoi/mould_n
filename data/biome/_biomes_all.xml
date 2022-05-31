@@ -1082,5 +1082,11 @@
 		height_index="0"
 		color="ff8a9f82" >
 	</Biome>
+	
+	<Biome
+		biome_filename="data/biome/subnoitica_room.xml" 
+		height_index="0"
+		color="ff85d1a8" >
+	</Biome>
 
 </BiomesToLoad>
