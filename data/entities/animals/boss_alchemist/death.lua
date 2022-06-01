@@ -27,9 +27,8 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	end
 	
 	EntityLoad( "data/entities/animals/boss_alchemist/key.xml",  x, y )
-
-	local r = math.random(1,4)
-	if r == 1 then
-		EntityLoad("mods/mould_n/data/entities/items/rebirth/boss_reborn_tablet.xml", x, y)
-	end
+	EntityLoad("mods/mould_n/data/entities/items/rebirth/boss_alchemist_tablet.xml", x, y)
+	
+	AddFlagPersistent( "card_unlocked_duplicate" )
+	AddFlagPersistent( "miniboss_alchemist" )
 end

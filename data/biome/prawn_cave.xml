@@ -9,8 +9,6 @@
     lua_script="data/scripts/biomes/prawn_cave.lua"
     wang_map_width="260"
     wang_map_height="260"
-    audio_music_2="fungicave"
-    audio_ambience="fungicave"
   >
   </Topology>
 

@@ -278,6 +278,45 @@ local to_insert = {
 			current_reload_time = current_reload_time + 100
 		end,
 	},
+	{
+		id          = "HIISI_SHOTGUN",
+		name 		= "Hiisi Shell",
+		description = "Fires a shell made by the Hiisi.",
+		sprite 		= "data/ui_gfx/gun_actions/hiisi_shotgun.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/dynamite_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/hiisi_shotgun.xml",3},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "",
+		spawn_probability                 = "",
+		price = 160,
+		mana = 30,
+		action 		= function()
+			add_projectile("data/entities/projectiles/hiisi_shotgun.xml")
+			add_projectile("data/entities/projectiles/hiisi_shotgun.xml")
+			add_projectile("data/entities/projectiles/hiisi_shotgun.xml")
+			c.fire_rate_wait = c.fire_rate_wait + 7
+			c.spread_degrees = c.spread_degrees + 10.0
+			c.screenshake = c.screenshake + 1.5
+		end,
+	},
+	{
+		id          = "HIISI_GUN",
+		name 		= "Hiisi Bullet",
+		description = "Fires a bullet made by the Hiisi.",
+		sprite 		= "data/ui_gfx/gun_actions/hiisi_gun.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/dynamite_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/hiisi_gun.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "",
+		spawn_probability                 = "",
+		price = 180,
+		mana = 20,
+		action 		= function()
+			add_projectile("data/entities/projectiles/hiisi_gun.xml")
+			c.fire_rate_wait = c.fire_rate_wait + 5
+			c.screenshake = c.screenshake + 1.1
+		end,
+	},
 }
 
 for k, v in ipairs(to_insert) do

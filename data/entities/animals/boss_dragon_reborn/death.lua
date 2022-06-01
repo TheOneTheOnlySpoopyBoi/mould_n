@@ -9,7 +9,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 		EntityLoad("mods/mould_n/data/entities/items/dragon_wand_reborn.xml", x, y)
 	end
 
-	local r = math.random(1,4)
+	local r = math.random(1,3)
 	if r == 1 then
 		EntityLoad("mods/mould_n/data/entities/items/rebirth/boss_dragon_tablet.xml", x, y)
 	end

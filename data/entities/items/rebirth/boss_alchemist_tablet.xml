@@ -1,6 +1,6 @@
 <Entity
-    tags="rebirth_tablet,item_physics,rebirth_tablet_dragon"
-    name="Tablet of Rebirth (Dragon)"
+    tags="rebirth_tablet,item_physics,rebirth_tablet_alchemist"
+    name="Tablet of Rebirth (Alchemist)"
     >
 
 	<Base file="data/entities/items/rebirth/base_tablet.xml">
@@ -11,7 +11,7 @@
 		
 		<ItemComponent
 			item_name="Tablet of Rebirth"
-			ui_description="Has the power to resurrect the Dragon..."
+			ui_description="Has the power to resurrect the High Alchemist..."
 			>
 		</ItemComponent>
 		

@@ -1,4 +1,4 @@
-<Entity name="Higher Alchemist" tags="touchmagic_immunity,polymorphable_NOT,boss,miniboss,music_energy_100,necrobot_NOT,glue_NOT,curse_NOT">
+<Entity name="$animal_boss_alchemist" tags="touchmagic_immunity,polymorphable_NOT,boss,miniboss,music_energy_100,necrobot_NOT,glue_NOT,curse_NOT">
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="2" > </ItemChestComponent>
@@ -13,7 +13,7 @@
 			sense_creatures="1"
 			attack_ranged_enabled="1"
 			can_fly="1" 
-			attack_ranged_entity_file="data/entities/animals/boss_alchemist_reborn/wand_orb.xml"
+			attack_ranged_entity_file="data/entities/animals/boss_alchemist/wand_orb.xml"
 			attack_ranged_action_frame="5"
 			attack_ranged_frames_between="180"
 			attack_ranged_offset_x="24"
@@ -48,7 +48,7 @@
 		</DamageModelComponent>
 
 		<SpriteComponent 
-			image_file="data/entities/animals/boss_alchemist_reborn/boss_alchemist_reborn_sprite.xml" 
+			image_file="data/entities/animals/boss_alchemist/boss_alchemist_sprite.xml" 
 			offset_x="0"
 			offset_y="0">
 		</SpriteComponent>
@@ -111,7 +111,7 @@
 	</AudioComponent>
 	
 	<LuaComponent
-		script_death="data/entities/animals/boss_alchemist_reborn/death.lua"
+		script_death="data/entities/animals/boss_alchemist/death.lua"
 		>
 	</LuaComponent>
     

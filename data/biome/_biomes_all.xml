@@ -2,6 +2,81 @@
 	biome_image_map="data/biome_impl/biome_map.png"
 	biome_offset_y="14" >
 
+
+	<!--mould biomes-->
+
+	<Biome 
+		biome_filename="data/biome/mecha_fish_room.xml" 
+		height_index="0"
+		color="ff353fac" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/mecha_fish_room2.xml" 
+		height_index="0"
+		color="ff353fca" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/rainforest_decay.xml" 
+		height_index="0"
+		color="ff357442" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/cursed_sandcave.xml" 
+		height_index="0"
+		color="ff007f7f" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/reef.xml" 
+		height_index="0"
+		color="ff4bb87f" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/mine_field.xml" 
+		height_index="0"
+		color="ff082b70" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/prawn_cave.xml" 
+		height_index="0"
+		color="ff75b794" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/boss_lukki_room.xml" 
+		height_index="0"
+		color="ff528900" >
+	</Biome>
+
+	<Biome 
+		biome_filename="data/biome/boss_fungus_worm_room.xml" 
+		height_index="0"
+		color="ff1d3f24" >
+	</Biome>
+
+	<Biome
+		biome_filename="data/biome/harodl_room.xml" 
+		height_index="0"
+		color="ff8a9f82" >
+	</Biome>
+	
+	<Biome
+		biome_filename="data/biome/subnoitica_room.xml" 
+		height_index="0"
+		color="ff85d1a8" >
+	</Biome>
+
+	<Biome
+		biome_filename="data/biome/boss_lady_room.xml" 
+		height_index="0"
+		color="ff2d4def" >
+	</Biome>
+
   <!-- index is between 0 and 10 -->
 
   <!-- ground layer -->
@@ -1019,74 +1094,6 @@
 		biome_filename="data/biome/teleroom.xml" 
 		height_index="0"
 		color="ff5f8fab" >
-	</Biome>
-
-	<!--mould biomes-->
-
-	<Biome 
-		biome_filename="data/biome/mecha_fish_room.xml" 
-		height_index="0"
-		color="ff353fac" >
-	</Biome>
-
-	<Biome 
-		biome_filename="data/biome/mecha_fish_room2.xml" 
-		height_index="0"
-		color="ff353fca" >
-	</Biome>
-
-	<Biome 
-		biome_filename="data/biome/rainforest_decay.xml" 
-		height_index="0"
-		color="ff357442" >
-	</Biome>
-
-	<Biome 
-		biome_filename="data/biome/cursed_sandcave.xml" 
-		height_index="0"
-		color="ff007f7f" >
-	</Biome>
-
-	<Biome 
-		biome_filename="data/biome/reef.xml" 
-		height_index="0"
-		color="ff4bb87f" >
-	</Biome>
-
-	<Biome 
-		biome_filename="data/biome/mine_field.xml" 
-		height_index="0"
-		color="ff082b70" >
-	</Biome>
-
-	<Biome 
-		biome_filename="data/biome/prawn_cave.xml" 
-		height_index="0"
-		color="ff75b794" >
-	</Biome>
-
-	<Biome 
-		biome_filename="data/biome/boss_lukki_room.xml" 
-		height_index="0"
-		color="ff528900" >
-	</Biome>
-
-	<Biome 
-		biome_filename="data/biome/boss_fungus_worm_room.xml" 
-		height_index="0"
-		color="ff1d3f24" >
-	</Biome>
-
-	<Biome
-		biome_filename="data/biome/harodl_room.xml" 
-		height_index="0"
-		color="ff8a9f82" >
-	</Biome>
-	
-	<Biome
-		biome_filename="data/biome/subnoitica_room.xml" 
-		height_index="0"
-		color="ff85d1a8" >
 	</Biome>
 
 </BiomesToLoad>

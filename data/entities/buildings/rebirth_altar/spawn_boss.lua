@@ -44,6 +44,14 @@ function collision_trigger(colliding_entity_id)
         GameScreenshake( 100 )
         EntityLoad("data/entities/particles/rebirth.xml", altarx, altary)
     end
+    
+
+    if (EntityHasTag(colliding_entity_id, "rebirth_tablet_alchemist"))
+        EntityKill(colliding_entity_id)
+
+        EntityLoad("data/entities/animals/boss_alchemist_reborn/boss_reborn_alchemist.xml", altarx, altary)
+    end
+
     if (EntityHasTag(colliding_entity_id, "crab")) then
         EntityKill(colliding_entity_id)
 
