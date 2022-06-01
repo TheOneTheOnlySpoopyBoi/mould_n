@@ -46,7 +46,7 @@ function collision_trigger(colliding_entity_id)
     end
     
 
-    if (EntityHasTag(colliding_entity_id, "rebirth_tablet_alchemist"))
+    if (EntityHasTag(colliding_entity_id, "rebirth_tablet_alchemist")) then
         EntityKill(colliding_entity_id)
 
         EntityLoad("data/entities/animals/boss_alchemist_reborn/boss_reborn_alchemist.xml", altarx, altary)
