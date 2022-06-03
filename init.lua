@@ -2,6 +2,16 @@ ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mould_n/files/action
 ModLuaFileAppend( "data/scripts/status_effects/status_list.lua", "mods/mould_n/files/status_effects.lua" )
 ModMaterialsFileAdd("mods/mould_n/files/materials.xml")
 
+ModMagicNumbersFileAdd( "mods/mould_n/files/magic_numbers.xml" ) 
+--BiomeMapLoadImage( 0, 0, "mods/mould_n/files/biome_map.png" )
+
+--[[
+MAP NAMES
+
+1 - normal biome map thingy
+2 - lake on both sides maybe idk
+]]
+
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
 local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/boss_pit/boss_pit.xml"))
 xml:add_child(nxml.parse([[

@@ -47,7 +47,7 @@
     kill_when_finished="0"
     steps_per_frame="3"
     from_material_tag="[earth]"
-    to_material="magic_gas_hp_regeneration"
+    to_material="mat_rock_static_cursed"
     clean_stains="0"
     is_circle="1"
     radius="48" 

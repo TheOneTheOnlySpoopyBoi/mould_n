@@ -58,7 +58,7 @@ local to_insert = {
         action = function()
               c.extra_entities = c.extra_entities .. "data/entities/misc/rasputin.xml"
             c.fire_rate_wait = c.fire_rate_wait + 15
-            c.explosion_radius = c.explosion_radius - 30.0
+            c.explosion_radius = c.explosion_radius + 70
             c.damage_explosion_add = c.damage_explosion_add + 50
             draw_actions( 1, true )
         end,
@@ -286,8 +286,8 @@ local to_insert = {
 		sprite_unidentified = "data/ui_gfx/gun_actions/dynamite_unidentified.png",
 		related_projectiles	= {"data/entities/projectiles/hiisi_shotgun.xml",3},
 		type 		= ACTION_TYPE_PROJECTILE,
-		spawn_level                       = "",
-		spawn_probability                 = "",
+		spawn_level                       = "0",
+		spawn_probability                 = "0",
 		price = 160,
 		mana = 30,
 		action 		= function()
@@ -307,8 +307,8 @@ local to_insert = {
 		sprite_unidentified = "data/ui_gfx/gun_actions/dynamite_unidentified.png",
 		related_projectiles	= {"data/entities/projectiles/hiisi_gun.xml"},
 		type 		= ACTION_TYPE_PROJECTILE,
-		spawn_level                       = "",
-		spawn_probability                 = "",
+		spawn_level                       = "0",
+		spawn_probability                 = "0",
 		price = 180,
 		mana = 20,
 		action 		= function()
@@ -317,6 +317,27 @@ local to_insert = {
 			c.screenshake = c.screenshake + 1.1
 		end,
 	},
+	{
+		id          = "HIISI_SNIPER",
+		name 		= "Hiisi Round"
+		description = "Fires a powerful projectile made by the Hiisi.",
+		sprite 		= "data/ui_gfx/gun_actions/hiisi_sniper.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/light_bullet_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/hiisi_sniper.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "0", -- LIGHT_BULLET
+		spawn_probability                 = "0", -- LIGHT_BULLET
+		price = 200,
+		mana = 50,
+		--max_uses = -1,
+		action 		= function()
+			add_projectile("data/entities/projectiles/hiisi_sniper.xml")
+			c.fire_rate_wait = c.fire_rate_wait + 10
+			c.screenshake = c.screenshake + 0.17
+			c.spread_degrees = c.spread_degrees + 2.0
+			c.damage_critical_chance = c.damage_critical_chance + 10
+		end,
+	}
 }
 
 for k, v in ipairs(to_insert) do

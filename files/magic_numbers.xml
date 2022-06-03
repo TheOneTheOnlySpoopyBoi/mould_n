@@ -1,0 +1,5 @@
+<MagicNumbers 
+  BIOME_MAP="mods/mould_n/files/biome_map.png"
+  > <!--^ above will be effected by settings? idk man. maybe add biome map loading 
+  through init.lua and change it using settings but idk-->
+</MagicNumbers>

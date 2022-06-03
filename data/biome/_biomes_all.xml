@@ -77,6 +77,12 @@
 		color="ff2d4def" >
 	</Biome>
 
+	<Biome 
+		biome_filename="data/biome/reef_shrine.xml" 
+		height_index="0"
+		color="ff41a06e" >
+	</Biome>
+
   <!-- index is between 0 and 10 -->
 
   <!-- ground layer -->
