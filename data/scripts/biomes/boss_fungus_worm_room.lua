@@ -4,7 +4,7 @@ dofile_once("data/scripts/director_helpers.lua")
 dofile_once("data/scripts/biome_scripts.lua")
 
 RegisterSpawnFunction( 0xffffeedd, "init" )
-RegisterSpawnFunction( 0xff528900, "spawn_boss" )
+RegisterSpawnFunction( 0xff528900, "spawn_boss" ) 
 
 
 g_boss =
