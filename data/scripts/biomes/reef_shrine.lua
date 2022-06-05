@@ -24,5 +24,5 @@ function spawn_tablet(x, y)
 end
 
 function init( x, y, w, h )
-	LoadPixelScene( "data/biome_impl/boss_fungus_worm_room.png", x, y)
+	LoadPixelScene( "data/biome_impl/coral_reef_shrine.png", "", x, y, "", true )
 end

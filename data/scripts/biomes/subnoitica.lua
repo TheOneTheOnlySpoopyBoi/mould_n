@@ -24,5 +24,5 @@ function spawn_boss(x, y)
 end
 
 function init( x, y, w, h )
-	LoadPixelScene( "data/biome_impl/subnoitica.png", x, y)
+	LoadPixelScene( "data/biome_impl/subnoitica.png", "", x, y, "", true )
 end

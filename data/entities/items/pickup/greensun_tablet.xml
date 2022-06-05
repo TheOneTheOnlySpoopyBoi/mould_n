@@ -23,8 +23,8 @@
 			ui_sprite="data/items_gfx/book_s.png"
 			item_name="Notes on Grand Alchemy (Coral Reef)"
 			ui_description="To cure the afflictions of the alchemist, 
-			search the skies above the scale of the stars. 
-			Here you will find a mass capable of reversing the harm of the sun"
+search the skies above the scale of the stars. 
+Here you will find a mass capable of reversing the harm of the sun."
 			>
 		</ItemComponent>
 		
