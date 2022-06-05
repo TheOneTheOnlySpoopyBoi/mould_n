@@ -284,7 +284,7 @@ local to_insert = {
 		description = "Fires a shell made by the Hiisi.",
 		sprite 		= "data/ui_gfx/gun_actions/hiisi_shotgun.png",
 		sprite_unidentified = "data/ui_gfx/gun_actions/dynamite_unidentified.png",
-		related_projectiles	= {"data/entities/projectiles/hiisi_shotgun.xml",3},
+		related_projectiles	= {"data/entities/projectiles/hiisi_shotgun.xml"},
 		type 		= ACTION_TYPE_PROJECTILE,
 		spawn_level                       = "0",
 		spawn_probability                 = "0",
@@ -313,13 +313,13 @@ local to_insert = {
 		mana = 20,
 		action 		= function()
 			add_projectile("data/entities/projectiles/hiisi_gun.xml")
-			c.fire_rate_wait = c.fire_rate_wait + 5
+			c.fire_rate_wait = c.fire_rate_wait - 2
 			c.screenshake = c.screenshake + 1.1
 		end,
 	},
 	{
 		id          = "HIISI_SNIPER",
-		name 		= "Hiisi Round"
+		name 		= "Hiisi Round",
 		description = "Fires a powerful projectile made by the Hiisi.",
 		sprite 		= "data/ui_gfx/gun_actions/hiisi_sniper.png",
 		sprite_unidentified = "data/ui_gfx/gun_actions/light_bullet_unidentified.png",

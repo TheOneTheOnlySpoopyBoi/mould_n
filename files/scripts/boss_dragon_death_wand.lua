@@ -9,4 +9,9 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	EntityLoad("mods/mould_n/data/entities/items/dragon_wand.xml", x, y+20)
 
 	EntityLoad("mods/mould_n/data/entities/items/rebirth/boss_dragon_tablet.xml", x, y)
+
+	GamePrintImportant("THE SANDS HAVE SHIFTED", "Maybe you should dig...")
+	dofile_once("mods/mould_n/files/scripts/arch/arch_2.lua")
+	GameAddFlagRun("mould_arch_2_generated")
+	print("arch_2")
 end

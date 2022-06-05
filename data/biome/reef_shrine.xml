@@ -1,6 +1,6 @@
 <Biome>
   <Topology 
-    name="Reef"
+    name="Reef Shrine"
     type="BIOME_WANG_TILE"
     background_image="data/weather_gfx/background_cave_02.png"
     background_use_neighbor="0"
@@ -12,7 +12,7 @@
   </Topology>
 
   <Materials 
-    name="reef" 
+    name="" 
      >
     <MaterialComponent 
       _enabled="1" 

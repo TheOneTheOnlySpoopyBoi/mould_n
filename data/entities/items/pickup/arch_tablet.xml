@@ -7,8 +7,7 @@
 		
 		<ItemComponent
 			item_name="Tabula Kaivaa"
-			ui_description="Digging to the west of the pinnacle of past civilizations can uncover a variety of treasures.
-Certain events trigger the desert sands to shift and reveal greater treasures."
+			ui_description="I dont like sand."
 			>
 		</ItemComponent>
 		

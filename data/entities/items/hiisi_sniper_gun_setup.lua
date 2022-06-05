@@ -5,5 +5,4 @@ local entity_id = GetUpdatedEntityID()
 
 AddGunAction( entity_id, "HIISI_SNIPER" )
 AddGunActionPermanent( entity_id, "LIFETIME" )
-AddGunActionPermanent( entity_id, "DAMAGE" )
 AddGunActionPermanent( entity_id, "SPEED" )

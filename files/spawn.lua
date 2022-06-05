@@ -16,7 +16,7 @@ end
 
 
 --spacestation
-if GameHasFlagRun("mould_space_station") == false then
+--[[if GameHasFlagRun("mould_space_station") == false then
     EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/boss_space_station.xml", -953, -3582)
 
     EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
@@ -26,7 +26,7 @@ if GameHasFlagRun("mould_space_station") == false then
     EntityLoad("mods/mould_n/data/entities/animals/boss_space_station/space_station_drone.xml", -953, -3582)
 
     GameAddFlagRun("mould_space_station")
-end
+end]]--
 
 --golden lukki
 --[[if GameHasFlagRun("mould_boss_lukki") == false then
@@ -52,18 +52,19 @@ if GameHasFlagRun("mould_boss_lake_spirit") == false then
 end
 
 --arch1
-if GameHasFlagRun("mould_arch1") == false then
+--[[if GameHasFlagRun("mould_arch1") == false then
     dofile_once("mods/mould_n/files/scripts/arch/arch_1.lua")
 
     EntityLoad("data/entities/items/pickup/arch_tablet.xml", 0, -100)
 
     GameAddFlagRun("mould_arch1")
-end
+end]]--
 
 --other
 if GameHasFlagRun("mould_spawned") == false then
 
     EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
+    EntityLoad("data/entities/items/pickup/arch_tablet.xml", 0, -100)
 
     local pos_x = -1330
     local pos_y = -200
