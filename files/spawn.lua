@@ -45,11 +45,11 @@ end]]--
 
 
 --lake spirit
-if GameHasFlagRun("mould_boss_lake_spirit") == false then
+--[[if GameHasFlagRun("mould_boss_lake_spirit") == false then
     EntityLoad("mods/mould_n/data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml" , -12446, -186)
 
     GameAddFlagRun("mould_boss_lake_spirit")
-end
+end]]--
 
 --arch1
 --[[if GameHasFlagRun("mould_arch1") == false then

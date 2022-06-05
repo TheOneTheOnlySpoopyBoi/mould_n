@@ -24,13 +24,13 @@
 
    <CellData
 	name="mould"
-	ui_name="$mat_mould"
+	ui_name="Mould"
   	tags="[liquid],[impure]"
 	burnable="0"
 	density="1"
 	lifetime="1350"
 	cell_type="liquid"
-	wang_color="7f381774"
+	wang_color="7f2F4639"
 	generates_smoke="0"
 	liquid_gravity="0.5"
 	liquid_sand="1"
@@ -179,7 +179,12 @@
 
   <Reaction probability="50"
    input_cell1="seam" 	input_cell2="gold"
-   output_cell1="mould" 	output_cell2="steam" >
+   output_cell1="mould" 	output_cell2="water" >
+  </Reaction>
+
+  <Reaction probability="20"
+   input_cell1="mould" 	input_cell2="water"
+   output_cell1="mould" 	output_cell2="mould" >
   </Reaction>
 
 
