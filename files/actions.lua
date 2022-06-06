@@ -44,7 +44,7 @@ local to_insert = {
 			c.fire_rate_wait = c.fire_rate_wait + 20
 		end,
 	},
-    {
+    --[[{
         id          = "RASPUTIN",
         name         = "Rasputin",
         description = "Full of ecstasy and fire",
@@ -62,7 +62,7 @@ local to_insert = {
             c.damage_explosion_add = c.damage_explosion_add + 50
             draw_actions( 1, true )
         end,
-    },
+    },]]--
     {
 		id          = "FUNGUS_WORM_RAIN",
 		name 		= "Sienimatosade",
