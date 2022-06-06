@@ -3,5 +3,4 @@ dofile("data/scripts/gun/procedural/gun_action_utils.lua")
 
 local entity_id = GetUpdatedEntityID()
 
-AddGunActionPermanent( entity_id, "METEOR" )
-AddGunActionPermanent( entity_id, "MANA_REDUCE" )
+AddGunAction( entity_id, "METEOR" ) --replace with spell

@@ -8,11 +8,11 @@ if GameHasFlagRun("mysteryessence_spawned") == false then
 end
 
 --lightsaber
-if GameHasFlagRun("mould_saber_spawned") == false then
+--[[if GameHasFlagRun("mould_saber_spawned") == false then
     dofile_once("mods/mould_n/files/scripts/spawn_saber.lua")
     
     GameAddFlagRun("mould_saber_spawned")
-end
+end]]--
 
 
 --spacestation
