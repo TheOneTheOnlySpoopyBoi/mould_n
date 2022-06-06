@@ -40,4 +40,11 @@
 		</laser>
 	</LaserEmitterComponent>
 
+    <VariableStorageComponent
+		name="projectile_file"
+		value_string="data/entities/misc/hiisi_sniper_aim.xml"
+		>
+	</VariableStorageComponent>
+
+
 </Entity>

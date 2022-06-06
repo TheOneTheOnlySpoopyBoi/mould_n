@@ -357,6 +357,29 @@ local to_insert = {
 			c.screenshake = c.screenshake + 0.03
 
 		end,
+	},
+	{
+		id          = "LEVI_SHOTGUN",
+		name 		= "Lake Shell",
+		description = "Fishe",
+		sprite 		= "data/ui_gfx/gun_actions/levi_shotgun.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/dynamite_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/levi_shotgun.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "0",
+		spawn_probability                 = "0",
+		price = 160,
+		mana = 100,
+		action 		= function()
+			add_projectile("data/entities/projectiles/levi_shotgun.xml")
+			add_projectile("data/entities/projectiles/levi_shotgun.xml")
+			add_projectile("data/entities/projectiles/levi_shotgun.xml")
+			add_projectile("data/entities/projectiles/levi_shotgun.xml")
+			add_projectile("data/entities/projectiles/levi_shotgun.xml")
+			c.fire_rate_wait = c.fire_rate_wait + 2
+			c.spread_degrees = c.spread_degrees + 10.0
+			c.screenshake = c.screenshake + 2.7
+		end,
 	}
 }
 

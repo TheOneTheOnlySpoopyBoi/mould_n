@@ -18,4 +18,4 @@ end]]--
 
 --for i=1,10 do spawnsaber() end
 
-dofile_once("mods/mould_n/files/arch/arch_1.lua")
+--dofile_once("mods/mould_n/files/arch/arch_1.lua")
