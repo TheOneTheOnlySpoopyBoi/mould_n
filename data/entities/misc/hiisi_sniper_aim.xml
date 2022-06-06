@@ -1,0 +1,43 @@
+<Entity>
+	
+	<Base file="data/entities/base_custom_card.xml" > 
+		<SpriteComponent 
+			image_file="data/ui_gfx/gun_actions/hiisi_sniper_aim.png" >
+		</SpriteComponent>
+		
+		<ItemActionComponent 
+			_tags="enabled_in_world"
+			action_id="HIISI_SNIPER_AIM" >
+		</ItemActionComponent>
+	</Base>
+
+    <LuaComponent
+		script_source_file="data/scripts/projectiles/hiisi_sniper_aim.lua"
+		execute_every_n_frame="1"
+		>
+	</LuaComponent>
+
+	<InheritTransformComponent
+		_tags="enabled_in_world,enabled_in_hand" >
+	  <Transform 
+		position.x="8" 
+		position.y="0" >
+	  </Transform>
+	</InheritTransformComponent>
+
+	<LaserEmitterComponent>
+		<laser
+			damage_to_entities="0"
+			damage_to_cells="0"
+			max_length="312"
+			beam_radius="0.5"
+			max_cell_durability_to_destroy="0"
+			audio_enabled="0"
+			hit_particle_chance="0"
+			beam_particle_chance="50"
+			beam_particle_type="spark"
+			>
+		</laser>
+	</LaserEmitterComponent>
+
+</Entity>

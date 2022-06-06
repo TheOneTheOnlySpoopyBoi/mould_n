@@ -349,7 +349,7 @@ local to_insert = {
 		spawn_probability                 = "0", -- LIGHT_BULLET
 		price = 200,
 		mana = 0,
-		custom_xml_file="data/entities/misc/perks/laser_aim.xml",
+		custom_xml_file="data/entities/misc/hiisi_sniper_aim.xml",
 		action 		= function()
 			draw_actions( 1, true )
 			c.damage_critical_chance = c.damage_critical_chance + 10
