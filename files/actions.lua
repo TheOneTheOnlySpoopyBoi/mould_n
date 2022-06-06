@@ -334,8 +334,28 @@ local to_insert = {
 			add_projectile("data/entities/projectiles/hiisi_sniper.xml")
 			c.fire_rate_wait = c.fire_rate_wait + 10
 			c.screenshake = c.screenshake + 0.17
-			c.spread_degrees = c.spread_degrees + 2.0
+			c.spread_degrees = c.spread_degrees - 2.0
 			c.damage_critical_chance = c.damage_critical_chance + 10
+		end,
+	},
+	{
+		id          = "HIISI_SNIPER_AIM",
+		name 		= "Laser Sight",
+		description = "For the unskilled.",
+		sprite 		= "data/ui_gfx/gun_actions/hiisi_sniper_aim.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/light_bullet_unidentified.png",
+		type 		= ACTION_TYPE_PASSIVE,
+		spawn_level                       = "0", -- LIGHT_BULLET
+		spawn_probability                 = "0", -- LIGHT_BULLET
+		price = 200,
+		mana = 0,
+		custom_xml_file="data/entities/misc/perks/laser_aim.xml"
+		action 		= function()
+			draw_actions( 1, true )
+			c.damage_critical_chance = c.damage_critical_chance + 10
+			c.fire_rate_wait = c.fire_rate_wait + 2
+			c.screenshake = c.screenshake + 0.03
+
 		end,
 	}
 }
