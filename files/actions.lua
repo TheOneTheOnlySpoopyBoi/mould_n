@@ -251,7 +251,7 @@ local to_insert = {
 			return iter_max
 		end,
 	},
-	{
+	--[[{
 		id          = "HARODL",
 		name 		= "Mol",
 		description = "You're heavily advised to cast this spell.",
@@ -277,7 +277,7 @@ local to_insert = {
 			c.fire_rate_wait = c.fire_rate_wait + 100
 			current_reload_time = current_reload_time + 100
 		end,
-	},
+	},]]--
 	{
 		id          = "HIISI_SHOTGUN",
 		name 		= "Hiisi Shell",
@@ -338,7 +338,7 @@ local to_insert = {
 			c.damage_critical_chance = c.damage_critical_chance + 10
 		end,
 	},
-	{
+	--[[{
 		id          = "HIISI_SNIPER_AIM",
 		name 		= "Laser Sight",
 		description = "For the unskilled.",
@@ -357,7 +357,7 @@ local to_insert = {
 			c.screenshake = c.screenshake + 0.03
 
 		end,
-	},
+	},]]--
 	{
 		id          = "LEVI_SHOTGUN",
 		name 		= "Lake Shell",
