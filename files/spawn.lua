@@ -62,6 +62,7 @@ end]]--
 
 --other
 if GameHasFlagRun("mould_spawned") == false then
+    GameAddFlagRun("mould_spawned")
 
     EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
     EntityLoad("data/entities/items/pickup/arch_tablet.xml", 0, -100)
@@ -78,5 +79,5 @@ if GameHasFlagRun("mould_spawned") == false then
         } )
     end
 
-    GameAddFlagRun("mould_spawned")
+    
 end

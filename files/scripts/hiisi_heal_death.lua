@@ -6,7 +6,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 	local x, y = EntityGetTransform( GetUpdatedEntityID() )
 
-	local r = math.random(1,3) 
+	local r = math.random(1,13) 
 	if r == 2 then 
 		EntityLoad("mods/mould_n/data/entities/items/hiisi_heal_gun.xml", x, y-20)
 	end
