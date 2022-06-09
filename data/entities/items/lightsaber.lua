@@ -3,4 +3,4 @@ dofile("data/scripts/gun/procedural/gun_action_utils.lua")
 
 local entity_id = GetUpdatedEntityID()
 
-AddGunActionPermanent( entity_id, "LUMINOUS_DRILL" )
+AddGunActionPermanent( entity_id, "VACUUM_LIQUID" )

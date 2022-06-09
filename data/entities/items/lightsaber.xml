@@ -1,4 +1,4 @@
-<Entity tags="sword,lightsaber,hittable">
+<Entity tags="lightsaber,hittable">
 
 	<AbilityComponent 
         amount_in_inventory="1"
@@ -14,7 +14,7 @@
         sprite_file="data/items_gfx/lightsaber.xml"
         swim_propel_amount="0"
         throw_as_item="0"
-        ui_name="Lightsaber"
+        ui_name="Strange Shell"
         use_gun_script="1"
 		add_these_child_actions=""
 		>
