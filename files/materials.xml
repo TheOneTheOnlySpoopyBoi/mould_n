@@ -134,8 +134,8 @@
 
    <CellData
 	name="seam"
-	ui_name="Seam"
-  	tags="[liquid],[corrodible],[soluble],[blood],[impure],[liquid_common],[food]"
+	ui_name="Inhalium"
+  	tags="[liquid],[soluble],[blood],[impure],[magic_liquid],[food]"
 	burnable="0"
 	density="2.123"
 	cell_type="liquid"
@@ -145,9 +145,11 @@
 	liquid_sand="0"
 	liquid_stains="0"
 	on_fire="0"
+	gfx_glow="150"
 	requires_oxygen="1"
 	temperature_of_fire="10"
 	show_in_creative_mode="1"
+	audio_materialaudio_type="MAGICAL"
 	>
 	<StatusEffects>
 		<Ingestion>
