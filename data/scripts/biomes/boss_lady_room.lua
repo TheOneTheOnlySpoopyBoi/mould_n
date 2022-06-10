@@ -20,9 +20,11 @@ g_boss =
 }
 
 function spawn_boss(x, y)
-	spawn(g_boss,x,y)
+	--spawn(g_boss,x,y)
+	EntityLoad("data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml", x, y)
 end
 
 function init( x, y, w, h )
-	LoadPixelScene( "data/biome_impl/boss_lake_spirit.png", "", x, y, "", true )
+	--LoadPixelScene( "data/biome_impl/boss_lake_spirit.png", "", x, y, "", true )
+	EntityLoad("data/entities/animals/boss_lake_spirit/boss_lake_spirit.xml", x, y)
 end
