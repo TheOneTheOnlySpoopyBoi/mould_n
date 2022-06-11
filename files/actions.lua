@@ -156,7 +156,7 @@ local to_insert = {
 	{
 		id          = "RING_BALANCE",
 		name 		= "Flare of Balance",
-		description = "The power of the Fourth Egg in the palm of your hand...",
+		description = "The power of Green Sun in the palm of your hand...",
 		sprite 		= "data/ui_gfx/gun_actions/ring_balance.png",
 		sprite_unidentified = "data/ui_gfx/gun_actions/meteor_unidentified.png",
 		related_projectiles	= {"data/entities/projectiles/ring_balance.xml"},
@@ -379,6 +379,28 @@ local to_insert = {
 			c.fire_rate_wait = c.fire_rate_wait + 2
 			c.spread_degrees = c.spread_degrees + 10.0
 			c.screenshake = c.screenshake + 2.7
+		end,
+	},
+	{
+		id          = "DRAGON_SHOT",
+		name 		= "Dragon Breath",
+		description = "Launch a flurry of draconic fireballs.",
+		sprite 		= "data/ui_gfx/gun_actions/dragon_shot.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/bomb_unidentified.png",
+		related_projectiles	= { "data/entities/projectiles/orb_green_dragon.xml" },
+		related_extra_entities = { "data/entities/misc/dragon_shot.xml" },
+		type 		= ACTION_TYPE_STATIC_PROJECTILE,
+		spawn_level                       = "0",
+		spawn_probability                 = "0",
+		price = 300,
+		mana = 170, 
+		max_uses    = 10, 
+		custom_xml_file = "data/entities/misc/dragon_shot.xml",
+		action 		= function()
+			add_projectile("data/entities/projectiles/dragon_shot.xml")
+			c.extra_entities = c.extra_entities .. "data/entities/misc/effect_dragon_shot.xml,"
+			c.fire_rate_wait = c.fire_rate_wait + 30
+			current_reload_time = current_reload_time + 30
 		end,
 	}
 }

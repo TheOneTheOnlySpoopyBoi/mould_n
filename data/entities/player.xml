@@ -15,7 +15,7 @@
       <Entity><Base file="data/entities/items/start_wand.xml" /></Entity>
       <Entity><Base file="data/entities/items/mina_pearl.xml" /></Entity>
       <Entity><Base file="data/entities/items/start_wand_digging.xml" /></Entity>
-      <!--<Entity><Base file="data/entities/items/pyramid_wand.xml" /></Entity>-->
+      <Entity><Base file="data/entities/items/dragon_wand.xml" /></Entity>
 
       <Entity><Base file="data/entities/items/pickup/potion_water.xml" /></Entity>
   </Entity>
