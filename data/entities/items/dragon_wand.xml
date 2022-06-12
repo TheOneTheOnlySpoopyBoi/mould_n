@@ -22,12 +22,12 @@
             shuffle_deck_when_empty="0"
             deck_capacity="9"
 			actions_per_round="1"
-            reload_time="7"
+            reload_time="21"
 			speed_multiplier="1"
 			spread_degrees="3" >
         </gun_config>
         <gunaction_config 
-            fire_rate_wait="3" >
+            fire_rate_wait="15" >
         </gunaction_config>
     </AbilityComponent>
 	

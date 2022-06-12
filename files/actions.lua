@@ -380,7 +380,7 @@ local to_insert = {
 			c.spread_degrees = c.spread_degrees + 10.0
 			c.screenshake = c.screenshake + 2.7
 		end,
-	},
+	}--[[,
 	{
 		id          = "DRAGON_SHOT",
 		name 		= "Dragon Breath",
@@ -402,7 +402,7 @@ local to_insert = {
 			c.fire_rate_wait = c.fire_rate_wait + 30
 			current_reload_time = current_reload_time + 30
 		end,
-	}
+	}]]--
 }
 
 for k, v in ipairs(to_insert) do
