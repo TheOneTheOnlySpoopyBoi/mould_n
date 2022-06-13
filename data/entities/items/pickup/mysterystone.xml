@@ -39,15 +39,13 @@
     _tags="enabled_in_world"
   ></VelocityComponent>
 
-  <!-- steaming -->
-
   <MagicConvertMaterialComponent
     _tags="enabled_in_hand,enabled_in_world"
 	_enabled="0"
     kill_when_finished="0"
     steps_per_frame="3"
     from_material_tag="[earth]"
-    to_material="mat_rock_static_cursed"
+    to_material="rock_static_cursed"
     clean_stains="0"
     is_circle="1"
     radius="48" 
@@ -68,7 +66,7 @@
   <ItemComponent
     _tags="enabled_in_world"
     item_name="Mystery Stone"
-    ui_description="mmm"
+    ui_description="This small rock makes you feel."
     ui_sprite="data/ui_gfx/items/mysterystone.png"
     max_child_items="0"
     is_pickable="1"
@@ -78,10 +76,10 @@
 
   <UIInfoComponent
     _tags="enabled_in_world"
-    name="$item_mysterystone">
+    name="Mystery Stone">
   </UIInfoComponent>
   
-  <SpriteParticleEmitterComponent
+  <!--<SpriteParticleEmitterComponent
 		sprite_file="data/particles/ray.xml" 
 		delay="0"
 		lifetime="1.5"
@@ -109,7 +107,7 @@
 		randomize_velocity.min_y="-30"
 		randomize_velocity.max_y="30"
 		velocity_always_away_from_center="1">
-	</SpriteParticleEmitterComponent>
+	</SpriteParticleEmitterComponent>-->
 	
 	<AbilityComponent
 		ui_name="Mystery Stone"
@@ -139,7 +137,7 @@
     b="255" >
   </LightComponent>
   
-  <ParticleEmitterComponent 
+  <!--<ParticleEmitterComponent 
 		_tags="enabled_in_world,enabled_in_hand"
 		emitted_material_name="soil"
 		fade_based_on_lifetime="0"
@@ -235,7 +233,7 @@
 		emission_interval_min_frames="2"
 		emission_interval_max_frames="5"
 		is_emitting="1" >
-	</ParticleEmitterComponent>
+	</ParticleEmitterComponent>-->
 	
 	<LuaComponent
 		_tags="enabled_in_world,enabled_in_hand"

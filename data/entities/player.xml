@@ -18,6 +18,7 @@
       <!--<Entity><Base file="data/entities/items/dragon_wand.xml" /></Entity>-->
 
       <Entity><Base file="data/entities/items/pickup/potion_water.xml" /></Entity>
+      <Entity><Base file="data/entities/items/pickup/mystery_stone.xml" /></Entity>
   </Entity>
   <Entity name="inventory_full"/>
 

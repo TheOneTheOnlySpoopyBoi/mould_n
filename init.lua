@@ -5,31 +5,28 @@ ModMaterialsFileAdd("mods/mould_n/files/materials.xml")
 ModMagicNumbersFileAdd( "mods/mould_n/files/magic_numbers.xml" ) 
 --BiomeMapLoadImage( 0, 0, "mods/mould_n/files/biome_map.png" )
 
---[[
-MAP NAMES
-
-1 - normal biome map thingy
-2 - lake on both sides maybe idk
-]]
-
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
 
 local content = ModTextFileGetContent("data/biome/_biomes_all.xml")
 local xml = nxml.parse(content)
 xml:add_children(nxml.parse_many[[
+	<Biome height_index="0" color="ff528900" biome_filename="data/biome/boss_lukki_room.xml" />
+	<Biome height_index="0" color="ff1d3f24" biome_filename="data/biome/boss_fungus_room.xml" />
+	<Biome height_index="0" color="ff2d4def" biome_filename="data/biome/boss_lady_room.xml" />
+
 	<Biome height_index="0" color="ff353fac" biome_filename="data/biome/mecha_fish_room.xml" />
 	<Biome height_index="0" color="ff353fca" biome_filename="data/biome/mecha_fish_room2.xml" />
+	<Biome height_index="0" color="ff8a9f82" biome_filename="data/biome/harodl_room.xml" />
+	<Biome height_index="0" color="ff85d1a8" biome_filename="data/biome/subnoitica_room.xml" />
+	<Biome height_index="0" color="ff41a06e" biome_filename="data/biome/reef_shrine.xml" />
+	<Biome height_index="0" color="ff1789b2" biome_filename="data/biome/essence_mystery.xml" />
+
 	<Biome height_index="0" color="ff357442" biome_filename="data/biome/rainforest_decay.xml" />
 	<Biome height_index="0" color="ff007f7f" biome_filename="data/biome/cursed_sandcave.xml" />
 	<Biome height_index="0" color="ff4bb87f" biome_filename="data/biome/reef.xml" />
 	<Biome height_index="0" color="ff082b70" biome_filename="data/biome/mine_field.xml" />
-	<Biome height_index="0" color="ff528900" biome_filename="data/biome/boss_lukki_room.xml" />
-	<Biome height_index="0" color="ff1d3f24" biome_filename="data/biome/boss_fungus_room.xml" />
-	<Biome height_index="0" color="ff8a9f82" biome_filename="data/biome/harodl_room.xml" />
-	<Biome height_index="0" color="ff85d1a8" biome_filename="data/biome/subnoitica_room.xml" />
-	<Biome height_index="0" color="ff2d4def" biome_filename="data/biome/boss_lady_room.xml" />
-	<Biome height_index="0" color="ff41a06e" biome_filename="data/biome/reef_shrine.xml" />
 	<Biome height_index="0" color="ff75b794" biome_filename="data/biome/prawn_cave.xml" />
+	<Biome height_index="0" color="ff6dd931" biome_filename="data/biome/monkcity.xml" />
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 

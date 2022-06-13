@@ -1,7 +1,7 @@
 <Entity tags="teleportable_NOT,essence,item_pickup">
 	<ItemComponent
-		item_name="$item_essence_mystery"
-		ui_description="$itemdesc_essence_mystery"
+		item_name="Essence of Mystery"
+		ui_description="Your being is definitely a being!"
 		play_spinning_animation="0"
 		stats_count_as_item_pick_up="0"
 		>

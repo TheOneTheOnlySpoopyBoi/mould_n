@@ -2,10 +2,10 @@ dofile("data/scripts/lib/utilities.lua")
 
 
 --mystery essence
-if GameHasFlagRun("mysteryessence_spawned") == false then
+--[[if GameHasFlagRun("mysteryessence_spawned") == false then
     EntityLoad("data/entities/items/pickup/essence_mystery.xml" , 13059, -250)
     GameAddFlagRun("mysteryessence_spawned")
-end
+end]]--
 
 --lightsaber
 --[[if GameHasFlagRun("mould_saber_spawned") == false then
