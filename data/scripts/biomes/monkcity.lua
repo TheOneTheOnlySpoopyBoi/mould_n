@@ -20,7 +20,7 @@ g_enemies =
 		min_count	= 1,
 		max_count	= 1,    
 		entity 	= "data/entities/animals/monk.xml"
-	},
+	}
 }
 
 -- actual functions that get called from the wang generator

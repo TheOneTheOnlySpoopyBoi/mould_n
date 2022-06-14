@@ -16,7 +16,7 @@ g_prawn =
 		min_count	= 1,
 		max_count	= 1,    
 		entity 	= "data/entities/animals/prawn.xml"
-	},
+	}
 }
 
 function init( x, y, w, h )
