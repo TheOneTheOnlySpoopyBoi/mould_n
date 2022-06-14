@@ -67,7 +67,7 @@
     _tags="enabled_in_world"
     item_name="Mystery Stone"
     ui_description="This small rock makes you feel."
-    ui_sprite="data/ui_gfx/items/mysterystone.png"
+    ui_sprite="data/items_gfx/mysterystone.xml"
     max_child_items="0"
     is_pickable="1"
     is_equipable_forced="1"
@@ -112,6 +112,8 @@
 	<AbilityComponent
 		ui_name="Mystery Stone"
 		throw_as_item="1"
+		sprite_file="data/items_gfx/mysterystone.xml"
+		image_file="data/items_gfx/mysterystone.png"
 		><gun_config
 			deck_capacity="0"
 		></gun_config>
