@@ -162,46 +162,50 @@
     </Graphics>
   </CellData>
 
-  <CellDataChild
-  	_parent="rock_static"
-  	_inherit_reactions="1"
-	tags="[static],[alchemy],[solid],[earth]"
-  	name="rock_monk" 
+  <CellData
+	name="rock_monk"
 	ui_name="Rockier Rock"
+	tags="[static],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="10"
+	cell_type="liquid"
 	wang_color="ff3e3745"
-	hp="200000"
-	audio_physics_material_event="rock"
-	audio_physics_material_wall="rock"
-	audio_physics_material_solid="rock"
-	show_in_creative_mode="1"
+	liquid_sand="1"
+	liquid_static="1"
+	on_fire="0"
+	gfx_glow="50"
+	hp="60000" 
+	platform_type="1"
 	>
-  	<Graphics
-		texture_file="data/materials_gfx/monkbrick.png"
-		color="ff3e5045" >
+    <Graphics
+	texture_file="data/materials_gfx/rock_alt2.png"
+	color="ff3e5045"
+	>
     </Graphics>
-  </CellDataChild>
+  </CellData>
 
-    <CellDataChild
-  	_parent="templerock_static"
-  	_inherit_reactions="1"
-  	name="brick_monk" 
-	ui_name="Brickier Brick"
+  <CellData
+	name="brick_monk"
+	ui_name="Rockier Rock"
+	tags="[static],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="10"
+	cell_type="liquid"
 	wang_color="ff254c55"
-	wang_noise_percent="0.33"
-	hp="120000"
-	wang_curvature="0.5"
-	wang_noise_type="2"
-	durability="10"
-	audio_physics_material_wall="rock"
-	audio_physics_material_solid="rock"
+	liquid_sand="1"
+	liquid_static="1"
+	on_fire="0"
+	gfx_glow="50"
+	hp="60000" 
+	platform_type="1"
 	>
-  	<Graphics
-		texture_file="data/materials_gfx/monkbrick.png"
-		color="ff254c55" 
-		>
-		<Edge>
+    <Graphics
+	texture_file="data/materials_gfx/monkbrick.png"
+	color="ff254c55"
+	>
+	<Edge>
 			  <EdgeGraphics 
-				color="ff233112" 
+				color="ff254c55" 
 				overwrite="0" 
 				percent="1" 
 				require_same_material="0" 
@@ -241,9 +245,8 @@
 					max_angle="45" />
 				</Images>
 			  </EdgeGraphics>
-		</Edge>
     </Graphics>
-  </CellDataChild>
+  </CellData>
 
   <Reaction probability="50" 
 	input_cell1="blood" 	input_cell2="blood_worm"  
