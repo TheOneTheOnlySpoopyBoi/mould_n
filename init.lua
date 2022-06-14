@@ -11,7 +11,7 @@ local content = ModTextFileGetContent("data/biome/_biomes_all.xml")
 local xml = nxml.parse(content)
 xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ff528900" biome_filename="data/biome/boss_lukki_room.xml" />
-	<Biome height_index="0" color="ff1d3f24" biome_filename="data/biome/boss_fungus_room.xml" />
+	<Biome height_index="0" color="ff1d3f24" biome_filename="data/biome/boss_fungus_worm_room.xml" />
 	<Biome height_index="0" color="ff2d4def" biome_filename="data/biome/boss_lady_room.xml" />
 
 	<Biome height_index="0" color="ff353fac" biome_filename="data/biome/mecha_fish_room.xml" />
