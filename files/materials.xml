@@ -245,6 +245,7 @@
 					max_angle="45" />
 				</Images>
 			  </EdgeGraphics>
+			</Edge>
     </Graphics>
   </CellData>
 
