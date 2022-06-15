@@ -15,18 +15,18 @@ g_enemies =
 {
 	total_prob = 0,
 
-	{
+	--[[{
 		prob   		= 1,
 		min_count	= 1,
 		max_count	= 1,    
 		entity 	= "data/entities/animals/monk.xml"
-	}
+	}]]--
 }
 
 -- actual functions that get called from the wang generator
 
 function spawn_monks(x, y)
-	spawn(g_enemies, x, y)
+	--spawn(g_enemies, x, y)
 end
 
 
