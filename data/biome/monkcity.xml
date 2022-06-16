@@ -2,11 +2,8 @@
   <Topology 
     name="City of Monks"
     type="BIOME_WANG_TILE"
-    background_image="data/weather_gfx/background_monkcity.png"
-    background_edge_left="data/weather_gfx/edges/background_monkcity_left.png"
-    background_edge_right="data/weather_gfx/edges/background_monkcity_right.png"
-    background_edge_top="data/weather_gfx/edges/background_monkcity_top.png"
-    background_edge_bottom="data/weather_gfx/edges/background_monkcity_bottom.png"
+    background_image="data/weather_gfx/background_cave_04_alt8.png"
+    
     background_edge_priority="10"
     background_use_neighbor="0"
     background_image_height="0"
@@ -17,6 +14,10 @@
     wang_map_height="260"
   >
   </Topology>
+  <!--background_edge_left="data/weather_gfx/edges/background_monkcity_left.png"
+    background_edge_right="data/weather_gfx/edges/background_monkcity_right.png"
+    background_edge_top="data/weather_gfx/edges/background_monkcity_top.png"
+    background_edge_bottom="data/weather_gfx/edges/background_monkcity_bottom.png"-->
 
   <Materials 
     name="monkcity" 
@@ -43,7 +44,7 @@
       rare_use_polka="1" >
     </MaterialComponent>
 
-    <MaterialComponent 
+    <!--<MaterialComponent 
       _enabled="1" 
       is_rare="0" 
       limit_max_y="2048" 
@@ -63,7 +64,7 @@
       rare_scale_y="0.05" 
       rare_use_perlin="0" 
       rare_use_polka="1" >
-    </MaterialComponent>
+    </MaterialComponent>-->
 
     <MaterialComponent 
       _enabled="1" 
@@ -131,7 +132,7 @@
       rare_use_polka="1" >
     </MaterialComponent>
 	
-	<MaterialComponent 
+	<!--<MaterialComponent 
       _enabled="1" 
       is_rare="1" 
       limit_max_y="2048" 
@@ -193,7 +194,7 @@
       grass_requires_neighbors="1"
       material_on_top_of="sand_static"
       >
-    </VegetationComponent>
+    </VegetationComponent>-->
     
   </Materials>
 
