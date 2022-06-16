@@ -2,7 +2,7 @@
   <Topology 
     name="City of Monks"
     type="BIOME_WANG_TILE"
-    background_image="data/weather_gfx/background_cave_04_alt8.png"
+    background_image="data/weather_gfx/background_pyramid.png"
     
     background_edge_priority="10"
     background_use_neighbor="0"
