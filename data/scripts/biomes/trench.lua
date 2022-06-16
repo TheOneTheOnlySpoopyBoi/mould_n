@@ -12,7 +12,7 @@ g_small_enemies =
 	total_prob = 0,
 	-- this is air, so nothing spawns at 0.6
 	{
-		prob   		= 1.3,
+		prob   		= 0.1,
 		min_count	= 0,
 		max_count	= 0,    
 		entity 	= ""

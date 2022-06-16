@@ -38,7 +38,7 @@
     >
   </Topology>
 
-  <!------------ MATERIALS -------------------->
+  <!-- MATERIALS -->
 
   <Materials 
     name="lake" 
