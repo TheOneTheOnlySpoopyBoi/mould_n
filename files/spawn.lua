@@ -67,7 +67,10 @@ if GameHasFlagRun("mould_spawned") == false then
     EntityLoad("data/entities/buildings/rebirth_altar/rebirth_altar.xml", -10523, 9472)
     EntityLoad("data/entities/items/pickup/arch_tablet.xml", 0, -100)
 
-    local pos_x = -1330
+
+
+    --glas cannon in tree (why?)
+    --[[local pos_x = -1330
     local pos_y = -200
     local perk_id =	perk_spawn(pos_x, pos_y, "GLASS_CANNON", x, y)
 
@@ -77,7 +80,7 @@ if GameHasFlagRun("mould_spawned") == false then
             name = "perk_dont_remove_others",
             value_bool = "1",
         } )
-    end
+    end]]--
 
     
 end

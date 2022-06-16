@@ -27,6 +27,7 @@ xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ff082b70" biome_filename="data/biome/mine_field.xml" />
 	<Biome height_index="0" color="ff75b794" biome_filename="data/biome/prawn_cave.xml" />
 	<Biome height_index="0" color="ff6dd931" biome_filename="data/biome/monkcity.xml" />
+	<Biome height_index="0" color="ff112fd6" biome_filename="data/biome/trench.xml" />
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 
