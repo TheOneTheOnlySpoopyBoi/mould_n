@@ -1,5 +1,6 @@
 ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mould_n/files/actions.lua" )
 ModLuaFileAppend( "data/scripts/status_effects/status_list.lua", "mods/mould_n/files/status_effects.lua" )
+ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/mould_n/files/perk_list.lua" )
 ModMaterialsFileAdd("mods/mould_n/files/materials.xml")
 
 ModMagicNumbersFileAdd( "mods/mould_n/files/magic_numbers.xml" ) 

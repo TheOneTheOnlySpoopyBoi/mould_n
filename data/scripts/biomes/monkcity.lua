@@ -4,8 +4,8 @@ dofile_once("data/scripts/director_helpers_design.lua")
 dofile_once("data/scripts/biome_scripts.lua")
 
 RegisterSpawnFunction( 0xffffeedd, "init" )
-RegisterSpawnFunction( 0xff528900, "spawn_monks" ) --0xffffdd35
-RegisterSpawnFunction( 0xff400080, "spawn_miniboss" ) --why no work this is so sad
+RegisterSpawnFunction( 0xff528900, "spawn_monks" )
+RegisterSpawnFunction( 0xff400080, "spawn_miniboss" ) 
 
 
 g_monks =

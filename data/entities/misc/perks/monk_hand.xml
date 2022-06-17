@@ -1,0 +1,58 @@
+<Entity tags="monk_hand">
+	<HitboxComponent 
+        _tags="enabled_in_world"
+        aabb_min_x="-4" 
+        aabb_max_x="4" 
+        aabb_min_y="-4" 
+        aabb_max_y="4"
+    ></HitboxComponent>
+
+    <SimplePhysicsComponent
+        _tags="enabled_in_world" 
+    ></SimplePhysicsComponent>
+
+    <VelocityComponent
+        _tags="enabled_in_world"
+		gravity_y="0"
+    ></VelocityComponent>
+
+	<Entity>
+		<Base file="data/entities/misc/monk_arm.xml">
+		</Base>
+
+		<Entity tags="arm_fx">
+			<Base file="data/entities/misc/monk_arm_fx.xml" />
+		</Entity>
+		<Entity tags="arm_fx">
+			<Base file="data/entities/misc/monk_arm_fx.xml" />
+		</Entity>
+		<Entity tags="arm_fx">
+			<Base file="data/entities/misc/monk_arm_fx.xml" />
+		</Entity>
+	</Entity>
+
+	<!-- ghost functionality and visuals -->		
+	<SpriteComponent 
+		image_file="data/projectiles_gfx/perk_monk_hand.xml"
+		>
+	</SpriteComponent>
+	<LuaComponent 
+		script_source_file="data/scripts/animals/monk_hand_move.lua"
+		execute_every_n_frame="1"
+		>
+	</LuaComponent>
+	
+	<LuaComponent
+		_tags="monk_hand_cooldown"
+		script_source_file="data/scripts/perks/monk_hand_deny.lua"
+		execute_every_n_frame="1"
+		>
+	</LuaComponent>
+	
+	<AudioLoopComponent
+		file="data/audio/Desktop/animals.bank"
+		event_name="animals/monk/hand_hover_loop"
+		set_speed_parameter="1"
+		auto_play="1">
+	</AudioLoopComponent>
+</Entity>
