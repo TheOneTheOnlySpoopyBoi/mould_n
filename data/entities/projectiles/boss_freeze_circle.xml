@@ -72,7 +72,7 @@
 		</SpriteParticleEmitterComponent>
 
 		<ProjectileComponent 
-			damage_game_effect_entities="data/entities/misc/effect_frozen.xml,"
+			damage_game_effect_entities="data/entities/misc/effect_frozen.xml"
 			friendly_fire="0"
 			death_cause="Lack of skill"
 		    >

@@ -83,6 +83,11 @@
 		</HitboxComponent>
 	</Base>
 
+	<LuaComponent
+		script_death="mould_n/files/scripts/monk_death.lua"
+		>
+	</LuaComponent>
+
 	<!-- arms -->
 	<Entity>
 		<Base file="data/entities/misc/monk_arm.xml">

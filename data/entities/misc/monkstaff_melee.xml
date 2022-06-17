@@ -20,7 +20,7 @@
 		</Transform>
 	</InheritTransformComponent>
 	
-    <LaserEmitterComponent 
+    <!--<LaserEmitterComponent 
 		_tags="enabled_in_hand"
         _enabled="1" 
         emit_until_frame="-1" 
@@ -28,7 +28,7 @@
         laser_angle_add_rad="0" >
 
         <laser 
-            audio_enabled="1" 
+            audio_enabled="0" 
             audio_hit_always_enabled="0" 
             beam_particle_chance="50" 
             beam_particle_fade="1" 
@@ -39,10 +39,25 @@
             damage_to_entities="0.5" 
             hit_particle_chance="20" 
             max_cell_durability_to_destroy="24" 
-            max_length="38" 
-            root_entity_is_responsible_for_damage="0" >
+            max_length="3" 
+            root_entity_is_responsible_for_damage="1"
+            laser_dont_damage_shooter="1" >
         </laser>
 
-    </LaserEmitterComponent>
+    </LaserEmitterComponent>-->
+
+    <AreaDamageComponent
+		_tags="enabled_in_hand"
+		aabb_min.x="-30" 
+		aabb_min.y="-6" 
+		aabb_max.x="30" 
+		aabb_max.y="6" 
+		damage_per_frame="1"
+		update_every_n_frame="1"
+		entities_with_tag="enemy"
+        root_entity_is_responsible_for_damage="1"
+		damage_type="DAMAGE_SLICE"
+		>
+	</AreaDamageComponent>
 
 </Entity>

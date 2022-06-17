@@ -162,6 +162,41 @@
     </Graphics>
   </CellData>
 
+   <CellData
+	name="lean"
+	ui_name="Lean"
+  	tags="[liquid],[soluble],[blood],[impure],[magic_liquid],[food]"
+	burnable="0"
+	density="2.123"
+	cell_type="liquid"
+	wang_color="ffb06Cd2"
+	generates_smoke="0"
+	liquid_gravity="1.0"
+	liquid_sand="0"
+	liquid_stains="0"
+	on_fire="0"
+	gfx_glow="30"
+	requires_oxygen="1"
+	temperature_of_fire="10"
+	show_in_creative_mode="1"
+	audio_materialaudio_type="MAGICAL"
+	>
+		<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="WATERBREATHING" amount="0.3" />
+			<StatusEffect type="FASTER_LEVITATION" amount="0.3" />
+			<StatusEffect type="MOVEMENT_FASTER_2X" amount="0.3" />
+			<StatusEffect type="MANA_REGENERATION" amount="0.3" />
+			<StatusEffect type="BERSERK" amount="0.3" />
+			<StatusEffect type="NIGHTVISION" amount="0.3" />
+		</Ingestion>
+	</StatusEffects>
+    <Graphics 
+	texture_file="data/materials_gfx/lean.png" 
+	color="ffb06Cd2" >
+    </Graphics>
+  </CellData>
+
   <CellData
 	name="rock_monk"
 	ui_name="Rockier Rock"

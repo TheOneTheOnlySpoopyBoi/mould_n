@@ -1,8 +1,8 @@
 local to_insert = {
     {
 		id = "MONK_HAND",
-		ui_name = "Monk Hand",
-		ui_description = "Deny the projectiles of your enemies.",
+		ui_name = "Monk Hands",
+		ui_description = "Summons a hand to defend you with projectiles and another to absorb projectiles every now and then.",
 		ui_icon = "data/ui_gfx/perk_icons/monk_hand.png",
 		perk_icon = "data/items_gfx/perks/monk_hand.png",
 		usable_by_enemies = true,
@@ -31,6 +31,15 @@ local to_insert = {
 			reset_perk_pickup_event("MONKHAND")
 			GameRemoveFlagRun( "player_status_monk_hand" )
 		end,
+	},
+	{
+		id = "PROTECTION_FREEZE",
+		ui_name = "Freeze Immunity",
+		ui_description = "You cannot be frozen.",
+		ui_icon = "data/ui_gfx/perk_icons/protection_freeze.png",
+		perk_icon = "data/items_gfx/perks/protection_freeze.png",
+		game_effect = "PROTECTION_FREEZE",
+		usable_by_enemies = true,
 	}
 }
 

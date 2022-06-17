@@ -20,7 +20,7 @@
 		<Base file="data/entities/misc/monk_arm.xml">
 		</Base>
 
-		<Entity tags="arm_fx">
+		<!--<Entity tags="arm_fx">
 			<Base file="data/entities/misc/monk_arm_fx.xml" />
 		</Entity>
 		<Entity tags="arm_fx">
@@ -28,7 +28,7 @@
 		</Entity>
 		<Entity tags="arm_fx">
 			<Base file="data/entities/misc/monk_arm_fx.xml" />
-		</Entity>
+		</Entity>-->
 	</Entity>
 
 	<!-- ghost functionality and visuals -->		

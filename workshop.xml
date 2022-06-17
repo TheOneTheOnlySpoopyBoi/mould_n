@@ -3,14 +3,14 @@ name="Mould"
 description="
 Mould
 
-An expansion primarily based around hunting and exploration.
+An expansion based around hunting and exploration.
 NOW WITH 100% MORE MOULD!
 
 Incompatible with most other biome mods.
 
 Current Features:
-New weapons, a 3rd Sun, new bosses, a method to revive bosses, new biomes to fill the empty areas of the map, new materials, 
-Changes to drops, archaeology and world generation changes.
+New weapons, a 3rd Sun, new bosses, new perks, new spells, a method to revive bosses, new biomes to fill the empty areas of the map, new materials, 
+changes to drops, archaeology and world generation changes.
 
 Github: https://github.com/mole-den/mould_n
 Discord: https://discord.gg/tgdN6kHZhy
@@ -19,7 +19,7 @@ Special Thanks:
 Master of Copium, Gustavo, Extol, Evaisa, TheOneTheOnlySpoopyBoi
 
 "
-tags="gameplay,items,quality of life,loadouts,tweaks,bosses,biomes"
+tags="gameplay,items,quality of life,loadouts,tweaks,bosses,biomes,perks,spells"
 dont_upload_folders=".assets" 
 dont_upload_files=""
 >

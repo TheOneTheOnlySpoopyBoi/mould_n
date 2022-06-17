@@ -30,9 +30,9 @@
 			projectile="0.0"
 			explosion="0.1"
 			electricity="0.5"
-			fire="0.5" 
+			fire="0.1" 
 			slice="0.1"
-			ice="0.1"
+			ice="0.5"
 			>
 		</damage_multipliers>
 	</DamageModelComponent>
@@ -43,6 +43,7 @@
 		g="168"
 		b="255"
 	></LightComponent>
+
 	
 	<!-- movement -->
 	<VariableStorageComponent

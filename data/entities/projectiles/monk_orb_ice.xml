@@ -30,6 +30,7 @@
 		knockback_force="1.0"
 		velocity_sets_scale="1"
 		velocity_sets_scale_coeff="3"
+		damage_game_effect_entities="data/entities/misc/effect_frozen.xml"
 		>
 		<config_explosion
 			never_cache="1" 
@@ -117,7 +118,7 @@
 
 	<!-- burst -->
 	<ParticleEmitterComponent 
-		emitted_material_name="acid"
+		emitted_material_name="blood_cold"
 		gravity.y="0"
 		offset.x="0"
 		offset.y="0"
@@ -153,11 +154,11 @@
 
 	 <MagicConvertMaterialComponent
         from_material_array = "water_ice,water_salt,water_static,water_swamp,lava,radioactive_liquid,acid,blood_cold,blood,poison,slime"
-to_material_array = "ice_static,ice_static,ice_static,ice_static,rock_static,ice_radioactive_static,ice_acid_static,ice_cold_static,ice_blood_static,ice_poison_static,ice_slime_static"
+		to_material_array = "ice_static,ice_static,ice_static,ice_static,rock_static,ice_radioactive_static,ice_acid_static,ice_cold_static,ice_blood_static,ice_poison_static,ice_slime_static"
         steps_per_frame="20"
         loop="1"
 		is_circle="1"
-        radius="30" >
+        radius="20" >
     </MagicConvertMaterialComponent>
 	
 	<LightComponent 
