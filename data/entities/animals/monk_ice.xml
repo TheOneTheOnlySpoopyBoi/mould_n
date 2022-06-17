@@ -1,4 +1,4 @@
-<Entity name="Monk">
+<Entity name="Ice Monk">
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>
 
@@ -15,10 +15,10 @@
 		</AnimalAIComponent>
 
 		<DamageModelComponent 
-			hp="7"
+			hp="9"
 			materials_create_messages="1"
 			ragdoll_material="steel"
-			blood_material="acid"
+			blood_material="blood_cold"
 			blood_multiplier="0.3"
 			ragdoll_filenames_file="data/ragdolls/monk/filenames.txt" 
 			fire_probability_of_ignition="0"
@@ -29,7 +29,7 @@
 		</DamageModelComponent>
 
 		<SpriteComponent 
-			image_file="data/enemies_gfx/monk.xml" 
+			image_file="data/enemies_gfx/monk_ice.xml" 
 			offset_x="0"
 			offset_y="0">
 		</SpriteComponent>
@@ -85,22 +85,22 @@
 
 	<!-- arms -->
 	<Entity>
-		<Base file="data/entities/misc/monk_arm.xml">
+		<Base file="data/entities/misc/monk_arm_ice.xml">
 		</Base>
 
 		<Entity tags="arm_fx">
-			<Base file="data/entities/misc/monk_arm_fx.xml" />
+			<Base file="data/entities/misc/monk_arm_fx_ice.xml" />
 		</Entity>
 		<Entity tags="arm_fx">
-			<Base file="data/entities/misc/monk_arm_fx.xml" />
+			<Base file="data/entities/misc/monk_arm_fx_ice.xml" />
 		</Entity>
 		<Entity tags="arm_fx">
-			<Base file="data/entities/misc/monk_arm_fx.xml" />
+			<Base file="data/entities/misc/monk_arm_fx_ice.xml" />
 		</Entity>
 	</Entity>
 
 	<Entity>
-		<Base file="data/entities/misc/monk_arm.xml">
+		<Base file="data/entities/misc/monk_arm_ice.xml">
 			<SpriteComponent
 				has_special_scale="1"
 				special_scale_x="-1" >
@@ -111,13 +111,13 @@
 		</Base>
 
 		<Entity tags="arm_fx">
-			<Base file="data/entities/misc/monk_arm_fx.xml" />
+			<Base file="data/entities/misc/monk_arm_fx_ice.xml" />
 		</Entity>
 		<Entity tags="arm_fx">
-			<Base file="data/entities/misc/monk_arm_fx.xml" />
+			<Base file="data/entities/misc/monk_arm_fx_ice.xml" />
 		</Entity>
 		<Entity tags="arm_fx">
-			<Base file="data/entities/misc/monk_arm_fx.xml" />
+			<Base file="data/entities/misc/monk_arm_fx_ice.xml" />
 		</Entity>
 	</Entity>
 

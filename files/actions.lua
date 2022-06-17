@@ -380,7 +380,7 @@ local to_insert = {
 			c.spread_degrees = c.spread_degrees + 10.0
 			c.screenshake = c.screenshake + 2.7
 		end,
-	}--[[,
+	},--[[,
 	{
 		id          = "DRAGON_SHOT",
 		name 		= "Dragon Breath",
@@ -403,6 +403,20 @@ local to_insert = {
 			current_reload_time = current_reload_time + 30
 		end,
 	}]]--
+	{
+		id					= "MONKSTAFF_MELEE",
+		name				= "munkin henkilökunta",
+		description			= "You\'ve finally found what you were looking for.",
+		sprite      	   = "data/ui_gfx/gun_actions/monkstaff_melee.png",
+		type        		= ACTION_TYPE_PASSIVE,
+		spawn_level       = "0,0",
+		spawn_probability	= "0,0",
+		price				= 0,
+		mana				= 0,
+		custom_xml_file = "data/entities/misc/monkstaff_melee.xml",
+		action = function()
+		end,
+	}
 }
 
 for k, v in ipairs(to_insert) do

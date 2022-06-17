@@ -13,10 +13,16 @@ g_monks =
 	total_prob = 0,
 
 	{
-		prob   		= 1,
+		prob   		= 0.8,
+		min_count	= 1,
+		max_count	= 2,    
+		entity 	= "data/entities/animals/monk.xml"
+	},
+	{
+		prob   		= 0.2,
 		min_count	= 1,
 		max_count	= 1,    
-		entity 	= "data/entities/animals/monk.xml"
+		entity 	= "data/entities/animals/monk_ice.xml"
 	},
 }
 

@@ -35,7 +35,7 @@
 			never_cache="1" 
 			camera_shake="0" 
 			explosion_radius="10" 
-			explosion_sprite="data/particles/explosion_monk_orb_weak.xml" 
+			explosion_sprite="data/particles/explosion_monk_orb_ice.xml" 
 			explosion_sprite_lifetime="0.0" 
 			load_this_entity=""
 			create_cell_probability="0" 
@@ -67,7 +67,7 @@
 	<SpriteComponent 
 		_enabled="1" 
 		alpha="1" 
-		image_file="data/projectiles_gfx/monk_orb_weak.xml" 
+		image_file="data/projectiles_gfx/monk_orb_ice.xml" 
 		emissive="1"
 		additive="1"
 		>
@@ -76,7 +76,7 @@
 	<SpriteComponent 
 		_enabled="1" 
 		alpha="1" 
-		image_file="data/particles/explosion_monk_orb_weak.xml" 
+		image_file="data/particles/explosion_monk_orb_ice.xml" 
 		emissive="1"
 		additive="1"
 		
@@ -85,7 +85,7 @@
 
 	<!-- trail -->
 	<ParticleEmitterComponent 
-		emitted_material_name="acid"
+		emitted_material_name="blood_cold"
 		gravity.y="0"
 		offset.x="-0.5"
 		offset.y="0.5"
@@ -150,13 +150,22 @@
 		delay_frames="0"
 		is_emitting="1" >
 	</ParticleEmitterComponent>
+
+	 <MagicConvertMaterialComponent
+        from_material_array = "water_ice,water_salt,water_static,water_swamp,lava,radioactive_liquid,acid,blood_cold,blood,poison,slime"
+to_material_array = "ice_static,ice_static,ice_static,ice_static,rock_static,ice_radioactive_static,ice_acid_static,ice_cold_static,ice_blood_static,ice_poison_static,ice_slime_static"
+        steps_per_frame="20"
+        loop="1"
+		is_circle="1"
+        radius="30" >
+    </MagicConvertMaterialComponent>
 	
 	<LightComponent 
 		_enabled="1" 
 		radius="150" 
 		r="20"
-		g="90"
-		b="20">
+		g="20"
+		b="90">
 	</LightComponent>
 	
 	<AudioComponent
@@ -166,7 +175,7 @@
 	
 	<VariableStorageComponent
 		name="projectile_file"
-		value_string="data/entities/projectiles/monk_orb_weak.xml"
+		value_string="data/entities/projectiles/monk_orb_ice.xml"
 		>
 	</VariableStorageComponent>
 </Entity>
