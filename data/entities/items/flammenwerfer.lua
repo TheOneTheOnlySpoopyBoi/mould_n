@@ -3,7 +3,5 @@ dofile("data/scripts/gun/procedural/gun_action_utils.lua")
 
 local entity_id = GetUpdatedEntityID()
 
-AddGunAction( entity_id, "BURNING_GAZE" )
-AddGunActionPermanent( entity_id, "HOMING" )
-
---cringe flammenwerfer
+AddGunActionPermanent( entity_id, "SIRMOLE_MOMENT" )
+--AddGunActionPermanent( entity_id, "TORCH" )

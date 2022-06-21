@@ -11,10 +11,10 @@
 		mana_max="1001"
         max_amount_in_inventory="1"
         shooting_reduces_amount_in_inventory="0"
-        sprite_file="data/items_gfx/monkstaff.xml"
+        sprite_file="data/items_gfx/flammenwerfer.xml"
         swim_propel_amount="0"
         throw_as_item="0"
-        ui_name="munkin henkilökunta"
+        ui_name="flammenwerfer"
         use_gun_script="1"
 		add_these_child_actions=""
 		>
@@ -22,12 +22,12 @@
             shuffle_deck_when_empty="0"
             deck_capacity="0"
 			actions_per_round="1"
-            reload_time="27"
+            reload_time="1"
 			speed_multiplier="3"
 			spread_degrees="3" >
         </gun_config>
         <gunaction_config 
-            fire_rate_wait="20" >
+            fire_rate_wait="1" >
         </gunaction_config>
     </AbilityComponent>
 	
@@ -39,7 +39,7 @@
 	
     <Base file="data/entities/base_item.xml" >
         <ItemComponent
-            item_name="munkin henkilökunta"
+            item_name="flammenwerfer"
             always_use_item_name_in_ui="1"
             remove_on_death="1"
             collect_nondefault_actions="1" >
@@ -49,7 +49,7 @@
     <LuaComponent 
         execute_on_added="1"
         remove_after_executed="1"
-        script_source_file="mods/mould_n/data/entities/items/monkstaff.lua"
+        script_source_file="mods/mould_n/data/entities/items/flammenwerfer.lua"
         >
     </LuaComponent>
 

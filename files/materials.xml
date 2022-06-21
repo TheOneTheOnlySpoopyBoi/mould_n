@@ -284,6 +284,27 @@
     </Graphics>
   </CellData>
 
+  <CellDataChild
+  	_parent="plasma_fading"
+	name="plasma_fading_purple"
+	ui_name="Purple"
+	fire_hp="100"
+	wang_color="ff78F050"
+	requires_oxygen="0"
+	liquid_viscosity="10"
+	liquid_sticks_to_ceiling="100"
+	liquid_flow_speed="0.25"
+	temperature_of_fire="150"
+	liquid_gravity="0.2"
+	liquid_sand="1"
+	on_fire="1"
+	>
+    <Graphics
+	color="ffb773d9"
+	>
+    </Graphics>
+  </CellDataChild>
+
   <Reaction probability="50" 
 	input_cell1="blood" 	input_cell2="blood_worm"  
 	output_cell1="seam" 			output_cell2="seam"

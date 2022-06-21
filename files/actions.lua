@@ -416,6 +416,198 @@ local to_insert = {
 		custom_xml_file = "data/entities/misc/monkstaff_melee.xml",
 		action = function()
 		end,
+	},
+	{
+		id          = "MONKSTAFF_PROJ",
+		name 		= "munkin henkilökunta",
+		description = "A stranger you remian.",
+		sprite 		= "data/ui_gfx/gun_actions/monkstaff_melee.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/laser_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/monkstaff_proj.xml"},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "0",
+		spawn_probability                 = "0",
+		price = 0,
+		mana = 0,
+		--max_uses = 80,
+		custom_xml_file = "data/entities/misc/monkstaff_proj.xml",
+		action 		= function()
+			add_projectile("data/entities/projectiles/monkstaff_proj.xml")
+			c.fire_rate_wait = c.fire_rate_wait + 10
+			c.game_effect_entities = c.game_effect_entities .. "data/entities/misc/effect_disintegrated.xml,"
+			shot_effects.recoil_knockback = shot_effects.recoil_knockback + 20.0
+		end,
+	},
+	{
+		id          = "SIRMOLE_MOMENT",
+		name 		= "Flammenwerfer",
+		description = "HANZ GET ZE FLAMMENWERFER",
+		sprite 		= "data/ui_gfx/gun_actions/flamethrower.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/flamethrower_unidentified.png",
+		related_projectiles	= {"data/entities/projectiles/flammenwerfer.xml",3},
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "0",
+		spawn_probability                 = "0",
+		price = 0,
+		mana = 0,
+		action 		= function()
+			add_projectile("data/entities/projectiles/flammenwerfer.xml")
+			add_projectile("data/entities/projectiles/flammenwerfer.xml")
+			add_projectile("data/entities/projectiles/flammenwerfer.xml")
+			c.fire_rate_wait = c.fire_rate_wait - 10
+			c.spread_degrees = c.spread_degrees + 5
+			c.screenshake = c.screenshake + 0.3
+		end,
+	},
+	{
+		id          = "ICETHROWER",
+		name 		= "$action_icethrower",
+		description = "$actiondesc_icethrower",
+		sprite 		= "data/ui_gfx/gun_actions/icethrower.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,6", -- ICETHROWER
+		spawn_probability                        = "1,1,1", -- ICETHROWER
+		price = 260,
+		mana = 20,
+		max_uses = 60,
+		custom_xml_file = "data/entities/misc/custom_cards/icethrower.xml",
+		action 		= function()
+			add_projectile("data/entities/projectiles/icethrower.xml")
+			c.spread_degrees = c.spread_degrees + 2.0
+		end,
+	},
+	{
+		id          = "BLOOMSHOT",
+		name 		= "$action_bloomshot",
+		description = "$actiondesc_bloomshot",
+		sprite 		= "data/ui_gfx/gun_actions/bloomshot.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,6", -- BLOOMSHOT
+		spawn_probability                        = "1,1,1", -- BLOOMSHOT
+		price = 150,
+		mana = 80,
+		max_uses    = 30, 
+		custom_xml_file = "data/entities/misc/custom_cards/bloomshot.xml",
+		-- max_uses    = 10, 
+		action 		= function()
+			add_projectile("data/entities/projectiles/bloomshot.xml")
+			current_reload_time = current_reload_time + 40
+		end,
+	},
+	{
+		id          = "ICECIRCLE",
+		name 		= "$action_icecircle",
+		description = "$actiondesc_icecircle",
+		sprite 		= "data/ui_gfx/gun_actions/icecircle.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,6", -- ICECIRCLE
+		spawn_probability                        = "1,1,1", -- ICECIRCLE
+		price = 130,
+		mana = 100,
+		max_uses    = 30, 
+		custom_xml_file = "data/entities/misc/custom_cards/icecircle.xml",
+		action 		= function()
+			add_projectile("data/entities/projectiles/iceskull_explosion.xml")
+			current_reload_time = current_reload_time + 60
+		end,
+	},
+	{
+		id          = "PINK_ORB",
+		name 		= "$action_pink_orb",
+		description = "$actiondesc_pink_orb",
+		sprite 		= "data/ui_gfx/gun_actions/pink_orb.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,6", -- PINK_ORB
+		spawn_probability                        = "1,1,1", -- PINK_ORB
+		price = 160,
+		mana = 60,
+		max_uses    = 25, 
+		custom_xml_file = "data/entities/misc/custom_cards/pink_orb.xml",
+		action 		= function()
+			add_projectile("data/entities/projectiles/deck/pink_orb.xml")
+			current_reload_time = current_reload_time + 40
+		end,
+	},
+	{
+		id          = "COMMANDER_BULLET",
+		name 		= "$action_commander_bullet",
+		description = "$actiondesc_commander_bullet",
+		sprite 		= "data/ui_gfx/gun_actions/commander_bullet.png",
+		sprite_unidentified = "data/ui_gfx/gun_actions/teleport_projectile_unidentified.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,6", -- COMMANDER_BULLET
+		spawn_probability                 = "1,1,1", -- COMMANDER_BULLET
+		price = 160,
+		mana = 50,
+		--max_uses = 80,
+		action 		= function()
+			add_projectile("data/entities/projectiles/deck/commander_bullet.xml")
+			c.fire_rate_wait = c.fire_rate_wait + 10
+			draw_actions( 3, true )
+		end,
+	},
+	{
+		id          = "PLASMA_FLARE",
+		name 		= "$action_plasma_flare",
+		description = "$actiondesc_plasma_flare",
+		sprite 		= "data/ui_gfx/gun_actions/plasma_flare.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,6", -- PLASMA_FLARE
+		spawn_probability                        = "1,1,1", -- PLASMA_FLARE
+		price = 230,
+		mana = 40,
+		max_uses    = 30, 
+		custom_xml_file = "data/entities/misc/custom_cards/plasma_flare.xml",
+		action 		= function()
+			add_projectile("data/entities/projectiles/orb_pink_fast.xml")
+		end,
+	},
+	{
+		id          = "KEYSHOT",
+		name 		= "$action_keyshot",
+		description = "$actiondesc_keyshot",
+		sprite 		= "data/ui_gfx/gun_actions/keyshot.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,6", -- KEYSHOT
+		spawn_probability                        = "1,1,1", -- KEYSHOT
+		price = 999,
+		mana = 300,
+		max_uses    = 3, 
+		action 		= function()
+			add_projectile("data/entities/projectiles/deck/keyshot.xml")
+			current_reload_time = current_reload_time + 100
+		end,
+	},
+	{
+		id          = "SKULL",
+		name 		= "$action_skull",
+		description = "$actiondesc_skull",
+		sprite 		= "data/ui_gfx/gun_actions/skull.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,6", -- SKULL
+		spawn_probability                        = "1,1,1", -- SKULL
+		price = 150,
+		mana = 60,
+		max_uses    = 20, 
+		action 		= function()
+			add_projectile("data/entities/projectiles/deck/skull.xml")
+		end,
+	},
+	{
+		id          = "CHARM_FIELD",
+		name 		= "$action_charm_field",
+		description = "$actiondesc_charm_field",
+		sprite 		= "data/ui_gfx/gun_actions/charm_field.png",
+		type 		= ACTION_TYPE_PROJECTILE,
+		spawn_level                       = "2,3,4,6", -- CHARM_FIELD
+		spawn_probability                        = "0.3,0.3,0.3,0.3", -- CHARM_FIELD
+		price = 100,
+		mana = 30,
+		max_uses = 15,
+		action 		= function()
+			add_projectile("data/entities/projectiles/deck/charm_field.xml")
+			c.fire_rate_wait = c.fire_rate_wait + 15
+		end,
 	}
 }
 
