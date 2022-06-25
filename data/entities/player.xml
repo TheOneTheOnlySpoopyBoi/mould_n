@@ -16,7 +16,7 @@
       <Entity><Base file="data/entities/items/mina_pearl.xml" /></Entity>
       <Entity><Base file="data/entities/items/start_wand_digging.xml" /></Entity>
       <!--<Entity><Base file="data/entities/items/pyramid_wand.xml" /></Entity>-->
-      <!--<Entity><Base file="data/entities/items/monkstaff.xml" /></Entity>-->
+      <!--<Entity><Base file="data/entities/items/monkstaff.xml" /></Entity>
 
     <!--<Entity><Base file="data/entities/items/pickup/mystery_stone.xml" /></Entity>-->
 
