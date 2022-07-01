@@ -19,4 +19,10 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 		end
 	end
 
+	local r = math.random(1,50)
+	if r == 2 then 
+		EntityLoad("mods/mould_n/data/entities/items/monkstaff.xml", x, y+20)
+	end
+
+
 end

@@ -19,13 +19,13 @@ g_monks =
 		entity 	= "data/entities/animals/monk.xml"
 	},
 	{
-		prob   		= 0.25,
+		prob   		= 0.2,
 		min_count	= 1,
 		max_count	= 1,    
 		entity 	= "data/entities/animals/monk_ice.xml"
 	},
 	{
-		prob   		= 0.05,
+		prob   		= 0.1,
 		min_count	= 1,
 		max_count	= 1,    
 		entity 	= "data/entities/animals/monk_pyro.xml"

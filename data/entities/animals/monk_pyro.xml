@@ -18,7 +18,7 @@
 			hp="9"
 			materials_create_messages="1"
 			ragdoll_material="steel"
-			blood_material="blood_cold"
+			blood_material="lava"
 			blood_multiplier="0.3"
 			ragdoll_filenames_file="data/ragdolls/monk/filenames.txt" 
 			fire_probability_of_ignition="0"

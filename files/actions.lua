@@ -562,7 +562,7 @@ local to_insert = {
 			add_projectile("data/entities/projectiles/orb_pink_fast.xml")
 		end,
 	},
-	{
+	--[[{
 		id          = "KEYSHOT",
 		name 		= "$action_keyshot",
 		description = "$actiondesc_keyshot",
@@ -577,7 +577,7 @@ local to_insert = {
 			add_projectile("data/entities/projectiles/deck/keyshot.xml")
 			current_reload_time = current_reload_time + 100
 		end,
-	},
+	},]]--
 	{
 		id          = "SKULL",
 		name 		= "$action_skull",

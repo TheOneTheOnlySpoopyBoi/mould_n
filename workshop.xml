@@ -1,21 +1,28 @@
 <Mod
 name="Mould"
 description="
-Mould
+[h1] Mould [/h1]
 
-An expansion based around hunting and exploration.
+An expansion primarily based around hunting and exploration.
 NOW WITH 100% MORE MOULD!
 
-Incompatible with most other biome mods.
+[h1] Current Features: [/h1]
+New weapons, new spells, a 3rd Sun, new bosses, a method to revive certain bosses, new biomes to fill the empty areas of the map, new materials, Changes to drops, archaeology, reintroducing old spells and world generation changes.
 
-Current Features:
-New weapons, a 3rd Sun, new bosses, new perks, new spells, a method to revive bosses, new biomes to fill the empty areas of the map, new materials, 
-changes to drops, readding some spells, archaeology and world generation changes.
+[h1] Compatibility [/h1]
+Mould is now compatible with these mods:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2263080245
+https://steamcommunity.com/sharedfiles/filedetails/?id=2479652426
+(and you can use the biomes from all 3 at once)
+[b] To ensure that the mods load correctly, have them in this order: [/b]
+Mould
+Noitavania
+Flesh Biome
 
-Github: https://github.com/mole-den/mould_n
-Discord: https://discord.gg/tgdN6kHZhy
+[b] Github: https://github.com/mole-den/mould_n [/b]
+[b] Discord: https://discord.gg/tgdN6kHZhy [/b]
 
-Special Thanks:
+[b] Special Thanks:[/b]
 Master of Copium, Gustavo, Extol, Evaisa, TheOneTheOnlySpoopyBoi
 
 "

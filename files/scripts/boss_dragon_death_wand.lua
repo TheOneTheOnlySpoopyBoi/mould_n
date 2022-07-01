@@ -6,7 +6,14 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 	local x, y = EntityGetTransform( GetUpdatedEntityID() )
 
-	EntityLoad("mods/mould_n/data/entities/items/dragon_wand.xml", x, y+20)
+	
+
+	local r = math.random(1,20)
+	if r == 2 then 
+		EntityLoad("mods/mould_n/data/entities/items/flammenwerfer.xml", x, y+20)
+	else
+		EntityLoad("mods/mould_n/data/entities/items/dragon_wand.xml", x, y+20)
+	end
 
 	EntityLoad("mods/mould_n/data/entities/items/rebirth/boss_dragon_tablet.xml", x, y)
 

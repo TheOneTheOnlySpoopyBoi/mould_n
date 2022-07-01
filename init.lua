@@ -4,7 +4,7 @@ ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/mould_n/files/perk_l
 ModMaterialsFileAdd("mods/mould_n/files/materials.xml")
 
 ModMagicNumbersFileAdd( "mods/mould_n/files/magic_numbers.xml" ) 
---BiomeMapLoadImage( 0, 0, "mods/mould_n/files/biome_map.png" )
+--BiomeMapLoadImage( 0, 0, "mods/mould_n/files/maps/m.png" )
 
 local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
 
