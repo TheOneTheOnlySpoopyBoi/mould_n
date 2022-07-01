@@ -1,8 +1,6 @@
 <Mod
 name="Mould"
 description="
-[h1] Mould [/h1]
-
 An expansion primarily based around hunting and exploration.
 NOW WITH 100% MORE MOULD!
 
@@ -11,8 +9,8 @@ New weapons, new spells, a 3rd Sun, new bosses, a method to revive certain bosse
 
 [h1] Compatibility [/h1]
 Mould is now compatible with these mods:
-https://steamcommunity.com/sharedfiles/filedetails/?id=2263080245
-https://steamcommunity.com/sharedfiles/filedetails/?id=2479652426
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2263080245] Noitavania by Tanksy [/url] 
+[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2479652426] Flesh Biome by hornedkey [/url]
 (and you can use the biomes from all 3 at once)
 [b] To ensure that the mods load correctly, have them in this order: [/b]
 Mould
@@ -24,6 +22,8 @@ Flesh Biome
 
 [b] Special Thanks:[/b]
 Master of Copium, Gustavo, Extol, Evaisa, TheOneTheOnlySpoopyBoi
+
+i
 
 "
 tags="gameplay,items,quality of life,loadouts,tweaks,bosses,biomes,perks,spells"
