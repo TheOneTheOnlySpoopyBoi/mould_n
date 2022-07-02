@@ -11,23 +11,12 @@
       <Entity><Base file="data/entities/items/pickup/potion_water.xml" /></Entity>
   </Entity>
   -->
-   <Entity name="inventory_quick">
-      <Entity><Base file="data/entities/items/start_wand.xml" /></Entity>
-      <Entity><Base file="data/entities/items/mina_pearl.xml" /></Entity>
-      <Entity><Base file="data/entities/items/start_wand_digging.xml" /></Entity>
-      <!--<Entity><Base file="data/entities/items/dragon_wand.xml" /></Entity>-->
-      <!--<Entity><Base file="data/entities/items/monkstaff.xml" /></Entity>
 
-    <!--<Entity><Base file="data/entities/items/pickup/mystery_stone.xml" /></Entity>-->
-
-    <Entity><Base file="data/entities/items/pickup/potion_water.xml" /></Entity>
-      
-  </Entity>
   <Entity name="inventory_full"/>
 
   <!-- cape -->
 
-  <HotspotComponent
+  <!--<HotspotComponent
       _tags="cape_root"
       sprite_hotspot_name="cape" >
   </HotspotComponent>
@@ -35,7 +24,7 @@
   <Entity name="cape">  
       <Base file="data/entities/verlet_chains/cape/cape.xml">
       </Base>  
-  </Entity>
+  </Entity-->
 
 
   

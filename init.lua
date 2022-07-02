@@ -32,6 +32,16 @@ xml:add_children(nxml.parse_many[[
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 
+dofile_once("mods/mould_n/files/check.lua")
+
+if ModIsEnabled("mould_theotherside") then
+
+else
+	function Moulding()
+		dofile_once("mods/mould_n/files/spawn.lua")
+	end
+end
+
 local xml = nxml.parse(ModTextFileGetContent("data/entities/animals/boss_pit/boss_pit.xml"))
 xml:add_child(nxml.parse([[
 	<LuaComponent
@@ -165,8 +175,6 @@ function OnPlayerDied()
 	print("dead")
 end
 
-function Moulding()
-	dofile_once("mods/mould_n/files/spawn.lua")
-end
+
 
 GamePrint("Mould")

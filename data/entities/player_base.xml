@@ -87,12 +87,14 @@
     flying_recharge_removal_frames="8"
     gravity="0"
     buoyancy_check_offset_y="-7"
+    send_transform_update_message="1"
   ></CharacterDataComponent>
 
   <GenomeDataComponent 
     herd_id="player"
     food_chain_rank="20"
     is_predator="1"
+    berserk_dont_attack_friends="1"
   ></GenomeDataComponent>
 
   <CharacterPlatformingComponent 
@@ -143,8 +145,8 @@
     hp="4" 
     is_on_fire="0" 
     materials_damage="1" 
-    materials_that_damage="acid,lava,blood_cold_vapour,blood_cold,poison,radioactive_gas,radioactive_gas_static,rock_static_radioactive,rock_static_poison,ice_radioactive_static,ice_radioactive_glass,ice_acid_static,ice_acid_glass,rock_static_cursed,magic_gas_hp_regeneration,gold_radioactive,gold_static_radioactive"  
-    materials_how_much_damage="0.005,0.003,0.0006,0.0009,0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.005,-0.005,0.0002,0.0002" 
+    materials_that_damage="acid,lava,blood_cold_vapour,blood_cold,poison,radioactive_gas,radioactive_gas_static,rock_static_radioactive,rock_static_poison,ice_radioactive_static,ice_radioactive_glass,ice_acid_static,ice_acid_glass,rock_static_cursed,magic_gas_hp_regeneration,gold_radioactive,gold_static_radioactive,rock_static_cursed_green,cursed_liquid,poo_gas"  
+    materials_how_much_damage="0.005,0.003,0.0006,0.0009,0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.005,-0.005,0.0002,0.0002,0.004,0.0005,0.00001" 
     ragdoll_filenames_file="data/ragdolls/player/filenames.txt" 
     ragdoll_offset_y="-5"
     ragdollify_child_entity_sprites="1"
@@ -195,9 +197,21 @@
   </SpriteAnimatorComponent>
 
   <SpriteComponent 
-    _tags="character" 
+    _tags="character,lukki_disable" 
     alpha="1" 
     image_file="data/enemies_gfx/player.xml" 
+    next_rect_animation="" 
+    offset_x="6" 
+    offset_y="14" 
+    rect_animation="walk" 
+    z_index="0.6"
+  ></SpriteComponent>
+  
+  <SpriteComponent 
+    _tags="character,lukki_enable"
+	_enabled="0"
+    alpha="1" 
+    image_file="data/enemies_gfx/player_lukky.xml" 
     next_rect_animation="" 
     offset_x="6" 
     offset_y="14" 
@@ -211,7 +225,7 @@
     transform_with_scale="1"
   ></HotspotComponent>
 
-  <Entity name="arm_r">
+  <Entity name="arm_r" tags="player_arm_r">
 
     <SpriteComponent 
       _tags="with_item" 
@@ -317,16 +331,15 @@
 
   <ItemPickUpperComponent
     drop_items_on_death="0"
-    >
-  </ItemPickUpperComponent>
+  ></ItemPickUpperComponent>
 
 	<Base file="data/entities/base_jetpack_nosound.xml">
 
     <ParticleEmitterComponent
         offset.x="-2"
         offset.y="5"
-        lifetime_min="0.0" >
-    </ParticleEmitterComponent>
+        lifetime_min="0.0" 
+    ></ParticleEmitterComponent>
   
   </Base>
 
@@ -349,6 +362,25 @@
     updates_velocity="0"
   ></VelocityComponent>
   
+  <!-- cape -->
+
+  <!--<HotspotComponent
+      _tags="cape_root"
+      sprite_hotspot_name="cape" >
+  </HotspotComponent>
+
+  <Entity name="cape">  
+      <Base file="data/entities/verlet_chains/cape/cape.xml">
+      </Base>  
+  </Entity-->
+  
+  <!-- belt -->
+  
+  <HotspotComponent
+    _tags="belt_root"
+    sprite_hotspot_name="belt"
+  ></HotspotComponent>
+  
   <!-- ingestion -->
 
   <MaterialInventoryComponent 
@@ -361,7 +393,7 @@
   <IngestionComponent 
     ingestion_capacity="7500"
     overingestion_damage="0.002"
-    blood_healing_speed="0.0008"
+    blood_healing_speed="0.0016"
   ></IngestionComponent>
 
   <DrugEffectComponent>
@@ -397,100 +429,85 @@
 		name="kantele_song_pos"
 		value_int="0"
 	></VariableStorageComponent>
-
-  <SpriteComponent 
-    _tags="character,player_amulet_gem" 
-    alpha="1" 
-    image_file="data/enemies_gfx/player_amulet_gem.xml" 
-    next_rect_animation="" 
-    offset_x="6" 
-    offset_y="14" 
-    rect_animation="walk" 
-    z_index="0.59"
-	_enabled="0"
-  ></SpriteComponent>
-  
-  <LuaComponent
-	script_source_file="data/scripts/magic/amulet_gem.lua"
-	execute_on_added="1"
-	remove_after_executed="1"
-	>
-	</LuaComponent>
-
+	
 	<SpriteComponent 
-    _tags="character,player_amulet" 
-    alpha="1" 
-    image_file="data/enemies_gfx/player_amulet.xml" 
-    next_rect_animation="" 
-    offset_x="6" 
-    offset_y="14" 
-    rect_animation="walk" 
-    z_index="0.59"
-	_enabled="0"
-  ></SpriteComponent>
-  
-  <LuaComponent
-	script_source_file="data/scripts/magic/amulet.lua"
-	execute_on_added="1"
-	remove_after_executed="1"
-	>
-	</LuaComponent>
-
+		_tags="character,player_amulet" 
+		alpha="1" 
+		image_file="data/enemies_gfx/player_amulet.xml" 
+		next_rect_animation="" 
+		offset_x="6" 
+		offset_y="14" 
+		rect_animation="walk" 
+		z_index="0.59"
+		_enabled="0"
+	></SpriteComponent>
+	
 	<SpriteComponent 
-    _tags="character,player_hat" 
-    alpha="1" 
-    image_file="data/enemies_gfx/player_hat.xml" 
-    next_rect_animation="" 
-    offset_x="6" 
-    offset_y="14" 
-    rect_animation="walk" 
-    z_index="0.59"
-	_enabled="0"
-  ></SpriteComponent>
-  
-  <LuaComponent
-	script_source_file="data/scripts/magic/hat.lua"
-	execute_on_added="1"
-	remove_after_executed="1"
-	>
-	</LuaComponent>
-
+		_tags="character,player_amulet_gem" 
+		alpha="1" 
+		image_file="data/enemies_gfx/player_amulet_gem.xml" 
+		next_rect_animation="" 
+		offset_x="6" 
+		offset_y="14" 
+		rect_animation="walk" 
+		z_index="0.58"
+		_enabled="0"
+	></SpriteComponent>
+	
 	<SpriteComponent 
-    _tags="character,player_hat2" 
-    alpha="1" 
-    image_file="data/enemies_gfx/player_hat2.xml" 
-    next_rect_animation="" 
-    offset_x="6" 
-    offset_y="14" 
-    rect_animation="walk" 
-    z_index="0.59"
-	_enabled="0"
-  ></SpriteComponent>
-  
-  <LuaComponent
-	script_source_file="data/scripts/magic/hat2.lua"
-	execute_on_added="1"
-	remove_after_executed="1"
-	>
-	</LuaComponent>
-
+		_tags="character,player_hat"
+		alpha="1" 
+		image_file="data/enemies_gfx/player_hat.xml" 
+		next_rect_animation="" 
+		offset_x="6" 
+		offset_y="14" 
+		rect_animation="walk" 
+		z_index="0.59"
+		_enabled="0"
+	></SpriteComponent>
+	
 	<SpriteComponent 
-    _tags="character,player_hat2_shadow" 
-    alpha="1" 
-    image_file="data/enemies_gfx/player_hat2_shadow.xml" 
-    next_rect_animation="" 
-    offset_x="6" 
-    offset_y="14" 
-    rect_animation="walk" 
-    z_index="0.59"
-	_enabled="0"
-  ></SpriteComponent>
-  
-  <LuaComponent
-	script_source_file="data/scripts/magic/hat2_shadow.lua"
-	execute_on_added="1"
-	remove_after_executed="1"
-	>
+		_tags="character,player_hat2"
+		alpha="1" 
+		image_file="data/enemies_gfx/player_hat2.xml" 
+		next_rect_animation="" 
+		offset_x="6" 
+		offset_y="14" 
+		rect_animation="walk" 
+		z_index="0.58"
+		_enabled="0"
+	></SpriteComponent>
+	
+	<SpriteComponent 
+		_tags="character,player_hat2_shadow"
+		alpha="1" 
+		image_file="data/enemies_gfx/player_hat2_shadow.xml" 
+		next_rect_animation="" 
+		offset_x="6" 
+		offset_y="14" 
+		rect_animation="walk" 
+		z_index="0.58"
+		_enabled="0"
+	></SpriteComponent>
+
+	<LuaComponent
+		script_source_file="data/scripts/magic/amulet.lua"
+		execute_on_added="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
+	
+	<LuaComponent
+		script_source_file="data/scripts/magic/player_biome_check.lua"
+		execute_every_n_frame="80"
+		>
+	</LuaComponent>
+	
+	<LuaComponent
+		script_source_file="data/scripts/magic/orb_map_init.lua"
+		execute_every_n_frame="10"
+		remove_after_executed="1"
+		>
 	</LuaComponent>
 
 </Entity>
