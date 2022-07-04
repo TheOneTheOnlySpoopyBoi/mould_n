@@ -1,5 +1,5 @@
 local to_insert = {
-    {
+    --[[{
         id                 = "RA",
         name               = "Ra",
         description        = "Praise the Sun God!",
@@ -13,7 +13,7 @@ local to_insert = {
         action = function()
             add_projectile("data/entities/projectiles/ra.xml")
         end,
-    },
+    },]]--
     {
 		id          = "BURNING_GAZE",
 		name 		= "Burning Gaze",

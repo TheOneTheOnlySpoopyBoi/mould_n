@@ -2,24 +2,27 @@
 name="Mould"
 description="
 An expansion primarily based around hunting and exploration.
-NOW WITH 100% MORE MOULD!
+
+[b] This mod is (mostly) abandoned. However I may also add compatibilities between specific biome mods within this mod but probably not too many as it will become exponentially more work.[/b]
+
 
 [h1] Current Features: [/h1]
 [list]
-[*] New biomes: Coral Reef, Monk City, Decaying Jungle, Cursed Sandcave, Prawn Cave
-[*]  13 new spells and 7 returning spells
-[*] 49 weapons and wands
-[*] Tweaks to bosses and adding new drops
 [*] A 3rd Sun
-[*] 2 new bosses and 3 reborn bosses
+[*] 7 new spells and 7 returning spells
+[*] 31 weapons and wands
+[*] New biomes: Coral Reef (thanks to Spoopy), Cursed Sandcave, Prawn Cave
+[*] Tweaks to bosses and adding new drops
+[*] A structure to respawn bosses (only Alchemist, Dragon and Leviathan currently)
 [*] Archaeology to give incentives to hunting specific bosses
 [*] New materials and alchemy recipes
+[*] 1 new perk and 1 returning perk
 [/list]
 
 [h1] Compatibility [/h1]
 Mould is now compatible with these mods:
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2263080245] Noitavania by Tanksy [/url] 
-[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2479652426] Flesh Biome by hornedkey [/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2479652426] Flesh Biome by hornedkey [/url]
 (and you can use the biomes from all 3 at once)
 [b] To ensure that the mods load correctly, have them in this order: [/b]
 Mould
@@ -32,7 +35,7 @@ Flesh Biome
 [b] Special Thanks:[/b]
 Master of Copium, Gustavo, Extol, Evaisa, TheOneTheOnlySpoopyBoi
 
-
+Play [url=https://github.com/Ramiels/copis_things] Copis things. [/url]
 
 "
 tags="gameplay,items,quality of life,loadouts,tweaks,bosses,biomes,perks,spells"
@@ -40,3 +43,10 @@ dont_upload_folders=".assets"
 dont_upload_files=""
 >
 </Mod>
+
+<!--
+[b] I highly recommend these mods: (as well as the mods Ive added compatibility for ofc)[/b] 
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2726973753] Monsters! Drop your Guns! by Matolabu [/url] 
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1985600131] New Enemies and Bosses Mod by hornedkey [/url] 
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2818182929] Altar of Adaption by Evaisa [/url]
+-->
