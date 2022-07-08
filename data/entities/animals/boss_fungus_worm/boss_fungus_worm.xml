@@ -41,7 +41,7 @@
 
 	<CellEaterComponent
 		_tags="cell_eater"
-		radius="13" >
+		radius="9" >
 	</CellEaterComponent>
 
 	<DamageModelComponent 
@@ -54,7 +54,7 @@
 		fire_probability_of_ignition="0.5" 
 		blood_material="blood_worm"
 		blood_spray_material="blood_worm"
-		hp="300 " 
+		hp="300" 
 		is_on_fire="0" 
 		mAirAreWeInWater="0" 
 		mFallCount="0" 
@@ -220,6 +220,125 @@
 		sprite_id="6">
 	</SpriteStainsComponent>
 		
+	<Entity>
+		<InheritTransformComponent
+			parent_sprite_id="1"
+			>
+		</InheritTransformComponent>
+		
+		<GenomeDataComponent 
+			_enabled="1"
+			herd_id="worm"
+			food_chain_rank="6"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<LuaComponent
+			script_source_file="data/entities/animals/boss_fungus_worm/fungus_worm_pollen.lua"
+			execute_every_n_frame="75"
+			>
+		</LuaComponent>
+	</Entity>
+
+	<Entity>
+		<InheritTransformComponent
+			parent_sprite_id="2"
+			>
+		</InheritTransformComponent>
+		
+		<GenomeDataComponent 
+			_enabled="1"
+			herd_id="worm"
+			food_chain_rank="6"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<LuaComponent
+			script_source_file="data/entities/animals/boss_fungus_worm/fungus_worm_pollen.lua"
+			execute_every_n_frame="75"
+			>
+		</LuaComponent>
+	</Entity>
+
+	<Entity>
+		<InheritTransformComponent
+			parent_sprite_id="3"
+			>
+		</InheritTransformComponent>
+		
+		<GenomeDataComponent 
+			_enabled="1"
+			herd_id="worm"
+			food_chain_rank="6"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<LuaComponent
+			script_source_file="data/entities/animals/boss_fungus_worm/fungus_worm_pollen.lua"
+			execute_every_n_frame="75"
+			>
+		</LuaComponent>
+	</Entity>
+
+	<Entity>
+		<InheritTransformComponent
+			parent_sprite_id="4"
+			>
+		</InheritTransformComponent>
+		
+		<GenomeDataComponent 
+			_enabled="1"
+			herd_id="worm"
+			food_chain_rank="6"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<LuaComponent
+			script_source_file="data/entities/animals/boss_fungus_worm/fungus_worm_pollen.lua"
+			execute_every_n_frame="75"
+			>
+		</LuaComponent>
+	</Entity>
+
+	<Entity>
+		<InheritTransformComponent
+			parent_sprite_id="5"
+			>
+		</InheritTransformComponent>
+		
+		<GenomeDataComponent 
+			_enabled="1"
+			herd_id="worm"
+			food_chain_rank="6"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<LuaComponent
+			script_source_file="data/entities/animals/boss_fungus_worm/fungus_worm_pollen.lua"
+			execute_every_n_frame="75"
+			>
+		</LuaComponent>
+	</Entity>
+
+	<Entity>
+		<InheritTransformComponent
+			parent_sprite_id="6"
+			>
+		</InheritTransformComponent>
+		
+		<GenomeDataComponent 
+			_enabled="1"
+			herd_id="worm"
+			food_chain_rank="6"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<LuaComponent
+			script_source_file="data/entities/animals/boss_fungus_worm/fungus_worm_pollen.lua"
+			execute_every_n_frame="15"
+			>
+		</LuaComponent>
+	</Entity>
 
 	<SpriteComponent 
 		_tags="health_bar_back,ui,no_hitbox" 

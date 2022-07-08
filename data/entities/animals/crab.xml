@@ -7,9 +7,9 @@
     </AdvancedFishAIComponent>
 
     <GenomeDataComponent 
-        herd_id="helpless"
+        herd_id="spider"
         food_chain_rank="1000"
-        is_predator="0" >
+        is_predator="1" >
     </GenomeDataComponent>
 
 
@@ -110,5 +110,17 @@
         distance="2000"
         >
     </CameraBoundComponent>
+
+<AreaDamageComponent
+    aabb_min.x="-3" 
+    aabb_min.y="-3" 
+    aabb_max.x="3" 
+    aabb_max.y="3" 
+    damage_per_frame="0.1"
+    update_every_n_frame="10"
+	entities_with_tag="mortal"
+    damage_type="DAMAGE_SLICE"
+    >
+</AreaDamageComponent>
 
 </Entity>

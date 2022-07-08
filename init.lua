@@ -3,6 +3,13 @@ ModLuaFileAppend( "data/scripts/status_effects/status_list.lua", "mods/mould_n/f
 ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/mould_n/files/perk_list.lua" )
 ModMaterialsFileAdd("mods/mould_n/files/materials.xml")
 
+if ModIsEnabled("raksa") then
+  ModLuaFileAppend(
+    "mods/raksa/files/scripts/lists/entity_categories.lua",
+    "data/scripts/conjurer_mod/mould_list.lua"
+  )
+end
+
 ModMagicNumbersFileAdd( "mods/mould_n/files/magic_numbers.xml" ) 
 --BiomeMapLoadImage( 0, 0, "mods/mould_n/files/maps/m.png" )
 
